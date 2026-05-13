@@ -73,7 +73,7 @@ export function Hotels() {
   const [active, setActive] = useState<Hotel | null>(null);
 
   return (
-    <section id="hotels" className="py-16 md:py-24">
+    <section id="hotels" className="py-10 md:py-14">
       <div className="container-x">
         <div className="text-center max-w-2xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-navy">РАЗМЕЩЕНИЕ В ТРЁХ ОТЕЛЯХ НА ВЫБОР</h3>

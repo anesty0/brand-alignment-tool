@@ -2,7 +2,7 @@ import slope from "@/assets/solden-slope.jpg";
 
 export function Solden() {
   return (
-    <section className="py-12 md:py-20 bg-background">
+    <section className="py-8 md:py-12 bg-background">
       <div className="container-x grid lg:grid-cols-[0.9fr_1.4fr] gap-8 lg:gap-12 items-center">
         <div>
           <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight text-navy leading-tight">

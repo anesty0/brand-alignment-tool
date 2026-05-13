@@ -10,7 +10,7 @@ const items = [
 
 export function AlpsConnect() {
   return (
-    <section id="alps" className="py-16 md:py-24">
+    <section id="alps" className="py-10 md:py-14">
       <div className="container-x">
         <div className="text-center max-w-2xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-navy">ALPS CONNECT</h3>

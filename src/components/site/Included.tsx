@@ -10,7 +10,7 @@ const items = [
 
 export function Included() {
   return (
-    <section className="py-12 md:py-20">
+    <section className="py-8 md:py-12">
       <div className="container-x">
         <h3 className="text-center text-xl md:text-2xl font-extrabold tracking-tight text-navy">ЧТО ВКЛЮЧЕНО В УЧАСТИЕ</h3>
         <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-8">
