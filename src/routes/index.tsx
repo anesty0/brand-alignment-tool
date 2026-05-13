@@ -1,26 +1,38 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Solden } from "@/components/site/Solden";
+import { AlpsConnect } from "@/components/site/AlpsConnect";
+import { Program } from "@/components/site/Program";
+import { Hotels } from "@/components/site/Hotels";
+import { Included } from "@/components/site/Included";
+import { CtaBanners } from "@/components/site/CtaBanners";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Native Code — Ski Opening 2027 in Sölden, Austria" },
+      { name: "description", content: "1—6 December 2027 • Sölden, Austria. Five days in the Alps for entrepreneurs and investors: skiing by day, deep conversations by night." },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="min-h-screen bg-background text-foreground">
+      <Navbar />
+      <Hero />
+      <About />
+      <Solden />
+      <AlpsConnect />
+      <Program />
+      <Hotels />
+      <Included />
+      <CtaBanners />
+      <Footer />
+    </main>
+  );
 }
