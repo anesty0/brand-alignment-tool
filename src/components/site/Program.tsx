@@ -16,7 +16,7 @@ const days = [
 
 export function Program() {
   return (
-    <section id="program" className="py-12 md:py-20 bg-secondary/40">
+    <section id="program" className="py-8 md:py-12 bg-secondary/40">
       <div className="container-x">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 md:gap-5">
           {days.map((day) => (

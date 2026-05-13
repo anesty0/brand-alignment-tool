@@ -10,7 +10,7 @@ const features = [
 
 export function About() {
   return (
-    <section id="about" className="py-16 md:py-24">
+    <section id="about" className="py-10 md:py-14">
       <div className="container-x grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
         <div className="rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
           <img src={obs} alt="Alpine observation deck" loading="lazy" className="w-full h-full object-cover aspect-[4/5]" />
