@@ -135,6 +135,23 @@ article img {
   }
 }
 
+/* Tablet-only fixed crop for the image directly below the hero */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .about-tablet-image-frame {
+    height: 320px;
+    max-height: 320px;
+  }
+
+  .about-tablet-image {
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
 /* Smoother default interactive transitions */
 a, button {
   transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
