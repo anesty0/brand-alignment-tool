@@ -12,7 +12,7 @@ const features = [
 export function About() {
   const { t } = useI18n();
   return (
-    <section id="about" className="py-10 md:py-14">
+    <section id="about" className="py-10 md:py-14 lg:py-10 xl:py-12">
       <div className="container-x grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
         <div className="rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
           <img src={obs} alt="Alpine observation deck" loading="lazy" className="w-full h-full object-cover aspect-[4/5]" />
