@@ -66,10 +66,10 @@ function AboutPage() {
       <Navbar />
 
       {/* Hero — text left, mountain image bleeds to right edge with fade */}
-      <section className="relative overflow-hidden bg-[#f5f1ea]">
+      <section className="relative overflow-hidden bg-white">
         <div className="absolute inset-y-0 right-0 w-full lg:w-[62%]">
           <img src={alps} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#f5f1ea] via-[#f5f1ea]/70 to-[#f5f1ea]/10 lg:via-[#f5f1ea]/40 lg:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/70 to-white/10 lg:via-white/40 lg:to-transparent" />
         </div>
         <div className="container-x relative z-10 py-16 md:py-24 lg:py-32">
           <div className="max-w-xl">
