@@ -31,7 +31,7 @@ export function Hero() {
             </div>
           </div>
 
-          <p className="mt-3 text-sm md:text-base text-foreground/75 max-w-md">
+          <p className="mt-3 text-sm md:text-base text-foreground/75 max-w-md whitespace-pre-line">
             {t("hero.sub")}
           </p>
 
