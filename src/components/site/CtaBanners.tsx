@@ -2,7 +2,7 @@ import { Handshake, Mic, MessageCircle, Send, Mail, Instagram } from "lucide-rea
 import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
 
-const WA = "https://wa.me/79255895239";
+const WA = "https://wa.me/306972801776";
 
 export function CtaBanners() {
   const { t } = useI18n();
@@ -38,7 +38,7 @@ export function CtaBanners() {
           </Link>
           <div className="mt-5 flex justify-center gap-4 text-muted-foreground">
             <a href={WA} aria-label="WhatsApp" className="hover:text-emerald-600 transition"><MessageCircle size={16} /></a>
-            <a href="https://t.me/" aria-label="Telegram" className="hover:text-info transition"><Send size={16} /></a>
+            <a href="https://t.me/Irina_krasil" aria-label="Telegram" className="hover:text-info transition"><Send size={16} /></a>
             <a href="https://instagram.com/" aria-label="Instagram" className="hover:text-orange transition"><Instagram size={16} /></a>
             <a href="mailto:hello@nativecode.events" aria-label="Email" className="hover:text-orange transition"><Mail size={16} /></a>
           </div>

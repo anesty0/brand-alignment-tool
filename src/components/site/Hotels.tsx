@@ -230,7 +230,7 @@ export function Hotels() {
           ))}
 
           <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] p-5 flex flex-col justify-center gap-3 self-center w-full lg:w-[260px] lg:justify-self-end">
-            <a href="https://wa.me/79255895239" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-info font-semibold text-sm min-w-0">
+            <a href="https://wa.me/306972801776" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-info font-semibold text-sm min-w-0">
               <span className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-emerald-500/15 text-emerald-600 shrink-0">
                 <MessageCircle size={16} />
               </span>
@@ -288,7 +288,7 @@ export function Hotels() {
                       {t("hotels.bookOnline")}
                     </button>
                   )}
-                  <a href="https://wa.me/79255895239" target="_blank" rel="noreferrer" className="flex-1 inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-navy text-white hover:brightness-125 transition">
+                  <a href="https://wa.me/306972801776" target="_blank" rel="noreferrer" className="flex-1 inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-navy text-white hover:brightness-125 transition">
                     <MessageCircle size={14} /> {t("hotels.bookConsultant")}
                   </a>
                 </div>
