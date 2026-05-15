@@ -106,23 +106,28 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* Team / Partners */}
-      <section className="py-10 md:py-14">
+      {/* Team / Partners — editorial column layout */}
+      <section className="py-20 md:py-28 lg:py-36">
         <div className="container-x">
           <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
             {isRu ? "КОМАНДА ПРОЕКТА" : "PROJECT TEAM"}
           </div>
-          <h2 className="mt-3 text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-navy leading-tight max-w-2xl">
+          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-navy leading-[1.1] max-w-3xl">
             {isRu
               ? "Коллаборация опыта, людей и общей философии"
               : "A collaboration of experience, people and a shared philosophy"}
           </h2>
 
-          <div className="mt-10 grid md:grid-cols-3 gap-8">
-            {partners.map((p) => (
-              <article key={p.name} className="flex flex-col">
-                <h3 className="text-lg md:text-xl font-bold text-navy leading-snug">{p.name}</h3>
-                <div className="mt-4 space-y-3 text-sm text-muted-foreground leading-relaxed flex-1">
+          <div className="mt-16 md:mt-20 lg:mt-24 grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
+            {partners.map((p, idx) => (
+              <article
+                key={p.name}
+                className={`flex flex-col ${idx > 0 ? "md:pl-10 lg:pl-16 md:border-l md:border-border/60" : ""}`}
+              >
+                <h3 className="text-base md:text-lg font-bold tracking-tight text-navy leading-snug uppercase">
+                  {p.name}
+                </h3>
+                <div className="mt-6 space-y-4 text-sm text-muted-foreground leading-relaxed">
                   {(isRu ? p.bodyRu : p.bodyEn).map((para, i) => (
                     <p key={i}>{para}</p>
                   ))}
@@ -131,12 +136,17 @@ function AboutPage() {
                   href={`https://${p.link}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-5 inline-flex w-fit items-center gap-2 rounded-md border border-border px-4 py-2 text-[11px] font-semibold tracking-[0.14em] text-navy hover:border-orange hover:text-orange transition uppercase"
+                  className="mt-8 inline-flex w-fit items-center gap-2 rounded-md border border-border px-5 py-2.5 text-[11px] font-semibold tracking-[0.14em] text-navy hover:border-orange hover:text-orange transition uppercase"
                 >
                   {p.link} ↗
                 </a>
-                <div className="mt-5 rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-                  <img src={p.img} alt={p.name} loading="lazy" className="w-full h-44 md:h-52 object-cover" />
+                <div className="mt-10 overflow-hidden rounded-sm">
+                  <img
+                    src={p.img}
+                    alt={p.name}
+                    loading="lazy"
+                    className="w-full h-56 md:h-60 lg:h-72 object-cover"
+                  />
                 </div>
               </article>
             ))}
