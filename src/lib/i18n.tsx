@@ -13,10 +13,11 @@ const ru: Dict = {
   "nav.project": "О ПРОЕКТЕ",
   "nav.faq": "FAQ",
   "nav.cta": "ЗАБРОНИРОВАТЬ УЧАСТИЕ",
-  "brand.line2": "SKI OPENING 2027",
+  "brand.line2": "Клуб предпринимателей",
+  "brand.hero": "SKI OPENING 2026/27",
 
   // Hero
-  "hero.dates": "1 - 6 DECEMBER",
+  "hero.dates": "1 - 6 DECEMBER 2026",
   "hero.place": "SÖLDEN · AUSTRIA",
   "hero.tagline": "5 дней в Альпах: днём горы, вечером - разговоры",
   "hero.sub": "Встреча предпринимателей и\nинвесторов из разных стран",
@@ -140,8 +141,9 @@ const en: Dict = {
   "nav.faq": "FAQ",
   "nav.cta": "BOOK PARTICIPATION",
   "brand.line2": "ENTREPRENEURS CLUB",
+  "brand.hero": "SKI OPENING 2026/27",
 
-  "hero.dates": "1 - 6 DECEMBER",
+  "hero.dates": "1 - 6 DECEMBER 2026",
   "hero.place": "SÖLDEN • AUSTRIA",
   "hero.tagline": "Five days surrounded by people who speak your language.",
   "hero.sub": "A meeting of entrepreneurs and investors from different countries",

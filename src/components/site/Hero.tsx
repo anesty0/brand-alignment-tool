@@ -17,7 +17,7 @@ export function Hero() {
             NATIVE CODE
           </h1>
           <h2 className="mt-2 text-orange font-extrabold tracking-tight leading-[0.95] text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-            {t("brand.line2")}
+            {t("brand.hero")}
           </h2>
 
           <p className="mt-5 text-base md:text-lg text-foreground/80 max-w-md leading-snug">
@@ -27,7 +27,7 @@ export function Hero() {
           <div className="mt-5 space-y-1">
             <div className="text-lg md:text-xl font-bold text-navy tracking-tight">{t("hero.dates")}</div>
             <div className="text-lg md:text-xl font-bold text-navy tracking-tight flex items-center gap-2">
-              {t("hero.place")} <span aria-hidden>🇦🇹</span>
+              {t("hero.place")}
             </div>
           </div>
 
