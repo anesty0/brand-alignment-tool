@@ -244,14 +244,14 @@ export function Hotels() {
                     <span className="text-xs font-normal text-muted-foreground/80">{t("hotels.perPerson")}</span>
                   </div>
                   <div className="text-xs text-muted-foreground">{t("hotels.perPackage")}</div>
-                  <p className="mt-5 text-sm text-foreground/80 leading-relaxed">
-                    {lang === "ru" ? active.introRu : active.introEn}
-                  </p>
                 </div>
 
-                <div className="hotel-scroll mt-5 min-h-0 flex-1 overflow-y-auto px-6 pr-4 md:px-8 md:pr-5">
+                <div className="hotel-scroll mt-5 min-h-0 flex-1 max-h-[42dvh] md:max-h-[360px] overflow-y-auto px-6 pr-4 md:px-8 md:pr-5">
+                  <p className="text-sm text-foreground/80 leading-relaxed">
+                    {lang === "ru" ? active.introRu : active.introEn}
+                  </p>
                   {active.sections.map((s, si) => (
-                    <div key={si} className={si === 0 ? "" : "mt-6"}>
+                    <div key={si} className="mt-6">
                       <div className="text-[11px] font-semibold tracking-[0.18em] text-orange">
                         {lang === "ru" ? s.titleRu : s.titleEn}
                       </div>
