@@ -29,7 +29,7 @@ export function Footer() {
         <div className="text-sm">
           <div className="font-semibold text-white mb-3">{t("footer.contacts")}</div>
           <ul className="space-y-2 text-white/70">
-            <li>WhatsApp / Telegram</li>
+            <li><a href="https://wa.me/306972801776" target="_blank" rel="noreferrer" className="hover:text-orange transition">WhatsApp</a> / <a href="https://t.me/Irina_krasil" target="_blank" rel="noreferrer" className="hover:text-orange transition">Telegram</a></li>
             <li><a href="mailto:irina.krasilnikova1982@gmail.com" className="hover:text-orange transition">irina.krasilnikova1982@gmail.com</a></li>
             <li>Sölden, Tyrol, Austria</li>
           </ul>
@@ -38,7 +38,6 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container-x py-5 flex flex-col md:flex-row justify-between gap-2 text-xs text-white/60">
           <span>{t("footer.rights")}</span>
-          <span>{t("footer.made")}</span>
         </div>
       </div>
     </footer>
