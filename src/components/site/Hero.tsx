@@ -39,7 +39,7 @@ export function Hero() {
             <a href="https://wa.me/79255895239" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 text-xs font-semibold tracking-[0.12em] hover:brightness-110 transition shadow-[var(--shadow-soft)]">
               {t("hero.cta1")}
             </a>
-            <a href="#program" className="inline-flex items-center justify-center rounded-md bg-background border border-border text-navy px-5 py-3 text-xs font-semibold tracking-[0.12em] hover:border-orange hover:text-orange transition">
+            <a href="/#program" className="inline-flex items-center justify-center rounded-md bg-background border border-border text-navy px-5 py-3 text-xs font-semibold tracking-[0.12em] hover:border-orange hover:text-orange transition">
               {t("hero.cta2")}
             </a>
           </div>
