@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "@tanstack/react-router";
+
 import h1 from "@/assets/hotel-1.jpg";
 import h2 from "@/assets/hotel-2.jpg";
 import h3 from "@/assets/hotel-3.jpg";
