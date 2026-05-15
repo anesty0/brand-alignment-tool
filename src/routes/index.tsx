@@ -14,8 +14,8 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Native Code — Ski Opening 2027 in Sölden, Austria" },
-      { name: "description", content: "1—6 December 2027 • Sölden, Austria. Five days in the Alps for entrepreneurs and investors: skiing by day, deep conversations by night." },
+      { title: "Native Code - Ski Opening 2027 in Sölden, Austria" },
+      { name: "description", content: "1-6 December 2027 • Sölden, Austria. Five days in the Alps for entrepreneurs and investors: skiing by day, deep conversations by night." },
     ],
   }),
 });

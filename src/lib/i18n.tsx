@@ -16,9 +16,9 @@ const ru: Dict = {
   "brand.line2": "SKI OPENING 2027",
 
   // Hero
-  "hero.dates": "1 — 6 DECEMBER",
+  "hero.dates": "1 - 6 DECEMBER",
   "hero.place": "SÖLDEN · AUSTRIA",
-  "hero.tagline": "5 дней в Альпах: днём горы, вечером — разговоры",
+  "hero.tagline": "5 дней в Альпах: днём горы, вечером - разговоры",
   "hero.sub": "Встреча предпринимателей и инвесторов из разных стран",
   "hero.cta1": "ЗАБРОНИРОВАТЬ УЧАСТИЕ",
   "hero.cta2": "ПРОГРАММА",
@@ -26,30 +26,30 @@ const ru: Dict = {
   "hero.whatsappSub": "Ответим в течение дня и поможем выбрать формат участия",
 
   // About
-  "about.heading": "— это 5 дней в кругу людей, с которыми вы говорите на одном языке в жизни и бизнесе.",
-  "about.body": "В Зёльдене, в обстановке off the record, соберутся предприниматели, строящие бизнес в новых условиях и говорящие на русском языке. Здесь не нужно объяснять базовые вещи — мы говорим, думаем и смеёмся на одном языке.",
+  "about.heading": "- это 5 дней в кругу людей, с которыми вы говорите на одном языке в жизни и бизнесе.",
+  "about.body": "В Зёльдене, в обстановке off the record, соберутся предприниматели, строящие бизнес в новых условиях и говорящие на русском языке. Здесь не нужно объяснять базовые вещи - мы говорим, думаем и смеёмся на одном языке.",
   "about.f1.t": "ФОРМАТ",
-  "about.f1.b": "Ski Opening — это Альпы, вельвет Зёльдена и открытие сезона. Приезжайте в компании: днём — каждый в своём ритме, вечером — все за одним столом.",
+  "about.f1.b": "Ski Opening - это Альпы, вельвет Зёльдена и открытие сезона. Приезжайте в компании: днём - каждый в своём ритме, вечером - все за одним столом.",
   "about.f2.t": "УЧАСТНИКИ",
   "about.f2.b": "Уже прошли через ограничения и перестройку моделей, работают с командами, капиталом и структурой бизнеса, рассматривают новые проекты и партнёрства.",
   "about.f3.t": "ЧТО ДАЁТ",
   "about.f3.b": "Обмен реальным опытом: банки, налоги, ВНЖ и структура бизнеса. Возможность обсудить свои задачи с теми, кто в похожей ситуации. Среда, в которой за ужином или на подъёмнике возникают новые проекты.",
   "about.f4.t": "ДЕЛОВАЯ ЧАСТЬ",
-  "about.f4.b": "Днём — горы, вечером — ужины, встречи и деловая программа. В рамках NATIVE CODE будет отдельный бизнес-вечер с обсуждением проектов и возможностью представить свои идеи.",
+  "about.f4.b": "Днём - горы, вечером - ужины, встречи и деловая программа. В рамках NATIVE CODE будет отдельный бизнес-вечер с обсуждением проектов и возможностью представить свои идеи.",
 
   // Solden
   "solden.title": "SÖLDEN",
   "solden.sub": "один из лучших курортов Альп",
-  "solden.p1": "Зёльден — два ледника и стабильный снег.",
-  "solden.p2": "140+ км трасс и широкие склоны — здесь удобно кататься в любом ритме.",
+  "solden.p1": "Зёльден - два ледника и стабильный снег.",
+  "solden.p2": "140+ км трасс и широкие склоны - здесь удобно кататься в любом ритме.",
   "solden.p3": "Термы Aqua Dome делают поездку комфортной даже вне склонов.",
 
   // AlpsConnect
   "alps.kicker": "ALPS CONNECT",
-  "alps.date": "Главный вечер программы — 3 декабря",
+  "alps.date": "Главный вечер программы - 3 декабря",
   "alps.title": "На высоте 1950 метров разговоры звучат иначе",
   "alps.c1": "Проекты и решения",
-  "alps.c2": "Gurgl Carat — 1950 м над уровнем моря",
+  "alps.c2": "Gurgl Carat - 1950 м над уровнем моря",
   "alps.c3": "Люди и новые связи",
 
   // Program
@@ -59,11 +59,11 @@ const ru: Dict = {
   "program.d1.date": "1 ДЕКАБРЯ",
   "program.d1.title": "Прибытие и знакомство",
   "program.d1.morning": "Прибытие, заселение, получение оборудования",
-  "program.d1.evening": "Welcome Drink в Sky Bar — первый вечер знакомства",
+  "program.d1.evening": "Welcome Drink в Sky Bar - первый вечер знакомства",
   "program.d2.date": "2 ДЕКАБРЯ",
   "program.d2.title": "Открытие сезона",
   "program.d2.morning": "Ски сафари с инструктором (три группы по уровню катания)",
-  "program.d2.evening": "Открытие NATIVE CODE и гала-ужин в THE SECRET — вечер, с которого всё начинается",
+  "program.d2.evening": "Открытие NATIVE CODE и гала-ужин в THE SECRET - вечер, с которого всё начинается",
   "program.d3.date": "3 ДЕКАБРЯ",
   "program.d3.kicker": "КЛЮЧЕВОЙ ДЕНЬ ПРОГРАММЫ",
   "program.d3.title": "ALPS CONNECT DAY",
@@ -120,7 +120,7 @@ const ru: Dict = {
   "cta.about": "О ПРОЕКТЕ",
 
   // Footer
-  "footer.tagline": "1—6 декабря, Sölden • Austria. Встреча предпринимателей и инвесторов из разных стран.",
+  "footer.tagline": "1-6 декабря, Sölden • Austria. Встреча предпринимателей и инвесторов из разных стран.",
   "footer.nav": "Навигация",
   "footer.contacts": "Контакты",
   "footer.rights": "© 2026 NATIVE CODE. All rights reserved.",
@@ -141,19 +141,19 @@ const en: Dict = {
   "nav.cta": "BOOK PARTICIPATION",
   "brand.line2": "ENTREPRENEURS CLUB",
 
-  "hero.dates": "1 — 6 DECEMBER",
+  "hero.dates": "1 - 6 DECEMBER",
   "hero.place": "SÖLDEN • AUSTRIA",
   "hero.tagline": "Five days surrounded by people who speak your language.",
   "hero.sub": "A meeting of entrepreneurs and investors from different countries",
   "hero.cta1": "BOOK PARTICIPATION",
   "hero.cta2": "PROGRAM",
   "hero.whatsapp": "Message us on WhatsApp",
-  "hero.whatsappSub": "Questions and bookings — we'll help on WhatsApp",
+  "hero.whatsappSub": "Questions and bookings - we'll help on WhatsApp",
 
-  "about.heading": "— five days surrounded by people who speak your language.",
-  "about.body": "In Sölden, off the record, entrepreneurs building businesses in new conditions come together. No need to explain the basics — we think, talk and laugh in the same language.",
+  "about.heading": "- five days surrounded by people who speak your language.",
+  "about.body": "In Sölden, off the record, entrepreneurs building businesses in new conditions come together. No need to explain the basics - we think, talk and laugh in the same language.",
   "about.f1.t": "FORMAT",
-  "about.f1.b": "Ski Opening — the Alps, evening Z(I)Abend and the season's opening. Like-minded company: rhythm, energy, all at one table.",
+  "about.f1.b": "Ski Opening - the Alps, evening Z(I)Abend and the season's opening. Like-minded company: rhythm, energy, all at one table.",
   "about.f2.t": "PARTICIPANTS",
   "about.f2.b": "Already through entrepreneurship and reshaping models, working with teams, capital and business structure.",
   "about.f3.t": "WHAT YOU GET",
@@ -163,8 +163,8 @@ const en: Dict = {
 
   "solden.title": "SÖLDEN",
   "solden.sub": "one of the best resorts in the Alps",
-  "solden.p1": "Sölden — two glaciers and reliable snow.",
-  "solden.p2": "140+ km of slopes and wide pistes — comfortable for any pace.",
+  "solden.p1": "Sölden - two glaciers and reliable snow.",
+  "solden.p2": "140+ km of slopes and wide pistes - comfortable for any pace.",
   "solden.p3": "Aqua Dome thermal baths make the trip pleasant off-piste too.",
 
   "alps.kicker": "THE KEY DAY OF NATIVE CODE",
@@ -180,7 +180,7 @@ const en: Dict = {
   "program.d1.date": "DEC 1",
   "program.d1.title": "Arrival & welcome",
   "program.d1.morning": "Arrival, check-in, program overview",
-  "program.d1.evening": "Welcome Drink & Sky Bar — first evening together",
+  "program.d1.evening": "Welcome Drink & Sky Bar - first evening together",
   "program.d2.date": "DEC 2",
   "program.d2.title": "Season opening",
   "program.d2.morning": "Ski safari with instructors (three groups by level)",
@@ -237,7 +237,7 @@ const en: Dict = {
   "cta.creators": "Creators of NATIVE CODE",
   "cta.about": "ABOUT THE PROJECT",
 
-  "footer.tagline": "Dec 1—6, Sölden • Austria. Entrepreneurs and investors from different countries.",
+  "footer.tagline": "Dec 1-6, Sölden • Austria. Entrepreneurs and investors from different countries.",
   "footer.nav": "Navigation",
   "footer.contacts": "Contacts",
   "footer.rights": "© 2026 NATIVE CODE. All rights reserved.",

@@ -16,8 +16,8 @@ const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
   {
     qRu: "Что такое NATIVE CODE?",
     qEn: "What is NATIVE CODE?",
-    aRu: "NATIVE CODE — это клуб предпринимателей, инвесторов и людей, которые строят жизнь и бизнес в новых странах, но продолжают говорить на одном языке — русском.\n\nЭто сообщество людей с похожим опытом, кругом общения и пониманием реальности последних лет.\n\nSKI OPENING — первая встреча клуба в Альпах.",
-    aEn: "NATIVE CODE is a club of entrepreneurs, investors and people building life and business in new countries while still sharing one language — Russian.\n\nIt is a community of people with similar experience, social circles and understanding of the realities of recent years.\n\nSKI OPENING is the club's first gathering in the Alps.",
+    aRu: "NATIVE CODE - это клуб предпринимателей, инвесторов и людей, которые строят жизнь и бизнес в новых странах, но продолжают говорить на одном языке - русском.\n\nЭто сообщество людей с похожим опытом, кругом общения и пониманием реальности последних лет.\n\nSKI OPENING - первая встреча клуба в Альпах.",
+    aEn: "NATIVE CODE is a club of entrepreneurs, investors and people building life and business in new countries while still sharing one language - Russian.\n\nIt is a community of people with similar experience, social circles and understanding of the realities of recent years.\n\nSKI OPENING is the club's first gathering in the Alps.",
   },
   {
     qRu: "Что такое SKI OPENING?",
@@ -41,7 +41,7 @@ const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
     qRu: "Можно приехать без пары или компании?",
     qEn: "Can I come alone, without a partner or group?",
     aRu: "Да.\n\nОчень многие участники приезжают одни.\n\nИменно поэтому здесь большое внимание уделяется атмосфере, знакомствам и лёгкому нетворкингу без «обязательных активностей».",
-    aEn: "Yes.\n\nMany guests come on their own.\n\nThat is exactly why so much attention is paid to atmosphere, introductions and easy networking — without any “mandatory activities”.",
+    aEn: "Yes.\n\nMany guests come on their own.\n\nThat is exactly why so much attention is paid to atmosphere, introductions and easy networking - without any “mandatory activities”.",
   },
   {
     qRu: "Что входит в участие?",
@@ -52,14 +52,14 @@ const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
   {
     qRu: "Что такое Alps Connect?",
     qEn: "What is Alps Connect?",
-    aRu: "Alps Connect — это отдельная часть программы, посвящённая знакомствам, проектам, идеям и деловым связям.\n\nНе классическая конференция.\n\nСкорее среда, где:\n\n• обсуждают реальные кейсы\n• знакомятся с людьми своего круга\n• находят партнёров\n• инвесторов\n• новые проекты и возможности",
+    aRu: "Alps Connect - это отдельная часть программы, посвящённая знакомствам, проектам, идеям и деловым связям.\n\nНе классическая конференция.\n\nСкорее среда, где:\n\n• обсуждают реальные кейсы\n• знакомятся с людьми своего круга\n• находят партнёров\n• инвесторов\n• новые проекты и возможности",
     aEn: "Alps Connect is a dedicated part of the programme focused on introductions, projects, ideas and business connections.\n\nNot a classic conference.\n\nRather an environment where guests:\n\n• discuss real cases\n• meet peers of their level\n• find partners\n• meet investors\n• discover new projects and opportunities",
   },
   {
     qRu: "Будут ли выступления и спикеры?",
     qEn: "Will there be talks and speakers?",
-    aRu: "Да.\n\nЗапланированы:\n\n• короткие выступления\n• живые обсуждения\n• кейсы участников\n• private talks\n• networking sessions\n\nНо главное здесь — не сцена, а люди вокруг.",
-    aEn: "Yes.\n\nPlanned:\n\n• short talks\n• live discussions\n• guest case studies\n• private talks\n• networking sessions\n\nBut the main thing here isn't the stage — it's the people around you.",
+    aRu: "Да.\n\nЗапланированы:\n\n• короткие выступления\n• живые обсуждения\n• кейсы участников\n• private talks\n• networking sessions\n\nНо главное здесь - не сцена, а люди вокруг.",
+    aEn: "Yes.\n\nPlanned:\n\n• short talks\n• live discussions\n• guest case studies\n• private talks\n• networking sessions\n\nBut the main thing here isn't the stage - it's the people around you.",
   },
   {
     qRu: "Это бизнес-конференция?",
@@ -70,8 +70,8 @@ const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
   {
     qRu: "На каком языке проходит мероприятие?",
     qEn: "What language is the event held in?",
-    aRu: "Основной язык — русский.\n\nПри этом мероприятие международное: участники живут и работают в разных странах Европы и мира.",
-    aEn: "The main language is Russian.\n\nThe event is international — guests live and work across Europe and around the world.",
+    aRu: "Основной язык - русский.\n\nПри этом мероприятие международное: участники живут и работают в разных странах Европы и мира.",
+    aEn: "The main language is Russian.\n\nThe event is international - guests live and work across Europe and around the world.",
   },
   {
     qRu: "Можно ли приехать с друзьями или семьёй?",
@@ -82,8 +82,8 @@ const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
   {
     qRu: "Где проходит мероприятие?",
     qEn: "Where does the event take place?",
-    aRu: "Sölden — один из самых известных горнолыжных курортов Австрии и традиционное место открытия сезона в Альпах.",
-    aEn: "Sölden — one of Austria's most famous ski resorts and the traditional season-opening destination in the Alps.",
+    aRu: "Sölden - один из самых известных горнолыжных курортов Австрии и традиционное место открытия сезона в Альпах.",
+    aEn: "Sölden - one of Austria's most famous ski resorts and the traditional season-opening destination in the Alps.",
   },
   {
     qRu: "Почему именно Зёльден?",
