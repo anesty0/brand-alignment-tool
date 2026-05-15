@@ -13,8 +13,8 @@ export function About() {
   const { t } = useI18n();
   return (
     <section id="about" className="py-10 md:py-14 lg:py-10 xl:py-12">
-      <div className="container-x grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
-        <div className="about-tablet-image-frame rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
+      <div className="container-x grid xl:grid-cols-2 gap-10 xl:gap-14 items-start">
+        <div className="about-tablet-image-frame rounded-2xl overflow-hidden shadow-[var(--shadow-card)] max-w-xl xl:max-w-none mx-auto w-full">
           <img src={obs} alt="Alpine observation deck" loading="lazy" className="about-tablet-image w-full h-full object-cover aspect-[4/5]" />
         </div>
 
