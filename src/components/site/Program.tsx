@@ -26,12 +26,16 @@ export function Program() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 md:gap-4">
           {days.map((day) => (
             <article key={day.k} className="bg-card rounded-xl overflow-hidden border border-border shadow-[var(--shadow-card)] hover:-translate-y-1 transition-transform duration-300 flex flex-col">
-              <img src={day.img} alt={t(`${day.k}.title`)} loading="lazy" className="w-full h-28 object-cover" />
+              <div className="relative">
+                <img src={day.img} alt={t(`${day.k}.title`)} loading="lazy" className="w-full h-28 object-cover" />
+                {day.k === "program.d3" && (
+                  <span className="absolute bottom-2 left-2 bg-orange text-white text-[10px] font-bold tracking-[0.12em] uppercase px-2.5 py-1 rounded-full shadow-sm">
+                    {t(`${day.k}.kicker`)}
+                  </span>
+                )}
+              </div>
               <div className="p-3 text-[11px] leading-relaxed flex-1 flex flex-col">
                 <div className="text-[10px] font-bold tracking-[0.18em] text-orange">{t(`${day.k}.date`)}</div>
-                {day.k === "program.d3" && (
-                  <div className="mt-0.5 text-[10px] font-bold tracking-[0.18em] text-orange">{t(`${day.k}.kicker`)}</div>
-                )}
                 <h4 className="mt-1 text-sm font-bold text-navy leading-tight">{t(`${day.k}.title`)}</h4>
                 <div className="mt-2.5">
                   <div className="font-bold text-navy tracking-wider text-[10px]">{t("program.morning")}</div>
