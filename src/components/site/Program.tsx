@@ -29,7 +29,7 @@ export function Program() {
               <div className="relative">
                 <img src={day.img} alt={t(`${day.k}.title`)} loading="lazy" className="w-full h-28 object-cover" />
                 {day.k === "program.d3" && (
-                  <span className="absolute bottom-2 left-2 bg-orange text-white text-[10px] font-bold tracking-[0.12em] uppercase px-2.5 py-1 rounded-full shadow-sm">
+                  <span className="absolute bottom-2 left-2 bg-orange text-white text-[10px] xl:text-[8px] font-bold tracking-[0.12em] xl:tracking-[0.08em] uppercase px-2.5 xl:px-2 py-1 xl:py-0.5 rounded-full shadow-sm">
                     {t(`${day.k}.kicker`)}
                   </span>
                 )}
