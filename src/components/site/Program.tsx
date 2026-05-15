@@ -18,7 +18,7 @@ const days = [
 export function Program() {
   const { t } = useI18n();
   return (
-    <section id="program" className="py-8 md:py-12 lg:py-8 xl:py-10 bg-secondary/40">
+    <section id="program" className="scroll-mt-24 md:scroll-mt-28 py-8 md:py-12 lg:py-8 xl:py-10 bg-secondary/40">
       <div className="container-x">
         <div className="text-center max-w-2xl mx-auto mb-8">
           <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-navy">{t("program.title")}</h3>
