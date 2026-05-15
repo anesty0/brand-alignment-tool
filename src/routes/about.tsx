@@ -209,4 +209,3 @@ function AboutPage() {
   );
 }
 
-void Calendar;
