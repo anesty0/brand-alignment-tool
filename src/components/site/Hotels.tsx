@@ -23,6 +23,7 @@ type Hotel = {
   introRu: string; introEn: string;
   sections: Section[];
   gallery: string[];
+  bookUrl?: string;
 };
 
 const hotels: Hotel[] = [
