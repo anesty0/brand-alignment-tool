@@ -63,7 +63,7 @@ const partners = [
 const valueIcons = [Users, Mountain, Briefcase, Compass];
 
 function AboutPage() {
-  const { lang, t } = useI18n();
+  const { lang } = useI18n();
   const isRu = lang === "ru";
 
   const valuesRu = [
