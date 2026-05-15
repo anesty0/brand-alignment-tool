@@ -6,10 +6,10 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const linkKeys = [
-  { href: "#about", k: "nav.about" },
-  { href: "#program", k: "nav.program" },
-  { href: "#hotels", k: "nav.hotels" },
-  { href: "#alps", k: "nav.alps" },
+  { href: "/#about", k: "nav.about" },
+  { href: "/#program", k: "nav.program" },
+  { href: "/#hotels", k: "nav.hotels" },
+  { href: "/#alps", k: "nav.alps" },
 ];
 
 const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
@@ -144,7 +144,7 @@ export function Navbar() {
         </nav>
         <div className="flex items-center gap-2 md:gap-3">
           <LangSwitch className="hidden sm:inline-flex" />
-          <a href="#hotels" className="hidden md:inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 lg:px-5 py-2.5 text-[11px] font-semibold tracking-[0.1em] hover:brightness-110 transition shadow-[var(--shadow-soft)]">
+          <a href="/#hotels" className="hidden md:inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 lg:px-5 py-2.5 text-[11px] font-semibold tracking-[0.1em] hover:brightness-110 transition shadow-[var(--shadow-soft)]">
             {t("nav.cta")}
           </a>
           <button className="lg:hidden p-2 -mr-2 text-navy" onClick={() => setOpen(!open)} aria-label="Menu">
@@ -165,7 +165,7 @@ export function Navbar() {
             </button>
             <div className="mt-3 flex items-center justify-between gap-3">
               <LangSwitch />
-              <a href="#hotels" onClick={() => setOpen(false)} className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 text-[11px] font-semibold tracking-[0.1em]">
+              <a href="/#hotels" onClick={() => setOpen(false)} className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 text-[11px] font-semibold tracking-[0.1em]">
                 {t("nav.cta")}
               </a>
             </div>
