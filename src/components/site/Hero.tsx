@@ -11,7 +11,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/10 to-transparent" />
       </div>
 
-      <div className="relative container-x pt-8 md:pt-14 pb-16 md:pb-24">
+      <div className="relative container-x pt-8 md:pt-14 lg:pt-10 pb-16 md:pb-24 lg:pb-16 xl:pb-20">
         <div className="max-w-2xl">
           <h1 className="font-extrabold tracking-tight text-navy leading-[0.95] text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
             NATIVE CODE

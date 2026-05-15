@@ -4,7 +4,7 @@ import { useI18n } from "@/lib/i18n";
 export function Solden() {
   const { t } = useI18n();
   return (
-    <section className="py-8 md:py-12 bg-background">
+    <section className="py-8 md:py-12 lg:py-8 xl:py-10 bg-background">
       <div className="container-x">
         <div className="grid lg:grid-cols-[0.9fr_1.4fr] gap-8 lg:gap-12 items-start">
           <div>
