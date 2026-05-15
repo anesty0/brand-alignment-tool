@@ -35,10 +35,10 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/60">
       <div className="container-x flex items-center justify-between h-16 md:h-20 gap-3">
-        <a href="#top" className="leading-tight shrink-0">
+        <Link to="/" className="leading-tight shrink-0">
           <div className="font-extrabold tracking-tight text-base md:text-lg text-navy">NATIVE CODE</div>
           <div className="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-orange">{t("brand.line2")}</div>
-        </a>
+        </Link>
         <nav className="hidden lg:flex items-center gap-7">
           {linkKeys.map((l) => (
             <a key={l.href} href={l.href} className="text-xs font-semibold tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors">
