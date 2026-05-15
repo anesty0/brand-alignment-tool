@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "@tanstack/react-router";
 import h1 from "@/assets/hotel-1.jpg";
 import h2 from "@/assets/hotel-2.jpg";
 import h3 from "@/assets/hotel-3.jpg";
@@ -117,7 +118,7 @@ export function Hotels() {
             </article>
           ))}
 
-          <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] px-5 py-4 flex flex-col justify-center gap-2 self-center lg:max-w-[230px] lg:w-fit">
+          <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] px-5 py-4 flex flex-col justify-center gap-3 self-center lg:max-w-[230px] lg:w-fit">
             <a href="https://wa.me/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-info font-semibold whitespace-nowrap text-sm">
               <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-emerald-500/15 text-emerald-600 shrink-0">
                 <MessageCircle size={16} />
@@ -125,6 +126,12 @@ export function Hotels() {
               {t("hero.whatsapp")}
             </a>
             <p className="text-xs font-semibold text-navy leading-snug">{t("hotels.help")}</p>
+            <Link
+              to="/about"
+              className="inline-flex items-center justify-center rounded-md border border-border px-4 py-2 text-[11px] font-semibold tracking-[0.14em] text-navy hover:border-orange hover:text-orange transition uppercase"
+            >
+              {lang === "ru" ? "О ПРОЕКТЕ" : "ABOUT"}
+            </Link>
           </div>
         </div>
       </div>
