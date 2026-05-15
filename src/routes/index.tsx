@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
@@ -9,7 +9,6 @@ import { Hotels } from "@/components/site/Hotels";
 import { Included } from "@/components/site/Included";
 import { CtaBanners } from "@/components/site/CtaBanners";
 import { Footer } from "@/components/site/Footer";
-import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -21,24 +20,6 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-function CreatorsStrip() {
-  const { lang } = useI18n();
-  return (
-    <section className="py-8 md:py-10 border-t border-border/60">
-      <div className="container-x flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-        <h4 className="text-sm md:text-base font-bold tracking-wide text-navy">
-          {lang === "ru" ? "Создатели проекта & О проекте" : "Project creators & About the project"}
-        </h4>
-        <Link
-          to="/about"
-          className="inline-flex items-center justify-center rounded-md border border-border px-5 py-2.5 text-xs font-semibold tracking-[0.12em] text-navy hover:border-orange hover:text-orange transition"
-        >
-          {lang === "ru" ? "О ПРОЕКТЕ" : "ABOUT THE PROJECT"}
-        </Link>
-      </div>
-    </section>
-  );
-}
 
 function Index() {
   return (
@@ -52,7 +33,6 @@ function Index() {
       <Hotels />
       <Included />
       <CtaBanners />
-      <CreatorsStrip />
       <Footer />
     </main>
   );

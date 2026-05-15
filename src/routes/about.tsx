@@ -1,12 +1,11 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
-import { Footer } from "@/components/site/Footer";
 import { useI18n } from "@/lib/i18n";
 import alps from "@/assets/alps-1.jpg";
 import sail from "@/assets/alps-2.jpg";
 import lounge from "@/assets/alps-3.jpg";
 import fire from "@/assets/observation.jpg";
-import { Users, Mountain, Compass, Briefcase } from "lucide-react";
+import { Users, Mountain, Compass, Briefcase, Instagram, Send, MessageCircle, Mail, MapPin } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -84,35 +83,46 @@ function AboutPage() {
     <main className="min-h-screen bg-background text-foreground">
       <Navbar />
 
-      {/* Hero / Intro */}
+      {/* Hero — split layout: text left, mountain image right with fade */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={alps} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
-        </div>
-        <div className="relative container-x py-16 md:py-24 max-w-3xl">
-          <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
-            {isRu ? "О ПРОЕКТЕ" : "ABOUT"}
+        <div className="container-x grid lg:grid-cols-2 gap-8 lg:gap-12 items-center py-12 md:py-16 lg:py-20">
+          <div className="relative z-10 max-w-xl">
+            <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
+              {isRu ? "О ПРОЕКТЕ" : "ABOUT"}
+            </div>
+            <h1 className="mt-4 font-extrabold tracking-tight text-navy leading-[1.05] text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase">
+              {isRu ? "Кто создаёт" : "Who creates"}<br />NATIVE CODE
+            </h1>
+            <p className="mt-6 text-sm md:text-base text-foreground/75 leading-relaxed">
+              {isRu
+                ? "Проект создан предпринимателями и компаниями, которые сами живут между странами, строят бизнес и понимают ценность сильного окружения."
+                : "The project is created by entrepreneurs and companies who live between countries themselves, build businesses and understand the value of a strong circle."}
+            </p>
           </div>
-          <h1 className="mt-4 font-extrabold tracking-tight text-navy leading-[1.05] text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase">
-            {isRu ? "Кто создаёт" : "Who creates"}<br />NATIVE CODE
-          </h1>
-          <div className="mt-6 space-y-4 text-sm md:text-base text-foreground/80 leading-relaxed max-w-xl">
-            <p>{isRu
-              ? "NATIVE CODE появился не как очередной «бизнес-ивент»."
-              : "NATIVE CODE didn't appear as just another \"business event\"."}</p>
-            <p>{isRu
-              ? "Он вырос из реального круга людей, которые последние годы строят бизнес, проекты и новую жизнь в других странах — с новыми правилами, банками, налогами, языками и системой."
-              : "It grew out of a real circle of people who, in recent years, have been building businesses, projects and a new life in other countries — with new rules, banks, taxes, languages and systems."}</p>
-            <p>{isRu
-              ? "Проект создают предприниматели и компании, которые сами проходят этот путь."
-              : "The project is created by entrepreneurs and companies walking this path themselves."}</p>
+          <div className="relative h-64 sm:h-80 lg:h-[420px] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
+            <img src={alps} alt="" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/30 to-transparent lg:from-background/80" />
           </div>
         </div>
       </section>
 
+      {/* Intro paragraphs */}
+      <section className="py-8 md:py-12">
+        <div className="container-x max-w-3xl space-y-4 text-sm md:text-base text-foreground/80 leading-relaxed">
+          <p>{isRu
+            ? "NATIVE CODE появился не как очередной «бизнес-ивент»."
+            : "NATIVE CODE didn't appear as just another \"business event\"."}</p>
+          <p>{isRu
+            ? "Он вырос из реального круга людей, которые последние годы строят бизнес, проекты и новую жизнь в других странах — с новыми правилами, банками, налогами, языками и системой."
+            : "It grew out of a real circle of people who, in recent years, have been building businesses, projects and a new life in other countries — with new rules, banks, taxes, languages and systems."}</p>
+          <p>{isRu
+            ? "Проект создают предприниматели и компании, которые сами проходят этот путь."
+            : "The project is created by entrepreneurs and companies walking this path themselves."}</p>
+        </div>
+      </section>
+
       {/* Team / Partners */}
-      <section className="py-14 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container-x">
           <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
             {isRu ? "КОМАНДА ПРОЕКТА" : "PROJECT TEAM"}
@@ -123,7 +133,7 @@ function AboutPage() {
               : "A collaboration of experience, people and a shared philosophy"}
           </h2>
 
-          <div className="mt-12 grid md:grid-cols-3 gap-8">
+          <div className="mt-10 grid md:grid-cols-3 gap-8">
             {partners.map((p) => (
               <article key={p.name} className="flex flex-col">
                 <h3 className="text-lg md:text-xl font-bold text-navy leading-snug">{p.name}</h3>
@@ -154,16 +164,11 @@ function AboutPage() {
         <div className="container-x py-14 md:py-20">
           <p className="text-xl md:text-2xl lg:text-3xl font-light leading-snug max-w-3xl">
             {isRu
-              ? "NATIVE CODE создаётся людьми, которые сами живут между странами, строят международные проекты и понимают ценность сильного окружения."
-              : "NATIVE CODE is built by people who live between countries themselves, run international projects and understand the value of a strong circle."}
-          </p>
-          <p className="mt-5 text-sm md:text-base text-white/70 max-w-3xl leading-relaxed">
-            {isRu
-              ? "Поэтому здесь нет случайной атмосферы «массового форума». Это клубная среда, где знакомятся люди со схожим опытом, уровнем задач и образом жизни."
-              : "That's why there's no atmosphere of a \"mass forum\" here. It's a club environment where people with similar experience, scale of tasks and way of life meet."}
+              ? "NATIVE CODE — это больше, чем событие. Это среда людей со схожим опытом, скоростью жизни и уровнем задач."
+              : "NATIVE CODE is more than an event. It's a community of people with similar experience, pace of life and scale of tasks."}
           </p>
 
-          <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
             {values.map((v, i) => {
               const Icon = valueIcons[i];
               return (
@@ -175,18 +180,32 @@ function AboutPage() {
             })}
           </div>
 
-          <div className="mt-12">
-            <Link
-              to="/"
-              className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-6 py-3 text-xs font-semibold tracking-[0.12em] hover:brightness-110 transition shadow-[var(--shadow-soft)]"
-            >
-              {isRu ? "ВЕРНУТЬСЯ НА ГЛАВНУЮ" : "BACK TO HOME"}
-            </Link>
+          {/* Footer-style info row */}
+          <div className="mt-14 pt-6 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-xs md:text-sm">
+            <div className="leading-tight">
+              <div className="font-extrabold tracking-tight text-white">NATIVE CODE</div>
+              <div className="text-[10px] font-semibold tracking-[0.18em] text-orange mt-1">SKI OPENING 2026</div>
+            </div>
+            <div className="flex items-center gap-2 text-white/80">
+              <MapPin size={14} className="text-orange shrink-0" />
+              <div>
+                <div>1—6 DECEMBER 2026</div>
+                <div className="text-white/60">SÖLDEN, AUSTRIA</div>
+              </div>
+            </div>
+            <a href="mailto:info@nativecode.eu" className="flex items-center gap-2 text-white/80 hover:text-orange transition">
+              <Mail size={14} className="text-orange shrink-0" />
+              info@nativecode.eu
+            </a>
+            <div className="flex items-center justify-start md:justify-end gap-4 text-white/80">
+              <a href="#" aria-label="Instagram" className="hover:text-orange transition"><Instagram size={18} /></a>
+              <a href="#" aria-label="Telegram" className="hover:text-orange transition"><Send size={18} /></a>
+              <a href="https://wa.me/" target="_blank" rel="noreferrer" aria-label="WhatsApp" className="hover:text-orange transition"><MessageCircle size={18} /></a>
+            </div>
           </div>
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 }
+
