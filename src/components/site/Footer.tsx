@@ -14,7 +14,7 @@ export function Footer() {
             <a href="https://instagram.com/" aria-label="Instagram" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><Instagram size={16} /></a>
             <a href="https://t.me/Irina_krasil" aria-label="Telegram" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><Send size={16} /></a>
             <a href="https://wa.me/306972801776" aria-label="WhatsApp" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><MessageCircle size={16} /></a>
-            <a href="mailto:hello@nativecode.events" aria-label="Email" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><Mail size={16} /></a>
+            <a href="mailto:irina.krasilnikova1982@gmail.com" aria-label="Email" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><Mail size={16} /></a>
           </div>
         </div>
         <div className="text-sm">
@@ -30,7 +30,7 @@ export function Footer() {
           <div className="font-semibold text-white mb-3">{t("footer.contacts")}</div>
           <ul className="space-y-2 text-white/70">
             <li>WhatsApp / Telegram</li>
-            <li>hello@nativecode.events</li>
+            <li><a href="mailto:irina.krasilnikova1982@gmail.com" className="hover:text-orange transition">irina.krasilnikova1982@gmail.com</a></li>
             <li>Sölden, Tyrol, Austria</li>
           </ul>
         </div>

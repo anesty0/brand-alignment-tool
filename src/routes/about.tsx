@@ -160,9 +160,9 @@ function AboutPage() {
                 <div className="text-white/60">SÖLDEN, AUSTRIA</div>
               </div>
             </div>
-            <a href="mailto:info@nativecode.eu" className="flex items-center gap-2 text-white/80 hover:text-orange transition">
+            <a href="mailto:irina.krasilnikova1982@gmail.com" className="flex items-center gap-2 text-white/80 hover:text-orange transition">
               <Mail size={14} className="text-orange shrink-0" />
-              info@nativecode.eu
+              irina.krasilnikova1982@gmail.com
             </a>
             <div className="flex items-center justify-start md:justify-end gap-4 text-white/80">
               <a href="#" aria-label="Instagram" className="hover:text-orange transition"><Instagram size={18} /></a>

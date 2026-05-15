@@ -40,7 +40,7 @@ export function CtaBanners() {
             <a href={WA} aria-label="WhatsApp" className="hover:text-emerald-600 transition"><MessageCircle size={16} /></a>
             <a href="https://t.me/Irina_krasil" aria-label="Telegram" className="hover:text-info transition"><Send size={16} /></a>
             <a href="https://instagram.com/" aria-label="Instagram" className="hover:text-orange transition"><Instagram size={16} /></a>
-            <a href="mailto:hello@nativecode.events" aria-label="Email" className="hover:text-orange transition"><Mail size={16} /></a>
+            <a href="mailto:irina.krasilnikova1982@gmail.com" aria-label="Email" className="hover:text-orange transition"><Mail size={16} /></a>
           </div>
         </div>
       </div>
