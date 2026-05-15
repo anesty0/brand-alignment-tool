@@ -1,73 +1,174 @@
 import { useState } from "react";
 
-import h1 from "@/assets/hotel-1.jpg";
-import h2 from "@/assets/hotel-2.jpg";
-import h3 from "@/assets/hotel-3.jpg";
-import { MessageCircle, MountainSnow, BedDouble, UtensilsCrossed, Flame, Wifi, Users, X } from "lucide-react";
+import ganzMain from "@/assets/ganz-main.jpeg";
+import ganz1 from "@/assets/ganz-1.jpeg";
+import ganz2 from "@/assets/ganz-2.jpeg";
+import secretMain from "@/assets/secret-main.jpeg";
+import secret1 from "@/assets/secret-1.webp";
+import secret2 from "@/assets/secret-2.webp";
+import parkMain from "@/assets/parkhotel-main.png";
+import park1 from "@/assets/parkhotel-1.png";
+import park2 from "@/assets/parkhotel-2.png";
+import { MessageCircle, X } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useI18n } from "@/lib/i18n";
+
+type Section = { titleRu: string; titleEn: string; itemsRu: string[]; itemsEn: string[] };
 
 type Hotel = {
   tagRu: string; tagEn: string;
   name: string;
   price: string;
   img: string;
-  descRu: string; descEn: string;
-  features: { icon: React.ComponentType<{ size?: number; className?: string }>; ru: string; en: string }[];
+  introRu: string; introEn: string;
+  sections: Section[];
   gallery: string[];
 };
 
 const hotels: Hotel[] = [
   {
     tagRu: "В центре событий", tagEn: "In the heart of it",
-    name: "The SECRET 4*",
+    name: "GLANZ & GLORY 4★",
     price: "1800€",
-    img: h1,
-    descRu: "Бутик-отель премиального уровня в самом сердце Зёльдена. Идеален для участников, которые ценят атмосферу, приватность и сервис высочайшего класса.",
-    descEn: "A premium boutique hotel in the heart of Sölden. Ideal for guests who value atmosphere, privacy and top-class service.",
-    features: [
-      { icon: MountainSnow, ru: "В центре курорта, рядом со всеми локациями события", en: "Resort centre, close to all event locations" },
-      { icon: BedDouble, ru: "Просторные дизайнерские номера и сьюты", en: "Spacious designer rooms and suites" },
-      { icon: UtensilsCrossed, ru: "Авторская кухня и винная карта", en: "Signature cuisine and wine list" },
-      { icon: Flame, ru: "Wellness-зона: сауна, паровая, отдых", en: "Wellness: sauna, steam room, lounge" },
-      { icon: Wifi, ru: "Wi-Fi на всей территории отеля", en: "Wi-Fi throughout the hotel" },
-      { icon: Users, ru: "Идеально подходит для участников мероприятия", en: "Perfect for event participants" },
+    img: ganzMain,
+    introRu:
+      "Атмосферный отель в традиционном альпийском стиле, где сочетаются тирольское гостеприимство и комфорт зимнего отдыха в Зёльдене.",
+    introEn:
+      "An atmospheric hotel in classic alpine style, blending Tyrolean hospitality with the comfort of a winter stay in Sölden.",
+    sections: [
+      {
+        titleRu: "ЧТО ВАЖНО", titleEn: "WHAT MATTERS",
+        itemsRu: [
+          "50 метров до подъёмника",
+          "можно спуститься на лыжах к отелю",
+          "wellness & sauna",
+          "отличные завтраки",
+          "ресторан и бар для уютных вечеров после катания",
+        ],
+        itemsEn: [
+          "50 metres to the lift",
+          "ski-in access to the hotel",
+          "wellness & sauna",
+          "excellent breakfasts",
+          "restaurant and bar for cosy evenings after the slopes",
+        ],
+      },
+      {
+        titleRu: "В НОМЕРАХ", titleEn: "IN THE ROOMS",
+        itemsRu: [
+          "просторные комнаты",
+          "тёплые интерьеры в альпийском стиле",
+          "халаты, телевизор, фен и всё необходимое для комфортного отдыха",
+        ],
+        itemsEn: [
+          "spacious rooms",
+          "warm alpine-style interiors",
+          "bathrobes, TV, hairdryer and everything you need for a comfortable stay",
+        ],
+      },
+      {
+        titleRu: "ВКЛЮЧЕНО", titleEn: "INCLUDED",
+        itemsRu: ["5 ночей", "завтраки", "участие в программе NATIVE CODE"],
+        itemsEn: ["5 nights", "breakfasts", "participation in the NATIVE CODE programme"],
+      },
     ],
-    gallery: [h1, h2, h3],
+    gallery: [ganzMain, ganz1, ganz2],
   },
   {
-    tagRu: "Возле подъёмника", tagEn: "Next to the lift",
-    name: "Hotel Stefan 4*",
+    tagRu: "Премиальный выбор", tagEn: "Premium choice",
+    name: "THE SECRET SÖLDEN 4★",
     price: "1800€",
-    img: h2,
-    descRu: "Уютный и современный отель в самом сердце Зёльдена. Идеальное расположение рядом с подъёмниками и центром курорта.",
-    descEn: "A cosy modern hotel in central Sölden. Steps away from the lifts and the resort centre.",
-    features: [
-      { icon: MountainSnow, ru: "3 минуты пешком до Giggijochbahn", en: "3 min walk to Giggijochbahn lift" },
-      { icon: BedDouble, ru: "Комфортабельные номера в альпийском стиле", en: "Comfortable alpine-style rooms" },
-      { icon: UtensilsCrossed, ru: "Австрийская и интернациональная кухня", en: "Austrian and international cuisine" },
-      { icon: Flame, ru: "Wellness-зона: сауна, паровая, отдых", en: "Wellness: sauna, steam room, lounge" },
-      { icon: Wifi, ru: "Wi-Fi на всей территории отеля", en: "Wi-Fi throughout the hotel" },
-      { icon: Users, ru: "Идеально подходит для участников", en: "Perfect for participants" },
+    img: secretMain,
+    introRu:
+      "Современный дизайнерский отель в центре Зёльдена с атмосферой альпийского клуба, стильным SPA и просторными сьютами для комфортного отдыха в компании.",
+    introEn:
+      "A modern designer hotel in central Sölden with an alpine-club atmosphere, stylish SPA and spacious suites for a comfortable stay with friends.",
+    sections: [
+      {
+        titleRu: "ЧТО ВАЖНО", titleEn: "WHAT MATTERS",
+        itemsRu: [
+          "центр Зёльдена",
+          "рядом рестораны, бары и après-ski",
+          "стильное SPA-пространство",
+          "все номера — дизайнерские сьюты с 1, 2 или 3 спальнями",
+        ],
+        itemsEn: [
+          "central Sölden",
+          "restaurants, bars and après-ski nearby",
+          "stylish SPA space",
+          "all rooms are designer suites with 1, 2 or 3 bedrooms",
+        ],
+      },
+      {
+        titleRu: "В НОМЕРАХ", titleEn: "IN THE ROOMS",
+        itemsRu: [
+          "просторные сьюты от 50 до 155 м²",
+          "отдельные гостиные и обеденные зоны",
+          "кухни и большие террасы",
+          "премиальные материалы и современный альпийский дизайн",
+          "некоторые сьюты — с собственной инфракрасной кабиной",
+        ],
+        itemsEn: [
+          "spacious suites from 50 to 155 m²",
+          "separate living and dining areas",
+          "kitchens and large terraces",
+          "premium materials and modern alpine design",
+          "some suites with their own infrared cabin",
+        ],
+      },
+      {
+        titleRu: "ВКЛЮЧЕНО", titleEn: "INCLUDED",
+        itemsRu: ["5 ночей", "завтраки", "участие в программе NATIVE CODE"],
+        itemsEn: ["5 nights", "breakfasts", "participation in the NATIVE CODE programme"],
+      },
     ],
-    gallery: [h2, h1, h3],
+    gallery: [secretMain, secret1, secret2],
   },
   {
     tagRu: "Спокойный вариант", tagEn: "The quiet option",
-    name: "Park Hotel 3*",
+    name: "PARK HOTEL SÖLDEN 3★",
     price: "1500€",
-    img: h3,
-    descRu: "Спокойный и уютный отель для тех, кто хочет совместить активный отдых с тишиной и расслабленной атмосферой после насыщенного дня в горах.",
-    descEn: "A calm and cosy hotel for those who want to combine active days with a relaxed atmosphere.",
-    features: [
-      { icon: MountainSnow, ru: "5–7 минут до подъёмников курорта", en: "5–7 min to the lifts" },
-      { icon: BedDouble, ru: "Уютные номера с панорамным видом", en: "Cosy rooms with panoramic views" },
-      { icon: UtensilsCrossed, ru: "Завтраки и ужины в ресторане отеля", en: "Breakfast and dinner at the hotel" },
-      { icon: Flame, ru: "Сауна и зона отдыха для гостей", en: "Sauna and relaxation area" },
-      { icon: Wifi, ru: "Бесплатный Wi-Fi во всех зонах", en: "Free Wi-Fi everywhere" },
-      { icon: Users, ru: "Лучшее соотношение цена/качество", en: "Best value for money" },
+    img: parkMain,
+    introRu:
+      "Уютный отель в центре Зёльдена с расслабленной альпийской атмосферой, хорошей велнес-зоной с саунами и удобным расположением.",
+    introEn:
+      "A cosy hotel in central Sölden with a relaxed alpine atmosphere, a good wellness area with saunas and a convenient location.",
+    sections: [
+      {
+        titleRu: "ЧТО ВАЖНО", titleEn: "WHAT MATTERS",
+        itemsRu: [
+          "5 минут до подъёмника",
+          "отличные завтраки",
+          "спокойная атмосфера",
+          "центр Зёльдена и рестораны рядом",
+        ],
+        itemsEn: [
+          "5 minutes to the lift",
+          "excellent breakfasts",
+          "calm atmosphere",
+          "central Sölden and restaurants nearby",
+        ],
+      },
+      {
+        titleRu: "В НОМЕРАХ", titleEn: "IN THE ROOMS",
+        itemsRu: [
+          "светлые комнаты",
+          "интерьеры в альпийском стиле",
+          "всё необходимое для комфортного отдыха",
+        ],
+        itemsEn: [
+          "bright rooms",
+          "alpine-style interiors",
+          "everything you need for a comfortable stay",
+        ],
+      },
+      {
+        titleRu: "ВКЛЮЧЕНО", titleEn: "INCLUDED",
+        itemsRu: ["5 ночей", "завтраки", "участие в программе NATIVE CODE"],
+        itemsEn: ["5 nights", "breakfasts", "participation in the NATIVE CODE programme"],
+      },
     ],
-    gallery: [h3, h2, h1],
+    gallery: [parkMain, park1, park2],
   },
 ];
 
@@ -133,30 +234,42 @@ export function Hotels() {
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
         <DialogContent className="max-w-6xl p-0 overflow-hidden bg-card sm:rounded-2xl">
           {active && (
-            <div className="grid md:grid-cols-[1fr_1.1fr] gap-0 max-h-[90vh] overflow-y-auto">
+            <div className="grid md:grid-cols-[1fr_1.1fr] gap-0 max-h-[90vh] md:h-[90vh]">
               {/* Left: details */}
-              <div className="p-6 md:p-8 order-2 md:order-1">
-                <h4 className="text-2xl md:text-3xl font-extrabold text-navy">{active.name}</h4>
-                <div className="mt-2 flex items-baseline gap-2">
-                  <span className="text-orange font-extrabold text-2xl">{active.price}</span>
-                  <span className="text-xs font-normal text-muted-foreground/80">{t("hotels.perPerson")}</span>
+              <div className="order-2 md:order-1 flex flex-col min-h-0 max-h-[60vh] md:max-h-none">
+                <div className="px-6 md:px-8 pt-6 md:pt-8">
+                  <h4 className="text-2xl md:text-3xl font-extrabold text-navy">{active.name}</h4>
+                  <div className="mt-2 flex items-baseline gap-2">
+                    <span className="text-orange font-extrabold text-2xl">{active.price}</span>
+                    <span className="text-xs font-normal text-muted-foreground/80">{t("hotels.perPerson")}</span>
+                  </div>
+                  <div className="text-xs text-muted-foreground">{t("hotels.perPackage")}</div>
                 </div>
-                <div className="text-xs text-muted-foreground">{t("hotels.perPackage")}</div>
 
-                <p className="mt-5 text-sm text-foreground/80 leading-relaxed">
-                  {lang === "ru" ? active.descRu : active.descEn}
-                </p>
+                <div className="hotel-scroll mt-5 px-6 md:px-8 flex-1 overflow-y-auto pr-4 md:pr-5">
+                  <p className="text-sm text-foreground/80 leading-relaxed">
+                    {lang === "ru" ? active.introRu : active.introEn}
+                  </p>
 
-                <ul className="mt-6 space-y-3.5">
-                  {active.features.map((f, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span className="text-orange shrink-0 mt-0.5"><f.icon size={18} /></span>
-                      <span className="text-sm text-navy leading-snug">{lang === "ru" ? f.ru : f.en}</span>
-                    </li>
+                  {active.sections.map((s, si) => (
+                    <div key={si} className="mt-6">
+                      <div className="text-[11px] font-semibold tracking-[0.18em] text-orange">
+                        {lang === "ru" ? s.titleRu : s.titleEn}
+                      </div>
+                      <ul className="mt-3 space-y-2">
+                        {(lang === "ru" ? s.itemsRu : s.itemsEn).map((it, i) => (
+                          <li key={i} className="flex items-start gap-3 text-sm text-navy leading-snug">
+                            <span className="mt-2 h-1 w-1 rounded-full bg-orange shrink-0" />
+                            <span>{it}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
+                  <div className="h-2" />
+                </div>
 
-                <div className="mt-12 flex flex-col sm:flex-row gap-3">
+                <div className="px-6 md:px-8 py-5 md:py-6 border-t border-border/60 bg-card flex flex-col sm:flex-row gap-3">
                   <button className="flex-1 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
                     {t("hotels.bookOnline")}
                   </button>
@@ -167,7 +280,7 @@ export function Hotels() {
               </div>
 
               {/* Right: gallery */}
-              <div className="relative order-1 md:order-2 bg-secondary/40">
+              <div className="relative order-1 md:order-2 bg-secondary/40 overflow-y-auto">
                 <button
                   onClick={() => setActive(null)}
                   aria-label={t("hotels.close")}
