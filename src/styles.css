@@ -135,17 +135,17 @@ article img {
   }
 }
 
-/* Tablet-only fixed crop for the Sölden image below the hero */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .solden-tablet-image-frame {
+/* Tablet-only fixed crop for the image directly below the hero */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .about-tablet-image-frame {
     height: 320px;
     max-height: 320px;
   }
 
-  .solden-tablet-image {
+  .about-tablet-image {
     display: block;
     height: 100%;
-    max-height: none;
+    max-height: 100%;
     aspect-ratio: auto;
     object-fit: cover;
     object-position: center;

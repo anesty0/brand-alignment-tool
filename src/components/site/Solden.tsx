@@ -20,8 +20,8 @@ export function Solden() {
               <p>{t("solden.p3")}</p>
             </div>
           </div>
-          <div className="solden-tablet-image-frame rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-            <img src={slope} alt="Sölden ski slope" loading="lazy" className="solden-tablet-image w-full h-full object-cover aspect-[16/10] md:aspect-[21/9] md:max-h-[420px]" />
+          <div className="rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
+            <img src={slope} alt="Sölden ski slope" loading="lazy" className="w-full h-full object-cover aspect-[16/10] md:aspect-[21/9] md:max-h-[420px]" />
           </div>
         </div>
 
