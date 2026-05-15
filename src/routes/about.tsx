@@ -79,10 +79,10 @@ function AboutPage() {
             <h1 className="mt-5 font-extrabold tracking-tight text-navy leading-[1.05] text-4xl sm:text-5xl md:text-6xl uppercase">
               {isRu ? "Кто создаёт" : "Who creates"}<br />NATIVE CODE
             </h1>
-            <p className="mt-6 max-w-md text-sm md:text-base text-foreground/75 leading-relaxed">
+            <p className="mt-6 max-w-md text-sm md:text-base text-foreground/75 leading-relaxed whitespace-pre-line">
               {isRu
-                ? "Проект создан предпринимателями и компаниями, которые сами живут между странами, строят бизнес и понимают ценность сильного окружения."
-                : "The project is created by entrepreneurs and companies who live between countries themselves, build businesses and understand the value of a strong circle."}
+                ? "NATIVE CODE появился не как очередной «бизнес-ивент».\n\nОн вырос из реального круга людей, которые последние годы строят бизнес, проекты и новую жизнь в других странах — с новыми правилами, банками, налогами, языками и системой.\n\nПроект создают предприниматели и компании, которые сами проходят этот путь."
+                : "NATIVE CODE didn't appear as just another “business event”.\n\nIt grew out of a real circle of people who, over the past years, have been building businesses, projects and a new life in other countries — with new rules, banks, taxes, languages and systems.\n\nThe project is created by entrepreneurs and companies who are walking this path themselves."}
             </p>
           </div>
         </div>
