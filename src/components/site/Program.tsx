@@ -42,6 +42,17 @@ export function Program() {
             </article>
           ))}
         </div>
+        <div className="mt-8 md:mt-10 flex justify-center">
+          <a
+            href="/schedule.pdf"
+            target="_blank"
+            rel="noreferrer"
+            download
+            className="inline-flex items-center justify-center rounded-md bg-background border border-border text-navy px-5 py-2.5 text-xs font-semibold tracking-[0.12em] hover:border-orange hover:text-orange transition"
+          >
+            Подробное о расписании
+          </a>
+        </div>
       </div>
     </section>
   );
