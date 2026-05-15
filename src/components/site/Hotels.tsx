@@ -28,55 +28,6 @@ type Hotel = {
 
 const hotels: Hotel[] = [
   {
-    tagRu: "В центре событий", tagEn: "In the heart of it",
-    name: "GLANZ & GLORY 4★",
-    price: "1800€",
-    img: ganzMain,
-    introRu:
-      "Атмосферный отель в традиционном альпийском стиле, где сочетаются тирольское гостеприимство и комфорт зимнего отдыха в Зёльдене.",
-    introEn:
-      "An atmospheric hotel in classic alpine style, blending Tyrolean hospitality with the comfort of a winter stay in Sölden.",
-    sections: [
-      {
-        titleRu: "ЧТО ВАЖНО", titleEn: "WHAT MATTERS",
-        itemsRu: [
-          "50 метров до подъёмника",
-          "можно спуститься на лыжах к отелю",
-          "wellness & sauna",
-          "отличные завтраки",
-          "ресторан и бар для уютных вечеров после катания",
-        ],
-        itemsEn: [
-          "50 metres to the lift",
-          "ski-in access to the hotel",
-          "wellness & sauna",
-          "excellent breakfasts",
-          "restaurant and bar for cosy evenings after the slopes",
-        ],
-      },
-      {
-        titleRu: "В НОМЕРАХ", titleEn: "IN THE ROOMS",
-        itemsRu: [
-          "просторные комнаты",
-          "тёплые интерьеры в альпийском стиле",
-          "халаты, телевизор, фен и всё необходимое для комфортного отдыха",
-        ],
-        itemsEn: [
-          "spacious rooms",
-          "warm alpine-style interiors",
-          "bathrobes, TV, hairdryer and everything you need for a comfortable stay",
-        ],
-      },
-      {
-        titleRu: "ВКЛЮЧЕНО", titleEn: "INCLUDED",
-        itemsRu: ["5 ночей", "завтраки", "участие в программе NATIVE CODE"],
-        itemsEn: ["5 nights", "breakfasts", "participation in the NATIVE CODE programme"],
-      },
-    ],
-    gallery: [ganzMain, ganz1, ganz2],
-    bookUrl: "https://ski4u.com",
-  },
-  {
     tagRu: "Премиальный выбор", tagEn: "Premium choice",
     name: "THE SECRET SÖLDEN 4★",
     price: "2500€",
@@ -126,6 +77,55 @@ const hotels: Hotel[] = [
     ],
     gallery: [secretMain, secret1, secret2],
     bookUrl: "https://ski4u.com/hotels/the-secret-solden-pmkpqz?filters%5Bdate_check_in%5D=2026-12-20&filters%5Bdate_check_out%5D=2026-12-27&filters%5Bhotel%5D=4921&filters%5Brooms%5D%5B0%5D%5Badults%5D=2&filters%5Btype%5D=hotel",
+  },
+  {
+    tagRu: "Около подъемника", tagEn: "Near the lift",
+    name: "GLANZ & GLORY 4★",
+    price: "1800€",
+    img: ganzMain,
+    introRu:
+      "Атмосферный отель в традиционном альпийском стиле, где сочетаются тирольское гостеприимство и комфорт зимнего отдыха в Зёльдене.",
+    introEn:
+      "An atmospheric hotel in classic alpine style, blending Tyrolean hospitality with the comfort of a winter stay in Sölden.",
+    sections: [
+      {
+        titleRu: "ЧТО ВАЖНО", titleEn: "WHAT MATTERS",
+        itemsRu: [
+          "50 метров до подъёмника",
+          "можно спуститься на лыжах к отелю",
+          "wellness & sauna",
+          "отличные завтраки",
+          "ресторан и бар для уютных вечеров после катания",
+        ],
+        itemsEn: [
+          "50 metres to the lift",
+          "ski-in access to the hotel",
+          "wellness & sauna",
+          "excellent breakfasts",
+          "restaurant and bar for cosy evenings after the slopes",
+        ],
+      },
+      {
+        titleRu: "В НОМЕРАХ", titleEn: "IN THE ROOMS",
+        itemsRu: [
+          "просторные комнаты",
+          "тёплые интерьеры в альпийском стиле",
+          "халаты, телевизор, фен и всё необходимое для комфортного отдыха",
+        ],
+        itemsEn: [
+          "spacious rooms",
+          "warm alpine-style interiors",
+          "bathrobes, TV, hairdryer and everything you need for a comfortable stay",
+        ],
+      },
+      {
+        titleRu: "ВКЛЮЧЕНО", titleEn: "INCLUDED",
+        itemsRu: ["5 ночей", "завтраки", "участие в программе NATIVE CODE"],
+        itemsEn: ["5 nights", "breakfasts", "participation in the NATIVE CODE programme"],
+      },
+    ],
+    gallery: [ganzMain, ganz1, ganz2],
+    bookUrl: "https://ski4u.com",
   },
   {
     tagRu: "Спокойный вариант", tagEn: "The quiet option",
