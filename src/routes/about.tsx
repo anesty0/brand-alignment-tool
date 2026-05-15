@@ -23,7 +23,7 @@ const partners = [
     descriptionRu: "Греческая девелоперская компания в сфере недвижимости и lifestyle-проектов у моря. OPEN GREECE также развивает международную регату Open Greece Cup, объединяющую русскоговорящее сообщество по всему миру.",
     descriptionEn: "A Greek development company working with seaside real estate and lifestyle projects. OPEN GREECE also develops the international Open Greece Cup regatta, connecting the Russian-speaking community worldwide.",
     img: sail,
-    link: "open-greece.com",
+    link: "opengreece.gr",
   },
   {
     name: "Axiom Management Solutions GmbH",
