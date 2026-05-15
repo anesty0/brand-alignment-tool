@@ -246,7 +246,7 @@ export function Hotels() {
                   <div className="text-xs text-muted-foreground">{t("hotels.perPackage")}</div>
                 </div>
 
-                <div className="hotel-scroll mt-5 min-h-0 flex-1 max-h-[42dvh] md:max-h-[360px] overflow-y-auto px-6 pr-4 md:px-8 md:pr-5">
+                <div className="hotel-scroll mt-5 min-h-0 flex-1 md:max-h-[360px] md:overflow-y-auto px-6 pr-4 md:px-8 md:pr-5">
                   <p className="text-sm text-foreground/80 leading-relaxed">
                     {lang === "ru" ? active.introRu : active.introEn}
                   </p>
