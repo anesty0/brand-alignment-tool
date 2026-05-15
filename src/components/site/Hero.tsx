@@ -20,7 +20,7 @@ export function Hero() {
             {t("brand.hero")}
           </h2>
 
-          <p className="mt-5 text-base md:text-lg text-foreground/80 max-w-md leading-snug">
+          <p className="mt-5 text-base md:text-lg text-foreground/80 max-w-md leading-snug whitespace-pre-line">
             {t("hero.tagline")}
           </p>
 
