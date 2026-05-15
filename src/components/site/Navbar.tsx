@@ -138,7 +138,7 @@ export function Navbar() {
           className="leading-tight shrink-0"
         >
           <div className="font-extrabold tracking-tight text-base md:text-lg text-navy">NATIVE CODE</div>
-          <div className="text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-orange">{t("brand.line2")}</div>
+          <div className="text-[8px] md:text-[9px] font-semibold tracking-[0.14em] text-orange">{t("brand.line2")}</div>
         </Link>
         <nav className="hidden lg:flex items-center gap-7">
           {linkKeys.map((l) => (
