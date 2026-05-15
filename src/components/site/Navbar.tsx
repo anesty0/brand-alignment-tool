@@ -140,22 +140,22 @@ export function Navbar() {
           <div className="font-extrabold tracking-tight text-base md:text-lg text-navy">NATIVE CODE</div>
           <div className="text-[8px] md:text-[9px] font-semibold tracking-[0.14em] text-orange">{t("brand.line2")}</div>
         </Link>
-        <nav className="hidden lg:flex items-center gap-7">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-7 whitespace-nowrap">
           {linkKeys.map((l) => (
-            <a key={l.href} href={l.href} className="text-xs font-semibold tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors">
+            <a key={l.href} href={l.href} className="text-[11px] xl:text-xs font-semibold tracking-[0.1em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
               {t(l.k)}
             </a>
           ))}
-          <Link to="/about" className="text-xs font-semibold tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors">
+          <Link to="/about" className="text-[11px] xl:text-xs font-semibold tracking-[0.1em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
             {t("nav.project")}
           </Link>
-          <button onClick={() => setFaqOpen(true)} className="text-xs font-semibold tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors">
+          <button onClick={() => setFaqOpen(true)} className="text-[11px] xl:text-xs font-semibold tracking-[0.1em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
             {t("nav.faq")}
           </button>
         </nav>
-        <div className="flex items-center gap-2 md:gap-3">
-          <LangSwitch className="hidden sm:inline-flex" />
-          <a href="/#hotels" className="hidden md:inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 lg:px-5 py-2.5 text-[11px] font-semibold tracking-[0.1em] hover:brightness-110 transition shadow-[var(--shadow-soft)]">
+        <div className="flex items-center gap-2 md:gap-3 shrink-0">
+          <LangSwitch className="hidden sm:inline-flex shrink-0" />
+          <a href="/#hotels" className="hidden md:inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-3 lg:px-4 xl:px-5 py-2.5 text-[11px] font-semibold tracking-[0.1em] hover:brightness-110 transition shadow-[var(--shadow-soft)] whitespace-nowrap shrink-0">
             {t("nav.cta")}
           </a>
           <button className="lg:hidden p-2 -mr-2 text-navy" onClick={() => setOpen(!open)} aria-label="Menu">
