@@ -7,9 +7,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const linkKeys = [
   { href: "/#about", k: "nav.about" },
+  { href: "/#alps", k: "nav.alps" },
   { href: "/#program", k: "nav.program" },
   { href: "/#hotels", k: "nav.hotels" },
-  { href: "/#alps", k: "nav.alps" },
 ];
 
 const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
