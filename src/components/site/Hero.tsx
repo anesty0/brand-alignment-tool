@@ -8,7 +8,7 @@ export function Hero() {
       {/* background image with very subtle fade */}
       <div className="absolute inset-0">
         <img src={heroImg} alt="Skiers in Sölden Alps" className="w-full h-full object-cover object-[70%_center] md:object-center" width={1920} height={1080} />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/25 to-transparent" />
       </div>
 
       <div className="relative container-x pt-8 md:pt-14 lg:pt-10 pb-16 md:pb-24 lg:pb-16 xl:pb-20">
