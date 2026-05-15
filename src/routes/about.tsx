@@ -89,7 +89,7 @@ function AboutPage() {
       </section>
 
       {/* Team / Partners — editorial brand showcase */}
-      <section className="py-18 md:py-24 lg:py-28">
+      <section className="py-[4.5rem] md:py-24 lg:py-28">
         <div className="container-x">
           <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
             {isRu ? "КОМАНДА ПРОЕКТА" : "PROJECT TEAM"}
@@ -100,7 +100,7 @@ function AboutPage() {
               : "A collaboration of experience, people and a shared philosophy"}
           </h2>
 
-          <div className="mt-12 md:mt-16 lg:mt-18 grid md:grid-cols-3 gap-11 md:gap-0 md:border-y md:border-border/45">
+          <div className="mt-12 md:mt-16 lg:mt-[4.5rem] grid md:grid-cols-3 gap-11 md:gap-0 md:border-y md:border-border/45">
             {partners.map((p, idx) => (
               <article
                 key={p.name}
@@ -125,7 +125,7 @@ function AboutPage() {
                     src={p.img}
                     alt={p.name}
                     loading="lazy"
-                    className="w-full h-58 sm:h-64 md:h-58 lg:h-72 object-cover"
+                    className="w-full h-[14.5rem] sm:h-64 md:h-[14.5rem] lg:h-72 object-cover"
                   />
                 </div>
               </article>
