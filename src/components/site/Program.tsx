@@ -29,6 +29,9 @@ export function Program() {
               <img src={day.img} alt={t(`${day.k}.title`)} loading="lazy" className="w-full h-28 object-cover" />
               <div className="p-3 text-[11px] leading-relaxed flex-1 flex flex-col">
                 <div className="text-[10px] font-bold tracking-[0.18em] text-orange">{t(`${day.k}.date`)}</div>
+                {day.k === "program.d3" && (
+                  <div className="mt-0.5 text-[10px] font-bold tracking-[0.18em] text-orange">{t(`${day.k}.kicker`)}</div>
+                )}
                 <h4 className="mt-1 text-sm font-bold text-navy leading-tight">{t(`${day.k}.title`)}</h4>
                 <div className="mt-2.5">
                   <div className="font-bold text-navy tracking-wider text-[10px]">{t("program.morning")}</div>
