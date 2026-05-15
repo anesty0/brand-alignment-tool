@@ -135,6 +135,7 @@ const en: Dict = {
   "nav.program": "PROGRAM",
   "nav.hotels": "ACCOMMODATION",
   "nav.alps": "ALPS CONNECT",
+  "nav.project": "ABOUT THE PROJECT",
   "nav.faq": "FAQ",
   "nav.cta": "BOOK PARTICIPATION",
   "brand.line2": "ENTREPRENEURS CLUB",
