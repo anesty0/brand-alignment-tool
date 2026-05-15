@@ -167,7 +167,7 @@ function AboutPage() {
             <div className="flex items-center justify-start md:justify-end gap-4 text-white/80">
               <a href="#" aria-label="Instagram" className="hover:text-orange transition"><Instagram size={18} /></a>
               <a href="#" aria-label="Telegram" className="hover:text-orange transition"><Send size={18} /></a>
-              <a href="https://wa.me/" target="_blank" rel="noreferrer" aria-label="WhatsApp" className="hover:text-orange transition"><MessageCircle size={18} /></a>
+              <a href="https://wa.me/79255895239" target="_blank" rel="noreferrer" aria-label="WhatsApp" className="hover:text-orange transition"><MessageCircle size={18} /></a>
             </div>
           </div>
         </div>

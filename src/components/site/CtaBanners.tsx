@@ -2,7 +2,7 @@ import { Handshake, Mic, MessageCircle, Send, Mail, Instagram } from "lucide-rea
 import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
 
-const WA = "https://wa.me/";
+const WA = "https://wa.me/79255895239";
 
 export function CtaBanners() {
   const { t } = useI18n();
