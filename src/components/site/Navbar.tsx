@@ -138,6 +138,9 @@ export function Navbar() {
               {t(l.k)}
             </a>
           ))}
+          <Link to="/about" className="text-xs font-semibold tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors">
+            {t("nav.project")}
+          </Link>
           <button onClick={() => setFaqOpen(true)} className="text-xs font-semibold tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors">
             {t("nav.faq")}
           </button>
@@ -160,6 +163,9 @@ export function Navbar() {
                 {t(l.k)}
               </a>
             ))}
+            <Link to="/about" onClick={() => setOpen(false)} className="py-3 text-sm font-semibold tracking-wider text-foreground/85 border-b border-border">
+              {t("nav.project")}
+            </Link>
             <button onClick={() => { setOpen(false); setFaqOpen(true); }} className="py-3 text-left text-sm font-semibold tracking-wider text-foreground/85 border-b border-border">
               {t("nav.faq")}
             </button>
