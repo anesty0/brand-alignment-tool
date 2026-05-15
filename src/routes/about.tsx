@@ -11,8 +11,8 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "О проекте — NATIVE CODE" },
-      { name: "description", content: "Кто создаёт NATIVE CODE — предприниматели и компании, которые строят бизнес и новую жизнь между странами." },
+      { title: "О проекте - NATIVE CODE" },
+      { name: "description", content: "Кто создаёт NATIVE CODE - предприниматели и компании, которые строят бизнес и новую жизнь между странами." },
     ],
   }),
 });
@@ -65,7 +65,7 @@ function AboutPage() {
     <main className="min-h-screen bg-background text-foreground">
       <Navbar />
 
-      {/* Hero — text left, mountain image bleeds to right edge with fade */}
+      {/* Hero - text left, mountain image bleeds to right edge with fade */}
       <section className="relative overflow-hidden bg-white">
         <div className="absolute inset-y-0 right-0 w-full lg:w-[62%]">
           <img src={alps} alt="" className="w-full h-full object-cover" />
@@ -81,14 +81,14 @@ function AboutPage() {
             </h1>
             <p className="mt-6 max-w-md text-sm md:text-base text-foreground/75 leading-relaxed whitespace-pre-line">
               {isRu
-                ? "NATIVE CODE появился не как очередной «бизнес-ивент».\n\nОн вырос из реального круга людей, которые последние годы строят бизнес, проекты и новую жизнь в других странах — с новыми правилами, банками, налогами, языками и системой.\n\nПроект создают предприниматели и компании, которые сами проходят этот путь."
-                : "NATIVE CODE didn't appear as just another “business event”.\n\nIt grew out of a real circle of people who, over the past years, have been building businesses, projects and a new life in other countries — with new rules, banks, taxes, languages and systems.\n\nThe project is created by entrepreneurs and companies who are walking this path themselves."}
+                ? "NATIVE CODE появился не как очередной «бизнес-ивент».\n\nОн вырос из реального круга людей, которые последние годы строят бизнес, проекты и новую жизнь в других странах - с новыми правилами, банками, налогами, языками и системой.\n\nПроект создают предприниматели и компании, которые сами проходят этот путь."
+                : "NATIVE CODE didn't appear as just another “business event”.\n\nIt grew out of a real circle of people who, over the past years, have been building businesses, projects and a new life in other countries - with new rules, banks, taxes, languages and systems.\n\nThe project is created by entrepreneurs and companies who are walking this path themselves."}
             </p>
           </div>
         </div>
       </section>
 
-      {/* Team / Partners — editorial brand showcase */}
+      {/* Team / Partners - editorial brand showcase */}
       <section className="py-[4.5rem] md:py-24 lg:py-28">
         <div className="container-x">
           <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
@@ -131,7 +131,7 @@ function AboutPage() {
         <div className="container-x py-14 md:py-20">
           <p className="text-xl md:text-2xl lg:text-3xl font-light leading-snug max-w-3xl">
             {isRu
-              ? "NATIVE CODE — это больше, чем событие. Это среда людей со схожим опытом, скоростью жизни и уровнем задач."
+              ? "NATIVE CODE - это больше, чем событие. Это среда людей со схожим опытом, скоростью жизни и уровнем задач."
               : "NATIVE CODE is more than an event. It's a community of people with similar experience, pace of life and scale of tasks."}
           </p>
 
@@ -156,7 +156,7 @@ function AboutPage() {
             <div className="flex items-center gap-2 text-white/80">
               <MapPin size={14} className="text-orange shrink-0" />
               <div>
-                <div>1—6 DECEMBER 2026</div>
+                <div>1-6 DECEMBER 2026</div>
                 <div className="text-white/60">SÖLDEN, AUSTRIA</div>
               </div>
             </div>
