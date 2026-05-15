@@ -104,7 +104,7 @@ function AboutPage() {
             {partners.map((p, idx) => (
               <article
                 key={p.name}
-                className={`grid md:grid-rows-[64px_minmax(136px,auto)_40px_auto] lg:grid-rows-[70px_minmax(128px,auto)_40px_auto] md:py-10 lg:py-12 ${idx > 0 ? "md:pl-7 lg:pl-10 md:border-l md:border-border/60" : "md:pr-7 lg:pr-10"} ${idx === 1 ? "md:pr-7 lg:pr-10" : ""}`}
+                className={`grid md:grid-rows-[64px_minmax(180px,auto)_40px_auto] lg:grid-rows-[70px_minmax(170px,auto)_40px_auto] md:py-10 lg:py-12 ${idx > 0 ? "md:pl-7 lg:pl-10 md:border-l md:border-border/60" : "md:pr-7 lg:pr-10"} ${idx === 1 ? "md:pr-7 lg:pr-10" : ""}`}
               >
                 <h3 className="max-w-[15rem] text-base md:text-[17px] font-bold tracking-tight text-navy leading-[1.18] uppercase">
                   {p.name}
