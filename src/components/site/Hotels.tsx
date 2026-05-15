@@ -180,7 +180,7 @@ export function Hotels() {
   const openHotel = (h: Hotel) => { setActive(h); setGalleryIdx(0); };
 
   return (
-    <section id="hotels" className="py-10 md:py-14">
+    <section id="hotels" className="py-10 md:py-14 lg:py-10 xl:py-12">
       <div className="container-x">
         <div className="text-center max-w-2xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-navy">{t("hotels.title")}</h3>

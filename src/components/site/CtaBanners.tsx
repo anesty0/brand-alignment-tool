@@ -7,7 +7,7 @@ const WA = "https://wa.me/";
 export function CtaBanners() {
   const { t } = useI18n();
   return (
-    <section id="contact" className="py-8 md:py-12 bg-background">
+    <section id="contact" className="py-8 md:py-12 lg:py-8 xl:py-10 bg-background">
       <div className="container-x grid lg:grid-cols-[1fr_1fr_0.8fr] gap-6">
         <div className="rounded-2xl bg-orange-soft p-6 md:p-8 flex gap-5 items-center">
           <Handshake className="text-orange shrink-0" size={48} strokeWidth={1.5} />

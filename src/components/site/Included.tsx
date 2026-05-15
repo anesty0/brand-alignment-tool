@@ -12,7 +12,7 @@ const items = [
 export function Included() {
   const { t } = useI18n();
   return (
-    <section className="py-6 md:py-10">
+    <section className="py-6 md:py-10 lg:py-7 xl:py-8">
       <div className="container-x">
         <h3 className="text-center text-xl md:text-2xl font-extrabold tracking-tight text-navy">{t("inc.title")}</h3>
         <div className="mt-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-5 gap-y-6">
