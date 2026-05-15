@@ -5,7 +5,7 @@ import alps from "@/assets/alps-1.jpg";
 import sail from "@/assets/alps-2.jpg";
 import lounge from "@/assets/alps-3.jpg";
 import fire from "@/assets/observation.jpg";
-import { Users, Mountain, Compass, Briefcase, Instagram, Send, MessageCircle, Mail, MapPin, Calendar } from "lucide-react";
+import { Users, Mountain, Compass, Briefcase, Instagram, Send, MessageCircle, Mail, MapPin } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
