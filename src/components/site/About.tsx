@@ -1,4 +1,4 @@
-import obs from "@/assets/observation.jpg";
+import obs from "@/assets/about-section.jpg";
 import { Calendar, Users, Mountain, Briefcase } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
