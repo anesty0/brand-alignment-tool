@@ -33,7 +33,7 @@
   --color-orange: var(--orange);
   --color-orange-soft: var(--orange-soft);
   --color-info: var(--info);
-  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
