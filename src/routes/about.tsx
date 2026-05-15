@@ -83,25 +83,25 @@ function AboutPage() {
     <main className="min-h-screen bg-background text-foreground">
       <Navbar />
 
-      {/* Hero — split layout: text left, mountain image right with fade */}
-      <section className="relative overflow-hidden">
-        <div className="container-x grid lg:grid-cols-2 gap-8 lg:gap-12 items-center py-12 md:py-16 lg:py-20">
-          <div className="relative z-10 max-w-xl">
+      {/* Hero — text left, mountain image bleeds to right edge with fade */}
+      <section className="relative overflow-hidden bg-[#f5f1ea]">
+        <div className="absolute inset-y-0 right-0 w-full lg:w-[62%]">
+          <img src={alps} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#f5f1ea] via-[#f5f1ea]/70 to-[#f5f1ea]/10 lg:via-[#f5f1ea]/40 lg:to-transparent" />
+        </div>
+        <div className="container-x relative z-10 py-16 md:py-24 lg:py-32">
+          <div className="max-w-xl">
             <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
               {isRu ? "О ПРОЕКТЕ" : "ABOUT"}
             </div>
-            <h1 className="mt-4 font-extrabold tracking-tight text-navy leading-[1.05] text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase">
+            <h1 className="mt-5 font-extrabold tracking-tight text-navy leading-[1.05] text-4xl sm:text-5xl md:text-6xl uppercase">
               {isRu ? "Кто создаёт" : "Who creates"}<br />NATIVE CODE
             </h1>
-            <p className="mt-6 text-sm md:text-base text-foreground/75 leading-relaxed">
+            <p className="mt-6 max-w-md text-sm md:text-base text-foreground/75 leading-relaxed">
               {isRu
                 ? "Проект создан предпринимателями и компаниями, которые сами живут между странами, строят бизнес и понимают ценность сильного окружения."
                 : "The project is created by entrepreneurs and companies who live between countries themselves, build businesses and understand the value of a strong circle."}
             </p>
-          </div>
-          <div className="relative h-64 sm:h-80 lg:h-[420px] rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-            <img src={alps} alt="" className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/30 to-transparent lg:from-background/80" />
           </div>
         </div>
       </section>
