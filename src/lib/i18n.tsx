@@ -13,7 +13,7 @@ const ru: Dict = {
   "nav.project": "О ПРОЕКТЕ",
   "nav.faq": "FAQ",
   "nav.cta": "ЗАБРОНИРОВАТЬ УЧАСТИЕ",
-  "brand.line2": "КЛУБПРЕДПРИНИМАЛЕЛЕЙ",
+  "brand.line2": "КЛУБ ПРЕДПРИНИМАЛЕТЕЙ",
   "brand.hero": "SKI OPENING 2026/27",
 
   // Hero
