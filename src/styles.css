@@ -83,3 +83,21 @@
   padding-inline: 1.25rem;
   max-width: 1280px;
 }
+
+/* Premium minimal scrollbar for hotel modal content */
+.hotel-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.7 0.02 260 / 0.5) transparent;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+.hotel-scroll::-webkit-scrollbar { width: 6px; }
+.hotel-scroll::-webkit-scrollbar-track { background: transparent; }
+.hotel-scroll::-webkit-scrollbar-thumb {
+  background: oklch(0.7 0.02 260 / 0.4);
+  border-radius: 9999px;
+}
+.hotel-scroll::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.6 0.02 260 / 0.6);
+}
