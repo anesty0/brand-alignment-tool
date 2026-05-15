@@ -229,12 +229,12 @@ export function Hotels() {
             </article>
           ))}
 
-          <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] p-5 flex flex-col justify-center gap-3 self-center lg:w-[240px] lg:justify-self-end">
-            <a href="https://wa.me/79255895239" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2.5 text-info font-semibold whitespace-nowrap text-sm">
+          <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] p-5 flex flex-col justify-center gap-3 self-center w-full lg:w-[260px] lg:justify-self-end">
+            <a href="https://wa.me/79255895239" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-info font-semibold text-sm min-w-0">
               <span className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-emerald-500/15 text-emerald-600 shrink-0">
                 <MessageCircle size={16} />
               </span>
-              {t("hero.whatsapp")}
+              <span className="min-w-0 break-words leading-snug">{t("hero.whatsapp")}</span>
             </a>
             <p className="text-xs font-semibold text-navy leading-snug">{t("hotels.help")}</p>
           </div>
