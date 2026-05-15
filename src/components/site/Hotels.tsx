@@ -118,9 +118,9 @@ export function Hotels() {
             </article>
           ))}
 
-          <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] px-5 py-4 flex flex-col justify-center gap-2 self-center lg:max-w-[230px] lg:w-fit">
-            <a href="https://wa.me/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-info font-semibold whitespace-nowrap text-sm">
-              <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-emerald-500/15 text-emerald-600 shrink-0">
+          <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] p-5 flex flex-col justify-center gap-3 self-center lg:max-w-[240px] lg:w-fit">
+            <a href="https://wa.me/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2.5 text-info font-semibold whitespace-nowrap text-sm">
+              <span className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-emerald-500/15 text-emerald-600 shrink-0">
                 <MessageCircle size={16} />
               </span>
               {t("hero.whatsapp")}
