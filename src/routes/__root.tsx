@@ -10,6 +10,7 @@ import {
 
 import appCss from "../styles.css?url";
 import { I18nProvider } from "@/lib/i18n";
+import { RevealObserver } from "@/components/site/RevealObserver";
 
 function NotFoundComponent() {
   return (
