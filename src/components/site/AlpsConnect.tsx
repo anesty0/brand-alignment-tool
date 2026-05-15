@@ -11,7 +11,7 @@ export function AlpsConnect() {
     { img: a3, k: "alps.c3" },
   ];
   return (
-    <section id="alps" className="py-10 md:py-14">
+    <section id="alps" className="py-10 md:py-14 lg:py-10 xl:py-12">
       <div className="container-x">
         <div className="text-center max-w-2xl mx-auto">
           <div className="text-[11px] md:text-xs font-bold tracking-[0.22em] text-orange">{t("alps.kicker")}</div>
