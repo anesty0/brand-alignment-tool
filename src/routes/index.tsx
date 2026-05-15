@@ -9,7 +9,6 @@ import { Hotels } from "@/components/site/Hotels";
 import { Included } from "@/components/site/Included";
 import { CtaBanners } from "@/components/site/CtaBanners";
 import { Footer } from "@/components/site/Footer";
-import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -21,8 +20,6 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-// keep i18n import used elsewhere if needed
-void useI18n;
 
 function Index() {
   return (
