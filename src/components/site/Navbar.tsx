@@ -174,17 +174,19 @@ export function Navbar() {
       )}
 
       <Dialog open={faqOpen} onOpenChange={setFaqOpen}>
-        <DialogContent className="max-w-2xl">
+        <DialogContent className="max-w-2xl max-h-[90dvh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="text-navy text-xl md:text-2xl font-extrabold tracking-tight">{t("faq.title")}</DialogTitle>
           </DialogHeader>
           <Accordion type="single" collapsible className="w-full">
-            {[1, 2, 3, 4].map((i) => (
+            {faqs.map((f, i) => (
               <AccordionItem key={i} value={`item-${i}`}>
                 <AccordionTrigger className="text-left text-sm md:text-base text-navy">
-                  {lang === "ru" ? `Вопрос ${i}` : `Question ${i}`}
+                  {lang === "ru" ? f.qRu : f.qEn}
                 </AccordionTrigger>
-                <AccordionContent className="text-sm text-muted-foreground">{t("faq.empty")}</AccordionContent>
+                <AccordionContent className="text-sm text-muted-foreground whitespace-pre-line leading-relaxed">
+                  {lang === "ru" ? f.aRu : f.aEn}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
