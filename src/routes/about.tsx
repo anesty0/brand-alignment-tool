@@ -20,40 +20,22 @@ export const Route = createFileRoute("/about")({
 const partners = [
   {
     name: "OPEN GREECE",
-    bodyRu: [
-      "Греческая девелоперская компания, работающая в сфере недвижимости и lifestyle-проектов в Греции.",
-      "Компания развивает проекты у моря, закрытые жилые комплексы и направления, связанные с relocation и life investment в Европе.",
-      "Также OPEN GREECE является организатором международной парусной регаты Open Greece Cup, которая объединяет русскоговорящее сообщество из разных стран мира.",
-    ],
-    bodyEn: [
-      "A Greek development company working in real estate and lifestyle projects in Greece.",
-      "Open Greece develops seaside projects, gated residential communities and directions linked to relocation and life investment in Europe.",
-      "Open Greece is also the organiser of the international sailing regatta Open Greece Cup, uniting the Russian-speaking community from around the world.",
-    ],
+    descriptionRu: "Греческая девелоперская компания в сфере недвижимости и lifestyle-проектов у моря. OPEN GREECE также развивает международную регату Open Greece Cup, объединяющую русскоговорящее сообщество по всему миру.",
+    descriptionEn: "A Greek development company working with seaside real estate and lifestyle projects. OPEN GREECE also develops the international Open Greece Cup regatta, connecting the Russian-speaking community worldwide.",
     img: sail,
     link: "open-greece.com",
   },
   {
     name: "Axiom Management Solutions GmbH",
-    bodyRu: [
-      "Австрийская компания, специализирующаяся на бизнес-иммиграции, сопровождении предпринимателей, корпоративных структурах, налоговой и юридической интеграции бизнеса в Европе.",
-      "Команда много лет работает с предпринимателями, которые ведут деятельность между несколькими странами.",
-    ],
-    bodyEn: [
-      "An Austrian company specialising in business immigration, entrepreneur support, corporate structures, and tax and legal integration of businesses in Europe.",
-      "The team has spent years working with entrepreneurs operating across several countries.",
-    ],
+    descriptionRu: "Австрийская компания, сопровождающая предпринимателей в бизнес-иммиграции, корпоративных структурах, налоговой и юридической интеграции бизнеса в Европе.",
+    descriptionEn: "An Austrian company supporting entrepreneurs with business immigration, corporate structures, and tax and legal integration of businesses in Europe.",
     img: lounge,
     link: "axiom-management.at",
   },
   {
     name: "SKI4U",
-    bodyRu: [
-      "Туристический и alpine lifestyle-партнёр проекта с многолетним опытом организации премиальных горнолыжных путешествий и инфраструктуры отдыха в Альпах.",
-    ],
-    bodyEn: [
-      "Travel and alpine lifestyle partner of the project with many years of experience organising premium ski trips and leisure infrastructure in the Alps.",
-    ],
+    descriptionRu: "Туристический и alpine lifestyle-партнёр проекта с многолетним опытом организации премиальных горнолыжных путешествий и отдыха в Альпах.",
+    descriptionEn: "Travel and alpine lifestyle partner of the project, with years of experience organising premium ski journeys and leisure in the Alps.",
     img: fire,
     link: "ski4u.com",
   },
