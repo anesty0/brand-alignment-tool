@@ -1,0 +1,192 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Footer } from "@/components/site/Footer";
+import { useI18n } from "@/lib/i18n";
+import alps from "@/assets/alps-1.jpg";
+import sail from "@/assets/alps-2.jpg";
+import lounge from "@/assets/alps-3.jpg";
+import fire from "@/assets/observation.jpg";
+import { Users, Mountain, Compass, Briefcase } from "lucide-react";
+
+export const Route = createFileRoute("/about")({
+  component: AboutPage,
+  head: () => ({
+    meta: [
+      { title: "О проекте — NATIVE CODE" },
+      { name: "description", content: "Кто создаёт NATIVE CODE — предприниматели и компании, которые строят бизнес и новую жизнь между странами." },
+    ],
+  }),
+});
+
+const partners = [
+  {
+    name: "OPEN GREECE",
+    bodyRu: [
+      "Греческая девелоперская компания, работающая в сфере недвижимости и lifestyle-проектов в Греции.",
+      "Компания развивает проекты у моря, закрытые жилые комплексы и направления, связанные с relocation и life investment в Европе.",
+      "Также OPEN GREECE является организатором международной парусной регаты Open Greece Cup, которая объединяет русскоговорящее сообщество из разных стран мира.",
+    ],
+    bodyEn: [
+      "A Greek development company working in real estate and lifestyle projects in Greece.",
+      "Open Greece develops seaside projects, gated residential communities and directions linked to relocation and life investment in Europe.",
+      "Open Greece is also the organiser of the international sailing regatta Open Greece Cup, uniting the Russian-speaking community from around the world.",
+    ],
+    img: sail,
+    link: "open-greece.com",
+  },
+  {
+    name: "Axiom Management Solutions GmbH",
+    bodyRu: [
+      "Австрийская компания, специализирующаяся на бизнес-иммиграции, сопровождении предпринимателей, корпоративных структурах, налоговой и юридической интеграции бизнеса в Европе.",
+      "Команда много лет работает с предпринимателями, которые ведут деятельность между несколькими странами.",
+    ],
+    bodyEn: [
+      "An Austrian company specialising in business immigration, entrepreneur support, corporate structures, and tax and legal integration of businesses in Europe.",
+      "The team has spent years working with entrepreneurs operating across several countries.",
+    ],
+    img: lounge,
+    link: "axiom-management.at",
+  },
+  {
+    name: "SKI4U",
+    bodyRu: [
+      "Туристический и alpine lifestyle-партнёр проекта с многолетним опытом организации премиальных горнолыжных путешествий и инфраструктуры отдыха в Альпах.",
+    ],
+    bodyEn: [
+      "Travel and alpine lifestyle partner of the project with many years of experience organising premium ski trips and leisure infrastructure in the Alps.",
+    ],
+    img: fire,
+    link: "ski4u.com",
+  },
+];
+
+const valueIcons = [Users, Mountain, Briefcase, Compass];
+
+function AboutPage() {
+  const { lang } = useI18n();
+  const isRu = lang === "ru";
+
+  const valuesRu = [
+    "Мы сами живём между странами",
+    "Мы строим бизнес и инвестируем",
+    "Мы ценим окружение и реальные связи",
+    "Мы создаём пространство, куда хочется возвращаться",
+  ];
+  const valuesEn = [
+    "We live between countries ourselves",
+    "We build businesses and invest",
+    "We value our circle and real connections",
+    "We create a space worth coming back to",
+  ];
+  const values = isRu ? valuesRu : valuesEn;
+
+  return (
+    <main className="min-h-screen bg-background text-foreground">
+      <Navbar />
+
+      {/* Hero / Intro */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={alps} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
+        </div>
+        <div className="relative container-x py-16 md:py-24 max-w-3xl">
+          <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
+            {isRu ? "О ПРОЕКТЕ" : "ABOUT"}
+          </div>
+          <h1 className="mt-4 font-extrabold tracking-tight text-navy leading-[1.05] text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase">
+            {isRu ? "Кто создаёт" : "Who creates"}<br />NATIVE CODE
+          </h1>
+          <div className="mt-6 space-y-4 text-sm md:text-base text-foreground/80 leading-relaxed max-w-xl">
+            <p>{isRu
+              ? "NATIVE CODE появился не как очередной «бизнес-ивент»."
+              : "NATIVE CODE didn't appear as just another \"business event\"."}</p>
+            <p>{isRu
+              ? "Он вырос из реального круга людей, которые последние годы строят бизнес, проекты и новую жизнь в других странах — с новыми правилами, банками, налогами, языками и системой."
+              : "It grew out of a real circle of people who, in recent years, have been building businesses, projects and a new life in other countries — with new rules, banks, taxes, languages and systems."}</p>
+            <p>{isRu
+              ? "Проект создают предприниматели и компании, которые сами проходят этот путь."
+              : "The project is created by entrepreneurs and companies walking this path themselves."}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Team / Partners */}
+      <section className="py-14 md:py-20">
+        <div className="container-x">
+          <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
+            {isRu ? "КОМАНДА ПРОЕКТА" : "PROJECT TEAM"}
+          </div>
+          <h2 className="mt-3 text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-navy leading-tight max-w-2xl">
+            {isRu
+              ? "Коллаборация опыта, людей и общей философии"
+              : "A collaboration of experience, people and a shared philosophy"}
+          </h2>
+
+          <div className="mt-12 grid md:grid-cols-3 gap-8">
+            {partners.map((p) => (
+              <article key={p.name} className="flex flex-col">
+                <h3 className="text-lg md:text-xl font-bold text-navy leading-snug">{p.name}</h3>
+                <div className="mt-4 space-y-3 text-sm text-muted-foreground leading-relaxed flex-1">
+                  {(isRu ? p.bodyRu : p.bodyEn).map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
+                <a
+                  href={`https://${p.link}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-5 inline-flex w-fit items-center gap-2 rounded-md border border-border px-4 py-2 text-[11px] font-semibold tracking-[0.14em] text-navy hover:border-orange hover:text-orange transition uppercase"
+                >
+                  {p.link} ↗
+                </a>
+                <div className="mt-5 rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
+                  <img src={p.img} alt={p.name} loading="lazy" className="w-full h-44 md:h-52 object-cover" />
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Closing dark band */}
+      <section className="bg-navy text-white">
+        <div className="container-x py-14 md:py-20">
+          <p className="text-xl md:text-2xl lg:text-3xl font-light leading-snug max-w-3xl">
+            {isRu
+              ? "NATIVE CODE создаётся людьми, которые сами живут между странами, строят международные проекты и понимают ценность сильного окружения."
+              : "NATIVE CODE is built by people who live between countries themselves, run international projects and understand the value of a strong circle."}
+          </p>
+          <p className="mt-5 text-sm md:text-base text-white/70 max-w-3xl leading-relaxed">
+            {isRu
+              ? "Поэтому здесь нет случайной атмосферы «массового форума». Это клубная среда, где знакомятся люди со схожим опытом, уровнем задач и образом жизни."
+              : "That's why there's no atmosphere of a \"mass forum\" here. It's a club environment where people with similar experience, scale of tasks and way of life meet."}
+          </p>
+
+          <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            {values.map((v, i) => {
+              const Icon = valueIcons[i];
+              return (
+                <div key={i}>
+                  <Icon className="text-orange" size={28} strokeWidth={1.5} />
+                  <p className="mt-3 text-sm text-white/85 leading-snug">{v}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-12">
+            <Link
+              to="/"
+              className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-6 py-3 text-xs font-semibold tracking-[0.12em] hover:brightness-110 transition shadow-[var(--shadow-soft)]"
+            >
+              {isRu ? "ВЕРНУТЬСЯ НА ГЛАВНУЮ" : "BACK TO HOME"}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
+}

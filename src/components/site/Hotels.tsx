@@ -85,7 +85,7 @@ export function Hotels() {
           <p className="mt-2 text-sm md:text-base text-muted-foreground">{t("hotels.sub")}</p>
         </div>
 
-        <div className="mt-10 grid lg:grid-cols-[1fr_1fr_1fr_0.7fr] gap-6">
+        <div className="mt-10 grid lg:grid-cols-[1fr_1fr_1fr_auto] gap-6">
           {hotels.map((h) => (
             <article key={h.name} className="bg-card rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-soft)] transition-shadow flex flex-col">
               <div className="relative">
@@ -117,9 +117,9 @@ export function Hotels() {
             </article>
           ))}
 
-          <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] p-6 flex flex-col justify-center">
-            <a href="https://wa.me/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-info font-semibold">
-              <span className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-emerald-500/15 text-emerald-600">
+          <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] p-5 flex flex-col justify-center lg:max-w-[240px] lg:w-fit">
+            <a href="https://wa.me/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-info font-semibold whitespace-nowrap">
+              <span className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-emerald-500/15 text-emerald-600 shrink-0">
                 <MessageCircle size={18} />
               </span>
               {t("hero.whatsapp")}
@@ -155,7 +155,7 @@ export function Hotels() {
                   ))}
                 </ul>
 
-                <div className="mt-7 flex flex-col sm:flex-row gap-3">
+                <div className="mt-12 flex flex-col sm:flex-row gap-3">
                   <button className="flex-1 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
                     {t("hotels.bookOnline")}
                   </button>
