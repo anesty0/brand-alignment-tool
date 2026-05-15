@@ -124,6 +124,7 @@ const hotels: Hotel[] = [
       },
     ],
     gallery: [secretMain, secret1, secret2],
+    bookUrl: "https://ski4u.com/hotels/the-secret-solden-pmkpqz?filters%5Bdate_check_in%5D=2026-12-20&filters%5Bdate_check_out%5D=2026-12-27&filters%5Bhotel%5D=4921&filters%5Brooms%5D%5B0%5D%5Badults%5D=2&filters%5Btype%5D=hotel",
   },
   {
     tagRu: "Спокойный вариант", tagEn: "The quiet option",
@@ -211,9 +212,15 @@ export function Hotels() {
                   >
                     {t("hotels.more")}
                   </button>
-                  <button className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
-                    {t("hotels.choose")}
-                  </button>
+                  {h.bookUrl ? (
+                    <a href={h.bookUrl} target="_blank" rel="noreferrer" className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
+                      {t("hotels.choose")}
+                    </a>
+                  ) : (
+                    <button className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
+                      {t("hotels.choose")}
+                    </button>
+                  )}
                 </div>
                 <p className="mt-4 text-xs text-orange/90">{t("hotels.included")}</p>
               </div>
@@ -270,9 +277,15 @@ export function Hotels() {
                 </div>
 
                 <div className="shrink-0 px-6 md:px-8 py-5 md:py-6 border-t border-border/60 bg-card flex flex-col sm:flex-row gap-3">
-                  <button className="flex-1 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
-                    {t("hotels.bookOnline")}
-                  </button>
+                  {active.bookUrl ? (
+                    <a href={active.bookUrl} target="_blank" rel="noreferrer" className="flex-1 inline-flex items-center justify-center text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
+                      {t("hotels.bookOnline")}
+                    </a>
+                  ) : (
+                    <button className="flex-1 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
+                      {t("hotels.bookOnline")}
+                    </button>
+                  )}
                   <a href="https://wa.me/79255895239" target="_blank" rel="noreferrer" className="flex-1 inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-navy text-white hover:brightness-125 transition">
                     <MessageCircle size={14} /> {t("hotels.bookConsultant")}
                   </a>
