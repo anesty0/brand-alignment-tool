@@ -138,6 +138,9 @@ export function Navbar() {
               {t(l.k)}
             </a>
           ))}
+          <Link to="/" hash="" className="text-xs font-semibold tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors" {...{ to: "/about" } as any}>
+            {t("nav.project")}
+          </Link>
           <button onClick={() => setFaqOpen(true)} className="text-xs font-semibold tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors">
             {t("nav.faq")}
           </button>
