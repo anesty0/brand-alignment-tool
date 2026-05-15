@@ -10,6 +10,7 @@ const ru: Dict = {
   "nav.program": "ПРОГРАММА",
   "nav.hotels": "ПРОЖИВАНИЕ",
   "nav.alps": "ALPS CONNECT",
+  "nav.project": "О ПРОЕКТЕ",
   "nav.faq": "FAQ",
   "nav.cta": "ЗАБРОНИРОВАТЬ УЧАСТИЕ",
   "brand.line2": "SKI OPENING 2027",
