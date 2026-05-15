@@ -106,21 +106,6 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* Intro paragraphs */}
-      <section className="py-8 md:py-12">
-        <div className="container-x max-w-3xl space-y-4 text-sm md:text-base text-foreground/80 leading-relaxed">
-          <p>{isRu
-            ? "NATIVE CODE появился не как очередной «бизнес-ивент»."
-            : "NATIVE CODE didn't appear as just another \"business event\"."}</p>
-          <p>{isRu
-            ? "Он вырос из реального круга людей, которые последние годы строят бизнес, проекты и новую жизнь в других странах — с новыми правилами, банками, налогами, языками и системой."
-            : "It grew out of a real circle of people who, in recent years, have been building businesses, projects and a new life in other countries — with new rules, banks, taxes, languages and systems."}</p>
-          <p>{isRu
-            ? "Проект создают предприниматели и компании, которые сами проходят этот путь."
-            : "The project is created by entrepreneurs and companies walking this path themselves."}</p>
-        </div>
-      </section>
-
       {/* Team / Partners */}
       <section className="py-10 md:py-14">
         <div className="container-x">
