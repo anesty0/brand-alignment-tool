@@ -120,6 +120,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <I18nProvider>
+        <RevealObserver />
         <Outlet />
       </I18nProvider>
     </QueryClientProvider>
