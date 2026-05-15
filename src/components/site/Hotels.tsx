@@ -74,6 +74,7 @@ const hotels: Hotel[] = [
       },
     ],
     gallery: [ganzMain, ganz1, ganz2],
+    bookUrl: "https://ski4u.com",
   },
   {
     tagRu: "Премиальный выбор", tagEn: "Premium choice",
@@ -171,6 +172,7 @@ const hotels: Hotel[] = [
       },
     ],
     gallery: [parkMain, park1, park2],
+    bookUrl: "https://ski4u.com",
   },
 ];
 
