@@ -20,40 +20,22 @@ export const Route = createFileRoute("/about")({
 const partners = [
   {
     name: "OPEN GREECE",
-    bodyRu: [
-      "Греческая девелоперская компания, работающая в сфере недвижимости и lifestyle-проектов в Греции.",
-      "Компания развивает проекты у моря, закрытые жилые комплексы и направления, связанные с relocation и life investment в Европе.",
-      "Также OPEN GREECE является организатором международной парусной регаты Open Greece Cup, которая объединяет русскоговорящее сообщество из разных стран мира.",
-    ],
-    bodyEn: [
-      "A Greek development company working in real estate and lifestyle projects in Greece.",
-      "Open Greece develops seaside projects, gated residential communities and directions linked to relocation and life investment in Europe.",
-      "Open Greece is also the organiser of the international sailing regatta Open Greece Cup, uniting the Russian-speaking community from around the world.",
-    ],
+    descriptionRu: "Греческая девелоперская компания в сфере недвижимости и lifestyle-проектов у моря. OPEN GREECE также развивает международную регату Open Greece Cup, объединяющую русскоговорящее сообщество по всему миру.",
+    descriptionEn: "A Greek development company working with seaside real estate and lifestyle projects. OPEN GREECE also develops the international Open Greece Cup regatta, connecting the Russian-speaking community worldwide.",
     img: sail,
     link: "open-greece.com",
   },
   {
     name: "Axiom Management Solutions GmbH",
-    bodyRu: [
-      "Австрийская компания, специализирующаяся на бизнес-иммиграции, сопровождении предпринимателей, корпоративных структурах, налоговой и юридической интеграции бизнеса в Европе.",
-      "Команда много лет работает с предпринимателями, которые ведут деятельность между несколькими странами.",
-    ],
-    bodyEn: [
-      "An Austrian company specialising in business immigration, entrepreneur support, corporate structures, and tax and legal integration of businesses in Europe.",
-      "The team has spent years working with entrepreneurs operating across several countries.",
-    ],
+    descriptionRu: "Австрийская компания, сопровождающая предпринимателей в бизнес-иммиграции, корпоративных структурах, налоговой и юридической интеграции бизнеса в Европе.",
+    descriptionEn: "An Austrian company supporting entrepreneurs with business immigration, corporate structures, and tax and legal integration of businesses in Europe.",
     img: lounge,
     link: "axiom-management.at",
   },
   {
     name: "SKI4U",
-    bodyRu: [
-      "Туристический и alpine lifestyle-партнёр проекта с многолетним опытом организации премиальных горнолыжных путешествий и инфраструктуры отдыха в Альпах.",
-    ],
-    bodyEn: [
-      "Travel and alpine lifestyle partner of the project with many years of experience organising premium ski trips and leisure infrastructure in the Alps.",
-    ],
+    descriptionRu: "Туристический и alpine lifestyle-партнёр проекта с многолетним опытом организации премиальных горнолыжных путешествий и отдыха в Альпах.",
+    descriptionEn: "Travel and alpine lifestyle partner of the project, with years of experience organising premium ski journeys and leisure in the Alps.",
     img: fire,
     link: "ski4u.com",
   },
@@ -106,46 +88,44 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* Team / Partners — editorial column layout */}
-      <section className="py-20 md:py-28 lg:py-36">
+      {/* Team / Partners — editorial brand showcase */}
+      <section className="py-[4.5rem] md:py-24 lg:py-28">
         <div className="container-x">
           <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
             {isRu ? "КОМАНДА ПРОЕКТА" : "PROJECT TEAM"}
           </div>
-          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-navy leading-[1.1] max-w-3xl">
+          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-navy leading-[1.08] max-w-3xl">
             {isRu
               ? "Коллаборация опыта, людей и общей философии"
               : "A collaboration of experience, people and a shared philosophy"}
           </h2>
 
-          <div className="mt-16 md:mt-20 lg:mt-24 grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
+          <div className="mt-12 md:mt-16 lg:mt-[4.5rem] grid md:grid-cols-3 gap-11 md:gap-0 md:border-y md:border-border/45">
             {partners.map((p, idx) => (
               <article
                 key={p.name}
-                className={`flex flex-col ${idx > 0 ? "md:pl-10 lg:pl-16 md:border-l md:border-border/60" : ""}`}
+                className={`grid md:grid-rows-[64px_minmax(136px,auto)_40px_auto] lg:grid-rows-[70px_minmax(128px,auto)_40px_auto] md:py-10 lg:py-12 ${idx > 0 ? "md:pl-7 lg:pl-10 md:border-l md:border-border/60" : "md:pr-7 lg:pr-10"} ${idx === 1 ? "md:pr-7 lg:pr-10" : ""}`}
               >
-                <h3 className="text-base md:text-lg font-bold tracking-tight text-navy leading-snug uppercase">
+                <h3 className="max-w-[15rem] text-base md:text-[17px] font-bold tracking-tight text-navy leading-[1.18] uppercase">
                   {p.name}
                 </h3>
-                <div className="mt-6 space-y-4 text-sm text-muted-foreground leading-relaxed">
-                  {(isRu ? p.bodyRu : p.bodyEn).map((para, i) => (
-                    <p key={i}>{para}</p>
-                  ))}
-                </div>
+                <p className="max-w-[21rem] text-[13px] md:text-sm text-muted-foreground leading-[1.58] md:pr-2">
+                  {isRu ? p.descriptionRu : p.descriptionEn}
+                </p>
                 <a
                   href={`https://${p.link}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-8 inline-flex w-fit items-center gap-2 rounded-md border border-border px-5 py-2.5 text-[11px] font-semibold tracking-[0.14em] text-navy hover:border-orange hover:text-orange transition uppercase"
+                  className="mt-4 md:mt-0 inline-flex h-10 w-fit items-center gap-2 rounded-md border border-border px-5 text-[11px] font-semibold tracking-[0.14em] text-navy hover:border-orange hover:text-orange transition uppercase"
                 >
                   {p.link} ↗
                 </a>
-                <div className="mt-10 overflow-hidden rounded-sm">
+                <div className="mt-6 md:mt-7 lg:mt-8 overflow-hidden rounded-sm">
                   <img
                     src={p.img}
                     alt={p.name}
                     loading="lazy"
-                    className="w-full h-56 md:h-60 lg:h-72 object-cover"
+                    className="w-full h-[14.5rem] sm:h-64 md:h-[14.5rem] lg:h-72 object-cover"
                   />
                 </div>
               </article>
