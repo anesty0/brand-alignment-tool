@@ -163,6 +163,9 @@ export function Navbar() {
                 {t(l.k)}
               </a>
             ))}
+            <Link to="/about" onClick={() => setOpen(false)} className="py-3 text-sm font-semibold tracking-wider text-foreground/85 border-b border-border">
+              {t("nav.project")}
+            </Link>
             <button onClick={() => { setOpen(false); setFaqOpen(true); }} className="py-3 text-left text-sm font-semibold tracking-wider text-foreground/85 border-b border-border">
               {t("nav.faq")}
             </button>
