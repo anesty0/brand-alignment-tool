@@ -1,4 +1,5 @@
 import { Handshake, Mic, MessageCircle, Send, Mail, Instagram } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
 
 const WA = "https://wa.me/";
@@ -32,9 +33,9 @@ export function CtaBanners() {
 
         <div className="rounded-2xl border border-border p-6 md:p-8 flex flex-col justify-center text-center">
           <h4 className="text-sm md:text-base font-bold text-navy">{t("cta.creators")}</h4>
-          <button className="mt-4 mx-auto inline-flex rounded-md border border-border px-6 py-2.5 text-xs font-semibold tracking-wider text-navy hover:border-orange hover:text-orange transition">
+          <Link to="/about" className="mt-4 mx-auto inline-flex rounded-md border border-border px-6 py-2.5 text-xs font-semibold tracking-wider text-navy hover:border-orange hover:text-orange transition">
             {t("cta.about")}
-          </button>
+          </Link>
           <div className="mt-5 flex justify-center gap-4 text-muted-foreground">
             <a href={WA} aria-label="WhatsApp" className="hover:text-emerald-600 transition"><MessageCircle size={16} /></a>
             <a href="https://t.me/" aria-label="Telegram" className="hover:text-info transition"><Send size={16} /></a>
