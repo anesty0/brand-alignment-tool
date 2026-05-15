@@ -120,14 +120,6 @@ function AboutPage() {
                 >
                   {p.link} ↗
                 </a>
-                <div className="mt-6 md:mt-7 lg:mt-8 overflow-hidden rounded-sm">
-                  <img
-                    src={p.img}
-                    alt={p.name}
-                    loading="lazy"
-                    className="w-full h-[14.5rem] sm:h-64 md:h-[14.5rem] lg:h-72 object-cover"
-                  />
-                </div>
               </article>
             ))}
           </div>
