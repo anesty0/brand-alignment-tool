@@ -69,7 +69,7 @@ function AboutPage() {
       <section className="relative overflow-hidden bg-white">
         <div className="absolute inset-y-0 right-0 w-full lg:w-[62%]">
           <img src={alps} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/10 lg:from-white lg:via-white/80 lg:to-transparent" style={{ backgroundImage: "linear-gradient(to right, white 0%, white 35%, rgba(255,255,255,0.6) 60%, rgba(255,255,255,0) 85%)" }} />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0.7)_55%,rgba(255,255,255,0.1)_85%)] lg:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0.4)_40%,transparent_70%)]" />
         </div>
         <div className="container-x relative z-10 py-16 md:py-24 lg:py-32">
           <div className="max-w-xl">
