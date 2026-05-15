@@ -79,7 +79,7 @@ const hotels: Hotel[] = [
   {
     tagRu: "Премиальный выбор", tagEn: "Premium choice",
     name: "THE SECRET SÖLDEN 4★",
-    price: "1800€",
+    price: "2500€",
     img: secretMain,
     introRu:
       "Современный дизайнерский отель в центре Зёльдена с атмосферой альпийского клуба, стильным SPA и просторными сьютами для комфортного отдыха в компании.",
