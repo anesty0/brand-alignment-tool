@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { useI18n } from "@/lib/i18n";
-import alps from "@/assets/about-hero-mountains.webp";
+import alps from "@/assets/about-hero-mountains.jpg";
 import sail from "@/assets/alps-2.jpg";
 import lounge from "@/assets/alps-3.jpg";
 import fire from "@/assets/observation.jpg";
