@@ -1,4 +1,5 @@
 import { Handshake, Mic, MessageCircle, Send, Mail, Instagram } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
 
 const WA = "https://wa.me/";
