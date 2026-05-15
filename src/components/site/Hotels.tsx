@@ -232,7 +232,7 @@ export function Hotels() {
       </div>
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
-        <DialogContent className="max-w-6xl h-[90dvh] max-h-[820px] p-0 overflow-hidden bg-card sm:rounded-2xl">
+        <DialogContent className="max-w-6xl h-auto max-h-[90dvh] p-0 overflow-hidden bg-card sm:rounded-2xl">
           {active && (
             <div className="grid h-full min-h-0 md:grid-cols-[1fr_1.1fr] gap-0">
               {/* Left: details */}
