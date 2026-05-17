@@ -246,7 +246,7 @@ export function Hotels() {
           {active && (
             <div className="grid h-full min-h-0 md:grid-cols-[1fr_1.1fr] gap-0">
               {/* Left: details */}
-              <div className="order-2 md:order-1 flex min-h-0 flex-col md:overflow-hidden">
+              <div className="order-2 md:order-1 flex min-h-0 flex-col xl:overflow-hidden">
                 <div className="shrink-0 px-6 md:px-8 pt-6 md:pt-8">
                   <h4 className="text-2xl md:text-3xl font-extrabold text-navy">{active.name}</h4>
                   <div className="mt-2 flex items-baseline gap-2">
@@ -256,7 +256,7 @@ export function Hotels() {
                   <div className="text-xs text-muted-foreground">{t("hotels.perPackage")}</div>
                 </div>
 
-                <div className="hotel-scroll mt-5 min-h-0 flex-1 md:max-h-[360px] md:overflow-y-auto px-6 pr-4 md:px-8 md:pr-5">
+                <div className="hotel-scroll mt-5 min-h-0 flex-1 xl:max-h-[360px] xl:overflow-y-auto px-6 pr-4 md:px-8 md:pr-5">
                   <p className="text-sm text-foreground/80 leading-relaxed">
                     {lang === "ru" ? active.introRu : active.introEn}
                   </p>
