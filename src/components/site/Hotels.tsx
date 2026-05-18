@@ -210,7 +210,7 @@ export function Hotels() {
                 <div className="mt-5 flex flex-wrap gap-2 mt-auto pt-4">
                   <button
                     onClick={() => openHotel(h)}
-                    className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md border border-orange text-orange bg-transparent hover:brightness-110 transition"
+                    className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md border border-orange text-navy bg-transparent hover:brightness-110 transition"
                   >
                     {t("hotels.more")}
                   </button>
