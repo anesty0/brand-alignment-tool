@@ -135,7 +135,7 @@ function AboutPage() {
               : "NATIVE CODE is more than an event. It's a community of people with similar experience, pace of life and scale of tasks."}
           </p>
 
-          <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
+          <div className="mt-8 md:mt-10 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
             {values.map((v, i) => {
               const Icon = valueIcons[i];
               return (
