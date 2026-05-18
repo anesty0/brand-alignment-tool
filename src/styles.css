@@ -136,7 +136,7 @@ article img {
 }
 
 /* Tablet-only fixed crop for the image directly below the hero */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .about-tablet-image-frame {
     height: 320px;
     max-height: 320px;
