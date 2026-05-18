@@ -71,7 +71,7 @@ function AboutPage() {
           <img src={alps} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-white/85 lg:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0.55)_22%,transparent_45%)]" />
         </div>
-        <div className="container-x relative z-10 py-16 md:py-20 lg:py-20">
+        <div className="container-x relative z-10 py-12 md:py-14 lg:py-16">
           <div className="max-w-xl">
             <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
               {isRu ? "О ПРОЕКТЕ" : "ABOUT"}
@@ -89,7 +89,7 @@ function AboutPage() {
       </section>
 
       {/* Team / Partners - editorial brand showcase */}
-      <section className="py-[3rem] md:py-14 lg:py-16">
+      <section className="py-8 md:py-10 lg:py-12">
         <div className="container-x">
           <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
             {isRu ? "КОМАНДА ПРОЕКТА" : "PROJECT TEAM"}
@@ -100,11 +100,11 @@ function AboutPage() {
               : "A collaboration of experience, people and a shared philosophy"}
           </h2>
 
-          <div className="mt-8 md:mt-10 lg:mt-12 grid md:grid-cols-3 gap-11 md:gap-0 md:border-y md:border-border/45">
+          <div className="mt-6 md:mt-8 lg:mt-10 grid md:grid-cols-3 gap-11 md:gap-0 md:border-y md:border-border/45">
             {partners.map((p, idx) => (
               <article
                 key={p.name}
-                className={`grid md:grid-rows-[64px_minmax(180px,auto)_40px_auto] lg:grid-rows-[70px_minmax(170px,auto)_40px_auto] md:py-10 lg:py-12 ${idx > 0 ? "md:pl-7 lg:pl-10 md:border-l md:border-border/60" : "md:pr-7 lg:pr-10"} ${idx === 1 ? "md:pr-7 lg:pr-10" : ""}`}
+                className={`grid md:grid-rows-[64px_minmax(180px,auto)_40px_auto] lg:grid-rows-[70px_minmax(170px,auto)_40px_auto] md:py-8 lg:py-10 ${idx > 0 ? "md:pl-7 lg:pl-10 md:border-l md:border-border/60" : "md:pr-7 lg:pr-10"} ${idx === 1 ? "md:pr-7 lg:pr-10" : ""}`}
               >
                 <h3 className="max-w-[15rem] text-base md:text-[17px] font-bold tracking-tight text-navy leading-[1.18] uppercase">
                   {p.name}
@@ -128,14 +128,14 @@ function AboutPage() {
 
       {/* Closing dark band */}
       <section className="bg-navy text-white">
-        <div className="container-x py-12 md:py-14 lg:py-16">
+        <div className="container-x py-10 md:py-12 lg:py-14">
           <p className="text-xl md:text-2xl lg:text-3xl font-light leading-snug max-w-3xl">
             {isRu
               ? "NATIVE CODE - это больше, чем событие. Это среда людей со схожим опытом, скоростью жизни и уровнем задач."
               : "NATIVE CODE is more than an event. It's a community of people with similar experience, pace of life and scale of tasks."}
           </p>
 
-          <div className="mt-8 md:mt-10 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
+          <div className="mt-6 md:mt-8 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
             {values.map((v, i) => {
               const Icon = valueIcons[i];
               return (
@@ -148,7 +148,7 @@ function AboutPage() {
           </div>
 
           {/* Footer-style info row */}
-          <div className="mt-10 md:mt-12 pt-6 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-xs md:text-sm">
+          <div className="mt-8 md:mt-10 pt-6 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-xs md:text-sm">
             <div className="leading-tight">
               <div className="font-extrabold tracking-tight text-white">NATIVE CODE</div>
               <div className="text-[10px] font-semibold tracking-[0.18em] text-orange mt-1">SKI OPENING 2026</div>
