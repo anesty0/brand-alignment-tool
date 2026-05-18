@@ -12,7 +12,7 @@ const features = [
 export function About() {
   const { t } = useI18n();
   return (
-    <section id="about" className="py-10 md:py-14 lg:py-10 xl:py-12">
+    <section id="about" className="scroll-mt-32 md:scroll-mt-40 py-10 md:py-14 lg:py-10 xl:py-12">
       <div className="container-x grid lg:grid-cols-2 gap-10 xl:gap-14 items-stretch">
         <div className="about-tablet-image-frame rounded-2xl overflow-hidden shadow-[var(--shadow-card)] w-full h-full lg:min-h-[520px]">
           <img src={obs} alt="Alpine observation deck" loading="lazy" className="about-tablet-image w-full h-full object-cover aspect-[16/9] lg:aspect-auto" />
