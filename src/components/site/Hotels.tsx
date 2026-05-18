@@ -220,7 +220,7 @@ export function Hotels() {
                   <span className="text-[11px] font-normal text-muted-foreground/80">{t("hotels.perPerson")}</span>
                 </div>
                 <div className="text-xs text-muted-foreground mt-0.5">{t("hotels.perPackage")}</div>
-                <div className="mt-3 flex flex-wrap gap-2 mt-auto pt-3">
+                <div className="mt-2 flex flex-wrap gap-2 pt-1">
                   <button
                     onClick={() => openHotel(h)}
                     className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md border border-orange bg-transparent text-navy hover:brightness-110 transition"
