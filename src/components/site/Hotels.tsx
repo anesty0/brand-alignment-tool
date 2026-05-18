@@ -214,8 +214,8 @@ export function Hotels() {
                 </span>
               </div>
               <div className="p-5 pb-4 flex-1 flex flex-col">
-                <h4 className="text-sm lg:text-[15px] xl:text-base 2xl:text-lg font-bold text-navy leading-snug min-h-[2.6em]">{h.name}</h4>
-                <div className="mt-1 flex items-baseline gap-1.5">
+                <h4 className="text-sm lg:text-[15px] xl:text-base 2xl:text-lg font-bold text-navy leading-tight min-h-[2.4em]">{h.name}</h4>
+                <div className="mt-0.5 flex items-baseline gap-1.5">
                   <span className="text-orange font-bold text-base">{h.price}</span>
                   <span className="text-[11px] font-normal text-muted-foreground/80">{t("hotels.perPerson")}</span>
                 </div>
