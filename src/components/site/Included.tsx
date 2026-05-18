@@ -18,8 +18,10 @@ export function Included() {
         <div className="mt-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-5 gap-y-6">
           {items.map((it) => (
             <div key={it.k} className="text-center md:text-left">
-              <it.icon className="mx-auto md:mx-0 text-info" size={28} strokeWidth={1.5} />
-              <h4 className="mt-2.5 text-sm font-bold text-navy">{t(`${it.k}.t`)}</h4>
+              <div className="flex items-center justify-center md:justify-start gap-2.5">
+                <it.icon className="text-info shrink-0" size={28} strokeWidth={1.5} />
+                <h4 className="text-sm font-bold text-navy">{t(`${it.k}.t`)}</h4>
+              </div>
               <p className="mt-1.5 text-xs md:text-sm text-muted-foreground leading-relaxed">{t(`${it.k}.b`)}</p>
             </div>
           ))}
