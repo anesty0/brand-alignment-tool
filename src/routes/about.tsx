@@ -148,7 +148,7 @@ function AboutPage() {
           </div>
 
           {/* Footer-style info row */}
-          <div className="mt-14 pt-6 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-xs md:text-sm">
+          <div className="mt-10 md:mt-12 pt-6 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-xs md:text-sm">
             <div className="leading-tight">
               <div className="font-extrabold tracking-tight text-white">NATIVE CODE</div>
               <div className="text-[10px] font-semibold tracking-[0.18em] text-orange mt-1">SKI OPENING 2026</div>
