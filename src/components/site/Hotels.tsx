@@ -213,36 +213,22 @@ export function Hotels() {
                   {lang === "ru" ? h.tagRu : h.tagEn}
                 </span>
               </div>
-              <div className="p-5 flex-1 flex flex-col">
+              <div className="p-5 pb-4 flex-1 flex flex-col">
                 <h4 className="text-sm lg:text-[15px] xl:text-base 2xl:text-lg font-bold text-navy leading-snug min-h-[2.6em]">{h.name}</h4>
                 <div className="mt-1 flex items-baseline gap-1.5">
                   <span className="text-orange font-bold text-base">{h.price}</span>
                   <span className="text-[11px] font-normal text-muted-foreground/80">{t("hotels.perPerson")}</span>
                 </div>
                 <div className="text-xs text-muted-foreground mt-0.5">{t("hotels.perPackage")}</div>
-                <div className="mt-5 flex flex-wrap gap-2 mt-auto pt-4">
+                <div className="mt-3 flex flex-wrap gap-2 mt-auto pt-3">
                   <button
                     onClick={() => openHotel(h)}
-                    className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md border border-border text-navy hover:border-orange hover:text-orange transition"
+                    className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md border border-orange bg-transparent text-navy hover:brightness-110 transition"
                   >
                     {t("hotels.more")}
                   </button>
-                  {h.bookUrl ? (
-                    <a
-                      href={h.bookUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition"
-                    >
-                      {t("hotels.choose")}
-                    </a>
-                  ) : (
-                    <button className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
-                      {t("hotels.choose")}
-                    </button>
-                  )}
                 </div>
-                <p className="mt-4 text-xs text-orange/90">{t("hotels.included")}</p>
+                <p className="mt-2 text-xs text-orange/90">{t("hotels.included")}</p>
               </div>
             </article>
           ))}
