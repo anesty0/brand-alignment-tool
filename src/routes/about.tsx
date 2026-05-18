@@ -71,7 +71,7 @@ function AboutPage() {
           <img src={alps} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-white/85 lg:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0.55)_22%,transparent_45%)]" />
         </div>
-        <div className="container-x relative z-10 py-16 md:py-24 lg:py-32">
+        <div className="container-x relative z-10 py-16 md:py-20 lg:py-20">
           <div className="max-w-xl">
             <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
               {isRu ? "О ПРОЕКТЕ" : "ABOUT"}
