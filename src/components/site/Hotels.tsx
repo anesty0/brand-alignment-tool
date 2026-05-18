@@ -16,11 +16,13 @@ import { useI18n } from "@/lib/i18n";
 type Section = { titleRu: string; titleEn: string; itemsRu: string[]; itemsEn: string[] };
 
 type Hotel = {
-  tagRu: string; tagEn: string;
+  tagRu: string;
+  tagEn: string;
   name: string;
   price: string;
   img: string;
-  introRu: string; introEn: string;
+  introRu: string;
+  introEn: string;
   sections: Section[];
   gallery: string[];
   bookUrl?: string;
@@ -28,8 +30,9 @@ type Hotel = {
 
 const hotels: Hotel[] = [
   {
-    tagRu: "Премиальный выбор", tagEn: "Premium choice",
-    name: "THE SECRET SÖLDEN 4★",
+    tagRu: "Премиальный выбор",
+    tagEn: "Premium choice",
+    name: "THE SECRET SÖLDEN 4★+",
     price: "2500€",
     img: secretMain,
     introRu:
@@ -38,7 +41,8 @@ const hotels: Hotel[] = [
       "A modern designer hotel in central Sölden with an alpine-club atmosphere, stylish SPA and spacious suites for a comfortable stay with friends.",
     sections: [
       {
-        titleRu: "ЧТО ВАЖНО", titleEn: "WHAT MATTERS",
+        titleRu: "ЧТО ВАЖНО",
+        titleEn: "WHAT MATTERS",
         itemsRu: [
           "центр Зёльдена",
           "рядом рестораны, бары и après-ski",
@@ -53,7 +57,8 @@ const hotels: Hotel[] = [
         ],
       },
       {
-        titleRu: "В НОМЕРАХ", titleEn: "IN THE ROOMS",
+        titleRu: "В НОМЕРАХ",
+        titleEn: "IN THE ROOMS",
         itemsRu: [
           "просторные сьюты от 50 до 155 м²",
           "отдельные гостиные и обеденные зоны",
@@ -70,16 +75,19 @@ const hotels: Hotel[] = [
         ],
       },
       {
-        titleRu: "ВКЛЮЧЕНО", titleEn: "INCLUDED",
+        titleRu: "ВКЛЮЧЕНО",
+        titleEn: "INCLUDED",
         itemsRu: ["5 ночей", "завтраки", "участие в программе NATIVE CODE"],
         itemsEn: ["5 nights", "breakfasts", "participation in the NATIVE CODE programme"],
       },
     ],
     gallery: [secretMain, secret1, secret2],
-    bookUrl: "https://ski4u.com/hotels/the-secret-solden-pmkpqz?filters%5Bdate_check_in%5D=2026-12-20&filters%5Bdate_check_out%5D=2026-12-27&filters%5Bhotel%5D=4921&filters%5Brooms%5D%5B0%5D%5Badults%5D=2&filters%5Btype%5D=hotel",
+    bookUrl:
+      "https://ski4u.com/hotels/the-secret-solden-pmkpqz?filters%5Bdate_check_in%5D=2026-12-20&filters%5Bdate_check_out%5D=2026-12-27&filters%5Bhotel%5D=4921&filters%5Brooms%5D%5B0%5D%5Badults%5D=2&filters%5Btype%5D=hotel",
   },
   {
-    tagRu: "Около подъемника", tagEn: "Near the lift",
+    tagRu: "Около подъемника",
+    tagEn: "Near the lift",
     name: "GLANZ & GLORY 4★",
     price: "1800€",
     img: ganzMain,
@@ -89,7 +97,8 @@ const hotels: Hotel[] = [
       "An atmospheric hotel in classic alpine style, blending Tyrolean hospitality with the comfort of a winter stay in Sölden.",
     sections: [
       {
-        titleRu: "ЧТО ВАЖНО", titleEn: "WHAT MATTERS",
+        titleRu: "ЧТО ВАЖНО",
+        titleEn: "WHAT MATTERS",
         itemsRu: [
           "50 метров до подъёмника",
           "можно спуститься на лыжах к отелю",
@@ -106,7 +115,8 @@ const hotels: Hotel[] = [
         ],
       },
       {
-        titleRu: "В НОМЕРАХ", titleEn: "IN THE ROOMS",
+        titleRu: "В НОМЕРАХ",
+        titleEn: "IN THE ROOMS",
         itemsRu: [
           "просторные комнаты",
           "тёплые интерьеры в альпийском стиле",
@@ -119,7 +129,8 @@ const hotels: Hotel[] = [
         ],
       },
       {
-        titleRu: "ВКЛЮЧЕНО", titleEn: "INCLUDED",
+        titleRu: "ВКЛЮЧЕНО",
+        titleEn: "INCLUDED",
         itemsRu: ["5 ночей", "завтраки", "участие в программе NATIVE CODE"],
         itemsEn: ["5 nights", "breakfasts", "participation in the NATIVE CODE programme"],
       },
@@ -128,8 +139,9 @@ const hotels: Hotel[] = [
     bookUrl: "https://ski4u.com",
   },
   {
-    tagRu: "Спокойный вариант", tagEn: "The quiet option",
-    name: "PARK HOTEL SÖLDEN 3★",
+    tagRu: "Спокойный вариант",
+    tagEn: "The quiet option",
+    name: "PARK HOTEL SÖLDEN 3★+",
     price: "1500€",
     img: parkMain,
     introRu:
@@ -138,7 +150,8 @@ const hotels: Hotel[] = [
       "A cosy hotel in central Sölden with a relaxed alpine atmosphere, a good wellness area with saunas and a convenient location.",
     sections: [
       {
-        titleRu: "ЧТО ВАЖНО", titleEn: "WHAT MATTERS",
+        titleRu: "ЧТО ВАЖНО",
+        titleEn: "WHAT MATTERS",
         itemsRu: [
           "5 минут до подъёмника",
           "отличные завтраки",
@@ -153,20 +166,14 @@ const hotels: Hotel[] = [
         ],
       },
       {
-        titleRu: "В НОМЕРАХ", titleEn: "IN THE ROOMS",
-        itemsRu: [
-          "светлые комнаты",
-          "интерьеры в альпийском стиле",
-          "всё необходимое для комфортного отдыха",
-        ],
-        itemsEn: [
-          "bright rooms",
-          "alpine-style interiors",
-          "everything you need for a comfortable stay",
-        ],
+        titleRu: "В НОМЕРАХ",
+        titleEn: "IN THE ROOMS",
+        itemsRu: ["светлые комнаты", "интерьеры в альпийском стиле", "всё необходимое для комфортного отдыха"],
+        itemsEn: ["bright rooms", "alpine-style interiors", "everything you need for a comfortable stay"],
       },
       {
-        titleRu: "ВКЛЮЧЕНО", titleEn: "INCLUDED",
+        titleRu: "ВКЛЮЧЕНО",
+        titleEn: "INCLUDED",
         itemsRu: ["5 ночей", "завтраки", "участие в программе NATIVE CODE"],
         itemsEn: ["5 nights", "breakfasts", "participation in the NATIVE CODE programme"],
       },
@@ -181,7 +188,10 @@ export function Hotels() {
   const [galleryIdx, setGalleryIdx] = useState(0);
   const { t, lang } = useI18n();
 
-  const openHotel = (h: Hotel) => { setActive(h); setGalleryIdx(0); };
+  const openHotel = (h: Hotel) => {
+    setActive(h);
+    setGalleryIdx(0);
+  };
 
   return (
     <section id="hotels" className="py-10 md:py-14 lg:py-10 xl:py-12">
@@ -193,7 +203,10 @@ export function Hotels() {
 
         <div className="mt-10 grid lg:grid-cols-[1fr_1fr_1fr_auto] gap-6">
           {hotels.map((h) => (
-            <article key={h.name} className="bg-card rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-soft)] transition-shadow flex flex-col">
+            <article
+              key={h.name}
+              className="bg-card rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-soft)] transition-shadow flex flex-col"
+            >
               <div className="relative">
                 <img src={h.img} alt={h.name} loading="lazy" className="w-full h-44 md:h-52 object-cover" />
                 <span className="absolute top-3 left-3 bg-primary text-primary-foreground text-[11px] font-semibold tracking-wide px-3 py-1.5 rounded-md">
@@ -210,10 +223,24 @@ export function Hotels() {
                 <div className="mt-5 flex flex-wrap gap-2 mt-auto pt-4">
                   <button
                     onClick={() => openHotel(h)}
-                    className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md border border-orange text-navy bg-transparent hover:brightness-110 transition"
+                    className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md border border-border text-navy hover:border-orange hover:text-orange transition"
                   >
                     {t("hotels.more")}
                   </button>
+                  {h.bookUrl ? (
+                    <a
+                      href={h.bookUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition"
+                    >
+                      {t("hotels.choose")}
+                    </a>
+                  ) : (
+                    <button className="text-xs font-semibold tracking-wide px-4 py-2.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
+                      {t("hotels.choose")}
+                    </button>
+                  )}
                 </div>
                 <p className="mt-4 text-xs text-orange/90">{t("hotels.included")}</p>
               </div>
@@ -221,7 +248,12 @@ export function Hotels() {
           ))}
 
           <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] p-5 flex flex-col justify-center gap-3 self-center w-full lg:w-[260px] lg:justify-self-end">
-            <a href="https://wa.me/306972801776" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-info font-semibold text-sm min-w-0">
+            <a
+              href="https://wa.me/306972801776"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-3 text-info font-semibold text-sm min-w-0"
+            >
               <span className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-emerald-500/15 text-emerald-600 shrink-0">
                 <MessageCircle size={16} />
               </span>
@@ -233,11 +265,11 @@ export function Hotels() {
       </div>
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
-        <DialogContent className="max-w-6xl h-auto max-h-[90dvh] p-0 overflow-y-auto bg-card sm:rounded-2xl">
+        <DialogContent className="max-w-6xl h-auto max-h-[90dvh] p-0 overflow-y-auto md:overflow-hidden bg-card sm:rounded-2xl">
           {active && (
-            <div className="grid min-h-0 md:grid-cols-[1fr_1.1fr] gap-0">
+            <div className="grid h-full min-h-0 md:grid-cols-[1fr_1.1fr] gap-0">
               {/* Left: details */}
-              <div className="order-2 md:order-1 flex min-h-0 flex-col">
+              <div className="order-2 md:order-1 flex min-h-0 flex-col md:overflow-hidden">
                 <div className="shrink-0 px-6 md:px-8 pt-6 md:pt-8">
                   <h4 className="text-2xl md:text-3xl font-extrabold text-navy">{active.name}</h4>
                   <div className="mt-2 flex items-baseline gap-2">
@@ -271,7 +303,12 @@ export function Hotels() {
 
                 <div className="shrink-0 px-6 md:px-8 py-5 md:py-6 border-t border-border/60 bg-card flex flex-col sm:flex-row gap-3">
                   {active.bookUrl ? (
-                    <a href={active.bookUrl} target="_blank" rel="noreferrer" className="flex-1 inline-flex items-center justify-center text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
+                    <a
+                      href={active.bookUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex-1 inline-flex items-center justify-center text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition"
+                    >
                       {t("hotels.bookOnline")}
                     </a>
                   ) : (
@@ -279,7 +316,12 @@ export function Hotels() {
                       {t("hotels.bookOnline")}
                     </button>
                   )}
-                  <a href="https://wa.me/306972801776" target="_blank" rel="noreferrer" className="flex-1 inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-navy text-white hover:brightness-125 transition">
+                  <a
+                    href="https://wa.me/306972801776"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-navy text-white hover:brightness-125 transition"
+                  >
                     <MessageCircle size={14} /> {t("hotels.bookConsultant")}
                   </a>
                 </div>
@@ -294,7 +336,11 @@ export function Hotels() {
                 >
                   <X size={16} />
                 </button>
-                <img src={active.gallery[galleryIdx]} alt={active.name} className="w-full h-72 md:h-[460px] object-cover" />
+                <img
+                  src={active.gallery[galleryIdx]}
+                  alt={active.name}
+                  className="w-full h-72 md:h-[460px] object-cover"
+                />
                 <div className="p-4 md:p-5 grid grid-cols-3 gap-3">
                   {active.gallery.map((g, i) => (
                     <button
