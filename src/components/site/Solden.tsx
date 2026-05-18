@@ -39,7 +39,7 @@ export function Solden() {
             <p>{t("solden.p3")}</p>
           </div>
           <div className="mt-6 w-full max-w-5xl rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
-            <img src={slope} alt="Sölden ski slope" loading="lazy" className="w-full h-full object-cover aspect-[16/9]" />
+            <img src={slope} alt="Sölden ski slope" loading="lazy" className="w-full h-full object-cover aspect-[21/8] xl:aspect-[16/9]" />
           </div>
         </div>
       </div>
