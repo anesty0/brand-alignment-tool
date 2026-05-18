@@ -32,7 +32,7 @@ const hotels: Hotel[] = [
   {
     tagRu: "Премиальный выбор",
     tagEn: "Premium choice",
-    name: "THE SECRET SÖLDEN 4★+",
+    name: "THE SECRET SÖLDEN 4★",
     price: "2500€",
     img: secretMain,
     introRu:
@@ -141,7 +141,7 @@ const hotels: Hotel[] = [
   {
     tagRu: "Спокойный вариант",
     tagEn: "The quiet option",
-    name: "PARK HOTEL SÖLDEN 3★+",
+    name: "PARK HOTEL SÖLDEN 3★",
     price: "1500€",
     img: parkMain,
     introRu:
