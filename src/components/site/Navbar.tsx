@@ -140,22 +140,22 @@ export function Navbar() {
           <div className="font-extrabold tracking-tight text-base md:text-lg text-navy">NATIVE CODE</div>
           <div className="text-[7px] md:text-[8px] font-semibold tracking-[0.09em] text-orange">{t("brand.line2")}</div>
         </Link>
-        <nav className="hidden lg:flex items-center gap-4 xl:gap-7 whitespace-nowrap">
+        <nav className="hidden lg:flex items-center gap-3 xl:gap-7 whitespace-nowrap">
           {linkKeys.map((l) => (
-            <a key={l.href} href={l.href} className="text-[11px] xl:text-xs font-semibold tracking-[0.1em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
+            <a key={l.href} href={l.href} className="text-[10.5px] xl:text-xs font-semibold tracking-[0.08em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
               {t(l.k)}
             </a>
           ))}
-          <Link to="/about" className="text-[11px] xl:text-xs font-semibold tracking-[0.1em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
+          <Link to="/about" className="text-[10.5px] xl:text-xs font-semibold tracking-[0.08em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
             {t("nav.project")}
           </Link>
-          <button onClick={() => setFaqOpen(true)} className="text-[11px] xl:text-xs font-semibold tracking-[0.1em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
+          <button onClick={() => setFaqOpen(true)} className="text-[10.5px] xl:text-xs font-semibold tracking-[0.08em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
             {t("nav.faq")}
           </button>
         </nav>
-        <div className="flex items-center gap-2 md:gap-3 shrink-0">
+        <div className="flex items-center gap-2 lg:gap-2 xl:gap-3 shrink-0">
           <LangSwitch className="hidden sm:inline-flex shrink-0" />
-          <a href="/#hotels" className="hidden md:inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-3 lg:px-4 xl:px-5 py-2.5 text-[11px] font-semibold tracking-[0.1em] hover:brightness-110 transition shadow-[var(--shadow-soft)] whitespace-nowrap shrink-0">
+          <a href="/#hotels" className="hidden md:inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-3 lg:px-3 xl:px-5 py-2.5 text-[10.5px] xl:text-[11px] font-semibold tracking-[0.08em] xl:tracking-[0.1em] hover:brightness-110 transition shadow-[var(--shadow-soft)] whitespace-nowrap shrink-0">
             {t("nav.cta")}
           </a>
           <button className="lg:hidden p-2 -mr-2 text-navy" onClick={() => setOpen(!open)} aria-label="Menu">
