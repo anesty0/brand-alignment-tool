@@ -89,7 +89,7 @@ function AboutPage() {
       </section>
 
       {/* Team / Partners - editorial brand showcase */}
-      <section className="py-[4.5rem] md:py-24 lg:py-28">
+      <section className="py-[3rem] md:py-14 lg:py-16">
         <div className="container-x">
           <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
             {isRu ? "КОМАНДА ПРОЕКТА" : "PROJECT TEAM"}
