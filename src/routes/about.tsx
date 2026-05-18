@@ -100,7 +100,7 @@ function AboutPage() {
               : "A collaboration of experience, people and a shared philosophy"}
           </h2>
 
-          <div className="mt-12 md:mt-16 lg:mt-[4.5rem] grid md:grid-cols-3 gap-11 md:gap-0 md:border-y md:border-border/45">
+          <div className="mt-8 md:mt-10 lg:mt-12 grid md:grid-cols-3 gap-11 md:gap-0 md:border-y md:border-border/45">
             {partners.map((p, idx) => (
               <article
                 key={p.name}
