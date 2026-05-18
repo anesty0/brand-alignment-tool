@@ -12,9 +12,9 @@
     "lint": "eslint .",
     "format": "prettier --write ."
   },
-  "engines": {
-    "node": "18.x"
-  },
+    "engines": {
+      "node": "24.x"
+    },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.25.5",
     "@hookform/resolvers": "^5.2.2",
