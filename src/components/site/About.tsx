@@ -29,8 +29,10 @@ export function About() {
           <div className="mt-8 grid sm:grid-cols-2 gap-x-8 gap-y-7">
             {features.map((f) => (
               <div key={f.k}>
-                <f.icon className="text-navy" size={26} strokeWidth={1.5} />
-                <h4 className="mt-3 text-sm font-bold tracking-[0.12em] text-orange">{t(`${f.k}.t`)}</h4>
+                <div className="flex items-center gap-2.5">
+                  <f.icon className="text-navy shrink-0" size={26} strokeWidth={1.5} />
+                  <h4 className="text-sm font-bold tracking-[0.12em] text-orange">{t(`${f.k}.t`)}</h4>
+                </div>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t(`${f.k}.b`)}</p>
               </div>
             ))}
