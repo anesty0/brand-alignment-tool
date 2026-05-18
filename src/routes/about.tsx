@@ -71,7 +71,7 @@ function AboutPage() {
           <img src={alps} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-white/85 lg:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0.55)_22%,transparent_45%)]" />
         </div>
-        <div className="container-x relative z-10 py-16 md:py-24 lg:py-32">
+        <div className="container-x relative z-10 py-16 md:py-20 lg:py-20">
           <div className="max-w-xl">
             <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
               {isRu ? "О ПРОЕКТЕ" : "ABOUT"}
@@ -89,7 +89,7 @@ function AboutPage() {
       </section>
 
       {/* Team / Partners - editorial brand showcase */}
-      <section className="py-[4.5rem] md:py-24 lg:py-28">
+      <section className="py-[3rem] md:py-14 lg:py-16">
         <div className="container-x">
           <div className="text-[11px] font-semibold tracking-[0.2em] text-orange">
             {isRu ? "КОМАНДА ПРОЕКТА" : "PROJECT TEAM"}
@@ -100,7 +100,7 @@ function AboutPage() {
               : "A collaboration of experience, people and a shared philosophy"}
           </h2>
 
-          <div className="mt-12 md:mt-16 lg:mt-[4.5rem] grid md:grid-cols-3 gap-11 md:gap-0 md:border-y md:border-border/45">
+          <div className="mt-8 md:mt-10 lg:mt-12 grid md:grid-cols-3 gap-11 md:gap-0 md:border-y md:border-border/45">
             {partners.map((p, idx) => (
               <article
                 key={p.name}
@@ -128,14 +128,14 @@ function AboutPage() {
 
       {/* Closing dark band */}
       <section className="bg-navy text-white">
-        <div className="container-x py-14 md:py-20">
+        <div className="container-x py-12 md:py-14 lg:py-16">
           <p className="text-xl md:text-2xl lg:text-3xl font-light leading-snug max-w-3xl">
             {isRu
               ? "NATIVE CODE - это больше, чем событие. Это среда людей со схожим опытом, скоростью жизни и уровнем задач."
               : "NATIVE CODE is more than an event. It's a community of people with similar experience, pace of life and scale of tasks."}
           </p>
 
-          <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
+          <div className="mt-8 md:mt-10 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
             {values.map((v, i) => {
               const Icon = valueIcons[i];
               return (
@@ -148,7 +148,7 @@ function AboutPage() {
           </div>
 
           {/* Footer-style info row */}
-          <div className="mt-14 pt-6 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-xs md:text-sm">
+          <div className="mt-10 md:mt-12 pt-6 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-xs md:text-sm">
             <div className="leading-tight">
               <div className="font-extrabold tracking-tight text-white">NATIVE CODE</div>
               <div className="text-[10px] font-semibold tracking-[0.18em] text-orange mt-1">SKI OPENING 2026</div>
