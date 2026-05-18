@@ -128,7 +128,7 @@ function AboutPage() {
 
       {/* Closing dark band */}
       <section className="bg-navy text-white">
-        <div className="container-x py-14 md:py-20">
+        <div className="container-x py-12 md:py-14 lg:py-16">
           <p className="text-xl md:text-2xl lg:text-3xl font-light leading-snug max-w-3xl">
             {isRu
               ? "NATIVE CODE - это больше, чем событие. Это среда людей со схожим опытом, скоростью жизни и уровнем задач."
