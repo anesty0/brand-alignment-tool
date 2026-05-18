@@ -32,7 +32,7 @@ export function CtaBanners() {
         </div>
 
         <div className="rounded-2xl border border-border p-6 md:p-8 flex flex-col justify-center text-center">
-          <h4 className="text-sm md:text-base font-bold text-navy">{t("cta.creators")}</h4>
+          <h4 className="text-sm md:text-base font-bold text-navy whitespace-pre-line">{t("cta.creators").replace(" NATIVE CODE", "\nNATIVE CODE")}</h4>
           <Link to="/about" className="mt-4 mx-auto inline-flex rounded-md border border-border px-6 py-2.5 text-xs font-semibold tracking-wider text-navy hover:border-orange hover:text-orange transition">
             {t("cta.about")}
           </Link>
