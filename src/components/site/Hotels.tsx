@@ -251,11 +251,11 @@ export function Hotels() {
       </div>
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
-        <DialogContent className="max-w-6xl h-auto max-h-[90dvh] p-0 overflow-y-auto md:overflow-hidden bg-card sm:rounded-2xl">
+        <DialogContent className="max-w-6xl h-auto max-h-[90dvh] p-0 overflow-y-auto bg-card sm:rounded-2xl">
           {active && (
-            <div className="grid h-full min-h-0 md:grid-cols-[1fr_1.1fr] gap-0">
+            <div className="grid min-h-0 md:grid-cols-[1fr_1.1fr] gap-0">
               {/* Left: details */}
-              <div className="order-2 md:order-1 flex min-h-0 flex-col md:overflow-hidden">
+              <div className="order-2 md:order-1 flex min-h-0 flex-col">
                 <div className="shrink-0 px-6 md:px-8 pt-6 md:pt-8">
                   <h4 className="text-2xl md:text-3xl font-extrabold text-navy">{active.name}</h4>
                   <div className="mt-2 flex items-baseline gap-2">
