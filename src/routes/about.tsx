@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { useI18n } from "@/lib/i18n";
@@ -9,12 +10,6 @@ import { Users, Mountain, Compass, Briefcase, Instagram, Send, MessageCircle, Ma
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
-  head: () => ({
-    meta: [
-      { title: "О проекте - NATIVE CODE" },
-      { name: "description", content: "Кто создаёт NATIVE CODE - предприниматели и компании, которые строят бизнес и новую жизнь между странами." },
-    ],
-  }),
 });
 
 const partners = [
@@ -46,6 +41,12 @@ const valueIcons = [Users, Mountain, Briefcase, Compass];
 function AboutPage() {
   const { lang } = useI18n();
   const isRu = lang === "ru";
+
+  useEffect(() => {
+    document.title = isRu
+      ? "О проекте - Native Code"
+      : "About - Native Code";
+  }, [isRu]);
 
   const valuesRu = [
     "Мы сами живём между странами",

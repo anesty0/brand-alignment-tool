@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
@@ -12,16 +13,13 @@ import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
-  head: () => ({
-    meta: [
-      { title: "Native Code - Ski Opening 2027 in Sölden, Austria" },
-      { name: "description", content: "1-6 December 2027 • Sölden, Austria. Five days in the Alps for entrepreneurs and investors: skiing by day, deep conversations by night." },
-    ],
-  }),
 });
 
-
 function Index() {
+  useEffect(() => {
+    document.title = "Native Code - Ski Opening 2027 in Sölden, Austria";
+  }, []);
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Navbar />
