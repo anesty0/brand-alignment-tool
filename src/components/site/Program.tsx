@@ -1,9 +1,9 @@
-import d1 from "@/assets/day-1.jpg";
-import d2 from "@/assets/day-2.jpg";
-import d3 from "@/assets/day-3.jpg";
-import d4 from "@/assets/day-4.jpg";
-import d5 from "@/assets/day-5.jpg";
-import d6 from "@/assets/day-6.jpg";
+import d1 from "@/assets/day-1.webp";
+import d2 from "@/assets/day-2.webp";
+import d3 from "@/assets/day-3.webp";
+import d4 from "@/assets/day-4.webp";
+import d5 from "@/assets/day-5.webp";
+import d6 from "@/assets/day-6.webp";
 import { useI18n } from "@/lib/i18n";
 
 const days = [

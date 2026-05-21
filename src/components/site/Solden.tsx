@@ -1,4 +1,4 @@
-import slope from "@/assets/solden-slope.jpg";
+import slope from "@/assets/solden-slope.webp";
 import { useI18n } from "@/lib/i18n";
 
 export function Solden() {

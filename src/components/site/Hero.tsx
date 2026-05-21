@@ -1,4 +1,4 @@
-import heroImg from "@/assets/hero-skiers.jpg";
+import heroImg from "@/assets/hero-skiers.webp";
 import { useI18n } from "@/lib/i18n";
 
 export function Hero() {

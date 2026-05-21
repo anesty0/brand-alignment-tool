@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-import ganzMain from "@/assets/ganz-main.jpeg";
-import ganz1 from "@/assets/ganz-1.jpeg";
-import ganz2 from "@/assets/ganz-2.jpeg";
-import secretMain from "@/assets/secret-main.jpeg";
+import ganzMain from "@/assets/ganz-main.webp";
+import ganz1 from "@/assets/ganz-1.webp";
+import ganz2 from "@/assets/ganz-2.webp";
+import secretMain from "@/assets/secret-main.webp";
 import secret1 from "@/assets/secret-1.webp";
 import secret2 from "@/assets/secret-2.webp";
-import parkMain from "@/assets/parkhotel-main.png";
-import park1 from "@/assets/parkhotel-1.png";
-import park2 from "@/assets/parkhotel-2.png";
+import parkMain from "@/assets/parkhotel-main.webp";
+import park1 from "@/assets/parkhotel-1.webp";
+import park2 from "@/assets/parkhotel-2.webp";
 import { MessageCircle, X } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useI18n } from "@/lib/i18n";

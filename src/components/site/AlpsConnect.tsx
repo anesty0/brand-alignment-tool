@@ -1,6 +1,6 @@
-import a1 from "@/assets/alps-1.jpg";
-import a2 from "@/assets/alps-2.jpg";
-import a3 from "@/assets/alps-3.jpg";
+import a1 from "@/assets/alps-1.webp";
+import a2 from "@/assets/alps-2.webp";
+import a3 from "@/assets/alps-3.webp";
 import { useI18n } from "@/lib/i18n";
 
 export function AlpsConnect() {
