@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "@tanstack/react-router";
 
 import ganzMain from "@/assets/ganz-main.webp";
 import ganz1 from "@/assets/ganz-1.webp";
@@ -26,6 +27,9 @@ type Hotel = {
   sections: Section[];
   gallery: string[];
   bookUrl?: string;
+  bookSingleUrl?: string;
+  bookDoubleUrl?: string;
+  detailPath?: string;
 };
 
 const hotels: Hotel[] = [
@@ -82,8 +86,7 @@ const hotels: Hotel[] = [
       },
     ],
     gallery: [secretMain, secret1, secret2],
-    bookUrl:
-      "https://ski4u.com/hotels/the-secret-solden-pmkpqz?filters%5Bdate_check_in%5D=2026-12-20&filters%5Bdate_check_out%5D=2026-12-27&filters%5Bhotel%5D=4921&filters%5Brooms%5D%5B0%5D%5Badults%5D=2&filters%5Btype%5D=hotel",
+    detailPath: "/secret-solden",
   },
   {
     tagRu: "Около подъемника",
@@ -136,7 +139,8 @@ const hotels: Hotel[] = [
       },
     ],
     gallery: [ganzMain, ganz1, ganz2],
-    bookUrl: "https://ski4u.com",
+    bookSingleUrl: "https://ski4u.com",
+    bookDoubleUrl: "https://ski4u.com",
   },
   {
     tagRu: "Спокойный вариант",
@@ -179,7 +183,8 @@ const hotels: Hotel[] = [
       },
     ],
     gallery: [parkMain, park1, park2],
-    bookUrl: "https://ski4u.com",
+    bookSingleUrl: "https://ski4u.com",
+    bookDoubleUrl: "https://ski4u.com",
   },
 ];
 
@@ -265,7 +270,11 @@ export function Hotels() {
                   <div className="text-xs text-muted-foreground">{t("hotels.perPackage")}</div>
                 </div>
 
-                <div className="hotel-scroll mt-5 min-h-0 flex-1 md:max-h-[360px] md:overflow-y-auto px-6 pr-4 md:px-8 md:pr-5">
+                <div
+                  className={`hotel-scroll mt-5 min-h-0 flex-1 md:overflow-y-auto px-6 pr-4 md:px-8 md:pr-5 ${
+                    active.detailPath ? "md:max-h-[304px]" : "md:max-h-[248px]"
+                  }`}
+                >
                   <p className="text-sm text-foreground/80 leading-relaxed">
                     {lang === "ru" ? active.introRu : active.introEn}
                   </p>
@@ -287,26 +296,40 @@ export function Hotels() {
                   <div className="h-2" />
                 </div>
 
-                <div className="shrink-0 px-6 md:px-8 py-5 md:py-6 border-t border-border/60 bg-card flex flex-col sm:flex-row gap-3">
-                  {active.bookUrl ? (
-                    <a
-                      href={active.bookUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex-1 inline-flex items-center justify-center text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition"
+                <div className="shrink-0 px-6 md:px-8 py-5 md:py-6 border-t border-border/60 bg-card flex flex-col gap-3">
+                  {active.detailPath ? (
+                    <Link
+                      to={active.detailPath}
+                      onClick={() => setActive(null)}
+                      className="w-full inline-flex items-center justify-center text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition"
                     >
-                      {t("hotels.bookOnline")}
-                    </a>
+                      {t("hotels.chooseSuite")}
+                    </Link>
                   ) : (
-                    <button className="flex-1 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition">
-                      {t("hotels.bookOnline")}
-                    </button>
+                    <>
+                      <a
+                        href={active.bookSingleUrl ?? active.bookUrl ?? "#"}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-full inline-flex items-center justify-center text-center text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition"
+                      >
+                        {t("hotels.bookSingle")}
+                      </a>
+                      <a
+                        href={active.bookDoubleUrl ?? active.bookUrl ?? "#"}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-full inline-flex items-center justify-center text-center text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition"
+                      >
+                        {t("hotels.bookDouble")}
+                      </a>
+                    </>
                   )}
                   <a
                     href="https://wa.me/306972801776"
                     target="_blank"
                     rel="noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-navy text-white hover:brightness-125 transition"
+                    className="w-full inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-navy text-white hover:brightness-125 transition"
                   >
                     <MessageCircle size={14} /> {t("hotels.bookConsultant")}
                   </a>
