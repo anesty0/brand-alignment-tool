@@ -82,8 +82,8 @@ function AboutPage() {
             </h1>
             <p className="mt-6 max-w-md text-sm md:text-base text-foreground/75 leading-relaxed whitespace-pre-line">
               {isRu
-                ? "NATIVE CODE появился не как очередной «бизнес-ивент».\n\nОн вырос из реального круга людей, которые последние годы строят бизнес, проекты и новую жизнь в других странах - с новыми правилами, банками, налогами, языками и системой.\n\nПроект создают предприниматели и компании, которые сами проходят этот путь."
-                : "NATIVE CODE didn't appear as just another “business event”.\n\nIt grew out of a real circle of people who, over the past years, have been building businesses, projects and a new life in other countries - with new rules, banks, taxes, languages and systems.\n\nThe project is created by entrepreneurs and companies who are walking this path themselves."}
+                ? "NATIVE CODE создают люди, которые последние годы строят бизнес, запускают проекты и создают новую жизнь в разных странах Европы.\n\nИз этого опыта и появился NATIVE CODE.\n\nСегодня за проектом стоят компании из разных сфер — недвижимости, консалтинга, путешествий и международных событий.\n\nУ каждой компании своя экспертиза.\n\nА NATIVE CODE появился благодаря общему интересу к людям, идеям и новым проектам."
+                : "NATIVE CODE is created by people who, over the past years, have been building businesses, launching projects and creating a new life across different countries in Europe.\n\nFrom that experience NATIVE CODE was born.\n\nToday the project is backed by companies from different fields — real estate, consulting, travel and international events.\n\nEach company has its own expertise.\n\nAnd NATIVE CODE came into being thanks to a shared interest in people, ideas and new projects."}
             </p>
           </div>
         </div>

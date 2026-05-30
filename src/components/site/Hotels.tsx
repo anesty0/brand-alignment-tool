@@ -37,7 +37,7 @@ const hotels: Hotel[] = [
     tagRu: "Премиальный выбор",
     tagEn: "Premium choice",
     name: "THE SECRET SÖLDEN 4★",
-    price: "2500€",
+    price: "2200€",
     img: secretMain,
     introRu:
       "Современный дизайнерский отель в центре Зёльдена с атмосферой альпийского клуба, стильным SPA и просторными сьютами для комфортного отдыха в компании.",
@@ -139,8 +139,8 @@ const hotels: Hotel[] = [
       },
     ],
     gallery: [ganzMain, ganz1, ganz2],
-    bookSingleUrl: "https://ski4u.com",
-    bookDoubleUrl: "https://ski4u.com",
+    bookSingleUrl: "https://ski4u.com/special-offers/2026_nc_181",
+    bookDoubleUrl: "https://ski4u.com/special-offers/2026_nc_179",
   },
   {
     tagRu: "Спокойный вариант",
@@ -183,8 +183,8 @@ const hotels: Hotel[] = [
       },
     ],
     gallery: [parkMain, park1, park2],
-    bookSingleUrl: "https://ski4u.com",
-    bookDoubleUrl: "https://ski4u.com",
+    bookSingleUrl: "https://ski4u.com/special-offers/2026_nc_177",
+    bookDoubleUrl: "https://ski4u.com/special-offers/2026_nc_176",
   },
 ];
 

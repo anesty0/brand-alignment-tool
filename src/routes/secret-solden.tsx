@@ -1,12 +1,27 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowLeft, Calendar, Coffee, Users, Maximize2, Zap, MessageCircle } from "lucide-react";
+import { ArrowLeft, Calendar, Coffee, Users, Maximize2, Zap, MessageCircle, X } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { useI18n } from "@/lib/i18n";
 import secretMain from "@/assets/secret-main.webp";
-import secret1 from "@/assets/secret-1.webp";
-import secret2 from "@/assets/secret-2.webp";
+import studioDesign1 from "@/assets/secret/studio-design-1.webp";
+import studioDesign2 from "@/assets/secret/studio-design-2.webp";
+import suiteAlpine1 from "@/assets/secret/suite-alpine-1.webp";
+import suiteAlpine2 from "@/assets/secret/suite-alpine-2.webp";
+import comfortDesign1 from "@/assets/secret/comfort-design-1.webp";
+import comfortDesign2 from "@/assets/secret/comfort-design-2.webp";
+import comfortAlpine1 from "@/assets/secret/comfort-alpine-1.webp";
+import comfortAlpine2 from "@/assets/secret/comfort-alpine-2.webp";
+import superiorAlpine1 from "@/assets/secret/superior-alpine-1.webp";
+import superiorFamily1 from "@/assets/secret/superior-family-1.webp";
+import superiorFamily2 from "@/assets/secret/superior-family-2.webp";
+import deluxeAlpine1 from "@/assets/secret/deluxe-alpine-1.webp";
+import deluxeAlpine2 from "@/assets/secret/deluxe-alpine-2.webp";
+import deluxeFamily1 from "@/assets/secret/deluxe-family-1.webp";
+import deluxeFamily2 from "@/assets/secret/deluxe-family-2.webp";
+import premium1 from "@/assets/secret/premium-1.webp";
+import premium2 from "@/assets/secret/premium-2.webp";
 
 export const Route = createFileRoute("/secret-solden")({
   component: SecretSoldenPage,
@@ -30,9 +45,6 @@ type Suite = {
   prices: PriceTier[];
 };
 
-const galleryPool = [secretMain, secret1, secret2];
-const pic = (i: number) => galleryPool[i % galleryPool.length];
-
 const suites: Suite[] = [
   {
     name: "STUDIO DESIGN · Open Space",
@@ -43,9 +55,9 @@ const suites: Suite[] = [
       "Open-space сьют с объединенной зоной спальни и гостиной, кухней и обеденной зоной.",
     descriptionEn:
       "An open-space suite with a combined bedroom and living area, kitchen and dining area.",
-    images: [pic(0), pic(1)],
+    images: [studioDesign1, studioDesign2],
     prices: [
-      { guestsKey: "secret.guests1", price: 3100, perPerson: false, bookUrl: "https://ski4u.com/special-offers/2026_nc_178" },
+      { guestsKey: "secret.guests1", price: 3100, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_178" },
       { guestsKey: "secret.guests2", price: 2200, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_180" },
     ],
   },
@@ -58,9 +70,9 @@ const suites: Suite[] = [
       "Сьют с 1 спальней, отдельной гостиной зоной, кухней и видом на горы.",
     descriptionEn:
       "A suite with 1 bedroom, a separate living area, kitchen and mountain views.",
-    images: [pic(1), pic(2)],
+    images: [suiteAlpine1, suiteAlpine2],
     prices: [
-      { guestsKey: "secret.guests1", price: 3100, perPerson: false, bookUrl: "https://ski4u.com/special-offers/2026_nc_183" },
+      { guestsKey: "secret.guests1", price: 3100, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_183" },
       { guestsKey: "secret.guests2", price: 2200, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_184" },
       { guestsKey: "secret.guests3", price: 1800, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_185" },
     ],
@@ -74,7 +86,7 @@ const suites: Suite[] = [
       "Сьют с 2 спальнями, гостиной зоной, кухней, обеденной зоной и 2 санузлами. Интерьер в современном дизайнерском стиле.",
     descriptionEn:
       "A suite with 2 bedrooms, a living area, kitchen, dining area and 2 bathrooms. Modern designer interior.",
-    images: [pic(2), pic(0)],
+    images: [comfortDesign1, comfortDesign2],
     prices: [
       { guestsKey: "secret.guests2", price: 2600, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_186" },
       { guestsKey: "secret.guests3", price: 2200, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_187" },
@@ -90,7 +102,7 @@ const suites: Suite[] = [
       "Сьют с 2 спальнями, гостиной зоной, кухней, обеденной зоной и 2 санузлами. Интерьер в альпийском стиле.",
     descriptionEn:
       "A suite with 2 bedrooms, a living area, kitchen, dining area and 2 bathrooms. Alpine-style interior.",
-    images: [pic(0), pic(2)],
+    images: [comfortAlpine1, comfortAlpine2],
     prices: [
       { guestsKey: "secret.guests2", price: 2600, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_188" },
       { guestsKey: "secret.guests3", price: 2200, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_189" },
@@ -106,7 +118,7 @@ const suites: Suite[] = [
       "Просторный сьют с 2 спальнями, большой гостиной зоной, кухней, обеденной зоной, 2 санузлами и террасой.",
     descriptionEn:
       "A spacious suite with 2 bedrooms, a large living area, kitchen, dining area, 2 bathrooms and a terrace.",
-    images: [pic(1), pic(0)],
+    images: [superiorAlpine1, superiorAlpine1],
     prices: [
       { guestsKey: "secret.guests2", price: 2700, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_191" },
       { guestsKey: "secret.guests3", price: 2300, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_192" },
@@ -122,7 +134,7 @@ const suites: Suite[] = [
       "Просторный семейный сьют с 3 спальнями, включая детскую комнату с двухъярусной кроватью, гостиной, 2 санузлами, кухней, обеденной зоной и террасой или балконом.",
     descriptionEn:
       "A spacious family suite with 3 bedrooms, including a children's room with a bunk bed, living area, 2 bathrooms, kitchen, dining area and a terrace or balcony.",
-    images: [pic(2), pic(1)],
+    images: [superiorFamily1, superiorFamily2],
     prices: [
       { guestsKey: "secret.guests3", price: 2400, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_194" },
       { guestsKey: "secret.guests4", price: 2000, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_195" },
@@ -138,7 +150,7 @@ const suites: Suite[] = [
       "Дизайнерский сьют с 3 спальнями, гостиной, 2 санузлами, кухней и балконом или террасой.",
     descriptionEn:
       "A designer suite with 3 bedrooms, a living area, 2 bathrooms, kitchen and a balcony or terrace.",
-    images: [pic(0), pic(1)],
+    images: [deluxeAlpine1, deluxeAlpine2],
     prices: [
       { guestsKey: "secret.guests3", price: 2800, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_197" },
       { guestsKey: "secret.guests4", price: 2400, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_198" },
@@ -154,7 +166,7 @@ const suites: Suite[] = [
       "Большой семейный сьют с 4 спальнями, 3 санузлами, просторной гостиной, кухней, обеденной зоной и террасой. Одна из спален оборудована двухъярусной кроватью.",
     descriptionEn:
       "A large family suite with 4 bedrooms, 3 bathrooms, a spacious living area, kitchen, dining area and a terrace. One bedroom features a bunk bed.",
-    images: [pic(1), pic(2)],
+    images: [deluxeFamily1, deluxeFamily2],
     prices: [
       { guestsKey: "secret.guests4", price: 2600, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_200" },
       { guestsKey: "secret.guests6", price: 2100, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_201" },
@@ -170,7 +182,7 @@ const suites: Suite[] = [
       "Самый большой сьют курорта с 3 спальнями, просторной гостиной, 3 санузлами, полноценной кухней, ванной, инфракрасной кабиной для двух человек и балконом или террасой с видом на горы.",
     descriptionEn:
       "The resort's largest suite, with 3 bedrooms, a spacious living area, 3 bathrooms, a full kitchen, bathroom, an infrared cabin for two and a balcony or terrace with mountain views.",
-    images: [pic(2), pic(0)],
+    images: [premium1, premium2],
     prices: [
       { guestsKey: "secret.guests2", price: 4500, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_203" },
       { guestsKey: "secret.guests3", price: 3500, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_204" },
@@ -182,6 +194,7 @@ const suites: Suite[] = [
 function SecretSoldenPage() {
   const { t, lang } = useI18n();
   const isRu = lang === "ru";
+  const [lightboxImg, setLightboxImg] = useState<string | null>(null);
 
   useEffect(() => {
     document.title = isRu
@@ -189,6 +202,19 @@ function SecretSoldenPage() {
       : "THE SECRET SÖLDEN - Native Code";
     window.scrollTo({ top: 0, behavior: "auto" });
   }, [isRu]);
+
+  useEffect(() => {
+    if (!lightboxImg) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightboxImg(null);
+    };
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [lightboxImg]);
 
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -250,7 +276,13 @@ function SecretSoldenPage() {
       <section className="py-8 md:py-10">
         <div className="container-x space-y-5 md:space-y-6 lg:space-y-12">
           {suites.map((s) => (
-            <SuiteCard key={s.name} suite={s} isRu={isRu} t={t} />
+            <SuiteCard
+              key={s.name}
+              suite={s}
+              isRu={isRu}
+              t={t}
+              onImageClick={setLightboxImg}
+            />
           ))}
         </div>
       </section>
@@ -294,6 +326,34 @@ function SecretSoldenPage() {
       </section>
 
       <Footer />
+
+      {lightboxImg && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={t("hotels.close")}
+          onClick={() => setLightboxImg(null)}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 backdrop-blur-sm p-4 md:p-8 animate-in fade-in duration-150"
+        >
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              setLightboxImg(null);
+            }}
+            aria-label={t("hotels.close")}
+            className="absolute top-4 right-4 md:top-6 md:right-6 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 text-white transition"
+          >
+            <X size={20} />
+          </button>
+          <img
+            src={lightboxImg}
+            alt=""
+            onClick={(e) => e.stopPropagation()}
+            className="max-h-[90vh] max-w-[95vw] md:max-w-[90vw] object-contain rounded-lg shadow-2xl"
+          />
+        </div>
+      )}
     </main>
   );
 }
@@ -313,10 +373,12 @@ function SuiteCard({
   suite,
   isRu,
   t,
+  onImageClick,
 }: {
   suite: Suite;
   isRu: boolean;
   t: (k: string) => string;
+  onImageClick: (src: string) => void;
 }) {
   return (
     <article className="bg-card border border-border rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-soft)] transition-shadow overflow-hidden lg:bg-transparent lg:border-0 lg:rounded-none lg:shadow-none lg:hover:shadow-none lg:overflow-visible">
@@ -324,13 +386,20 @@ function SuiteCard({
         {/* Images */}
         <div className="grid grid-cols-2 gap-2 lg:gap-3 p-3 lg:p-0">
           {suite.images.map((img, i) => (
-            <img
+            <button
               key={i}
-              src={img}
-              alt={suite.name}
-              loading="lazy"
-              className="w-full h-32 sm:h-40 lg:h-full lg:min-h-[210px] object-cover rounded-lg lg:rounded-xl"
-            />
+              type="button"
+              onClick={() => onImageClick(img)}
+              aria-label={suite.name}
+              className="block w-full h-full p-0 m-0 border-0 bg-transparent cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-orange rounded-lg lg:rounded-xl overflow-hidden"
+            >
+              <img
+                src={img}
+                alt={suite.name}
+                loading="lazy"
+                className="w-full h-32 sm:h-40 lg:h-full lg:min-h-[210px] object-cover rounded-lg lg:rounded-xl transition-transform duration-500 hover:scale-[1.02]"
+              />
+            </button>
           ))}
         </div>
 
