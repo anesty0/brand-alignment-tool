@@ -118,7 +118,7 @@ const suites: Suite[] = [
       "Просторный сьют с 2 спальнями, большой гостиной зоной, кухней, обеденной зоной, 2 санузлами и террасой.",
     descriptionEn:
       "A spacious suite with 2 bedrooms, a large living area, kitchen, dining area, 2 bathrooms and a terrace.",
-    images: [superiorAlpine1, superiorAlpine1],
+    images: [superiorAlpine1, superiorFamily2],
     prices: [
       { guestsKey: "secret.guests2", price: 2700, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_191" },
       { guestsKey: "secret.guests3", price: 2300, perPerson: true, bookUrl: "https://ski4u.com/special-offers/2026_nc_192" },
