@@ -45,6 +45,18 @@ const ru: Dict = {
   "solden.p2": "140+ км трасс и широкие склоны - здесь удобно кататься в любом ритме.",
   "solden.p3": "Термы Aqua Dome делают поездку комфортной даже вне склонов.",
 
+  // Special guest
+  "guest.kicker": "СПЕЦИАЛЬНЫЙ ГОСТЬ",
+  "guest.name": "МАША СЛОНИМ",
+  "guest.desc1": "Журналист, много лет работала на BBC в Москве и Лондоне.",
+  "guest.desc2pre": "Автор книги ",
+  "guest.book": "«Возвращения. Несерьезный мемуар»",
+  "guest.desc2post": " — мемуара о жизни на два, три, четыре дома, написанного без пафоса, с тонкой самоиронией и удивительной честностью.",
+  "guest.topicLabel": "ТЕМА ВСТРЕЧИ",
+  "guest.topicTitle": "Внутренний код",
+  "guest.topic1": "Что остается с человеком, когда меняются страны, язык, профессия и привычная жизнь?",
+  "guest.topic2": "Разговор о выборе, свободе, людях, которых мы встречаем на своем пути, и о том, что невозможно потерять, даже начиная всё заново.",
+
   // AlpsConnect
   "alps.kicker": "ALPS CONNECT",
   "alps.date": "Главный вечер программы - 3 декабря",
@@ -52,6 +64,7 @@ const ru: Dict = {
   "alps.c1": "Проекты и решения",
   "alps.c2": "Gurgl Carat - 1950 м над уровнем моря",
   "alps.c3": "Люди и новые связи",
+  "alps.programBtn": "Программа и спикеры",
 
   // Program
   "program.title": "ПРОГРАММА NATIVE CODE",
@@ -73,8 +86,8 @@ const ru: Dict = {
   "program.d3.evening": "ALPS CONNECT: конференция, ужин и дискотека",
   "program.d4.date": "4 ДЕКАБРЯ",
   "program.d4.title": "Свой ритм",
-  "program.d4.morning": "Катание в своём ритме или поездка в Инсбрук",
-  "program.d4.evening": "Прогулки по Зёльдену, шопинг и отдых в термах Aqua Dome",
+  "program.d4.morning": "Катание в своём ритме, поездка в Инсбрук или отдых в термах Aqua Dome",
+  "program.d4.evening": "Expert Tables — обсуждение своих кейсов и проектов со спикерами и экспертами в небольших группах",
   "program.d5.date": "5 ДЕКАБРЯ",
   "program.d5.title": "Финал",
   "program.d5.morning": "Катание в своём ритме",
@@ -141,10 +154,10 @@ const ru: Dict = {
   // CTA
   "cta.partner.t": "ДЛЯ ПАРТНЁРОВ И СПОНСОРОВ",
   "cta.partner.b": "Станьте партнёром события и получите доступ к предпринимательской аудитории из разных стран",
-  "cta.partner.btn": "Стать партнёром",
-  "cta.speaker.t": "ДЛЯ СПИКЕРОВ И ПРОЕКТОВ",
-  "cta.speaker.b": "Мы отбираем ограниченное количество проектов для выступления и участия в ALPS CONNECT",
-  "cta.speaker.btn": "Подать заявку на выступление",
+  "cta.partner.btn": "Спонсорские пакеты",
+  "cta.speaker.t": "БИЗНЕС-ПРОГРАММА\nALPS CONNECT",
+  "cta.speaker.b": "Подробное расписание двух бизнес-дней: выступления, дискуссии, разборы кейсов и новые возможности для бизнеса в новых странах.",
+  "cta.speaker.btn": "Программа ALPS CONNECT",
   "cta.creators": "Создатели проекта NATIVE CODE",
   "cta.about": "О ПРОЕКТЕ",
 
@@ -197,12 +210,25 @@ const en: Dict = {
   "solden.p2": "140+ km of slopes and wide pistes - comfortable for any pace.",
   "solden.p3": "Aqua Dome thermal baths make the trip pleasant off-piste too.",
 
+  // Special guest
+  "guest.kicker": "SPECIAL GUEST",
+  "guest.name": "MASHA SLONIM",
+  "guest.desc1": "A journalist who worked for the BBC in Moscow and London for many years.",
+  "guest.desc2pre": "Author of the book ",
+  "guest.book": "«Returns. An Unserious Memoir»",
+  "guest.desc2post": " — a memoir about living across two, three, four homes, written without pathos, with subtle self-irony and remarkable honesty.",
+  "guest.topicLabel": "TOPIC OF THE MEETING",
+  "guest.topicTitle": "Inner Code",
+  "guest.topic1": "What stays with a person when countries, language, profession and familiar life all change?",
+  "guest.topic2": "A conversation about choice, freedom, the people we meet along the way, and what cannot be lost — even when starting all over again.",
+
   "alps.kicker": "THE KEY DAY OF NATIVE CODE",
   "alps.date": "December 3",
   "alps.title": "Talking business in one language",
   "alps.c1": "Projects and decisions",
   "alps.c2": "1950 metres above sea level",
   "alps.c3": "People and new connections",
+  "alps.programBtn": "Program and speakers",
 
   "program.title": "NATIVE CODE PROGRAM",
   "program.morning": "MORNING",
@@ -223,8 +249,8 @@ const en: Dict = {
   "program.d3.evening": "ALPS CONNECT: conference, dinner and after-party",
   "program.d4.date": "DEC 4",
   "program.d4.title": "Your own pace",
-  "program.d4.morning": "Ski at your own pace or trip to Innsbruck",
-  "program.d4.evening": "Stroll Sölden, shopping and Aqua Dome thermal baths",
+  "program.d4.morning": "Ski at your own pace, a trip to Innsbruck or the Aqua Dome thermal baths",
+  "program.d4.evening": "Expert Tables — discuss your own cases and projects with speakers and experts in small groups",
   "program.d5.date": "DEC 5",
   "program.d5.title": "Finale",
   "program.d5.morning": "Ski at your own pace",
@@ -288,10 +314,10 @@ const en: Dict = {
 
   "cta.partner.t": "FOR PARTNERS & SPONSORS",
   "cta.partner.b": "Become a partner and get access to an entrepreneurial audience from different countries",
-  "cta.partner.btn": "Become a partner",
-  "cta.speaker.t": "FOR SPEAKERS & PROJECTS",
-  "cta.speaker.b": "We curate a limited number of projects for ALPS CONNECT",
-  "cta.speaker.btn": "Apply to speak",
+  "cta.partner.btn": "Sponsorship packages",
+  "cta.speaker.t": "BUSINESS PROGRAM\nALPS CONNECT",
+  "cta.speaker.b": "A detailed schedule of two business days: talks, discussions, case studies and new business opportunities in new countries.",
+  "cta.speaker.btn": "ALPS CONNECT program",
   "cta.creators": "Creators of NATIVE CODE",
   "cta.about": "ABOUT THE PROJECT",
 

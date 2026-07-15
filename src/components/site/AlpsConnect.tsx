@@ -1,3 +1,4 @@
+import { Users, ArrowRight } from "lucide-react";
 import a1 from "@/assets/alps-1.webp";
 import a2 from "@/assets/alps-2.webp";
 import a3 from "@/assets/alps-3.webp";
@@ -30,6 +31,20 @@ export function AlpsConnect() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Program & speakers PDF — full-width on mobile, centered auto-width on desktop */}
+        <div className="mt-8 md:mt-10 flex justify-center">
+          <a
+            href="/alps-connect.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-full md:w-auto items-center justify-center gap-3 rounded-md bg-navy text-white px-6 py-3.5 text-xs md:text-sm font-semibold tracking-[0.12em] uppercase hover:brightness-125 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2"
+          >
+            <Users size={18} strokeWidth={2} aria-hidden="true" />
+            <span>{t("alps.programBtn")}</span>
+            <ArrowRight size={18} strokeWidth={2} aria-hidden="true" className="ml-auto md:ml-0" />
+          </a>
         </div>
       </div>
     </section>
