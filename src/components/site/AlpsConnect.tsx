@@ -1,9 +1,7 @@
-import { Users, ArrowRight } from "lucide-react";
 import a1 from "@/assets/alps-1.webp";
 import a2 from "@/assets/alps-2.webp";
 import a3 from "@/assets/alps-3.webp";
 import { useI18n } from "@/lib/i18n";
-import { cn } from "@/lib/utils";
 import { pdfButtonClass } from "./pdfButtonStyles";
 
 export function AlpsConnect() {
@@ -42,11 +40,9 @@ export function AlpsConnect() {
               href="/alps-connect.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className={cn(pdfButtonClass, "w-full md:w-auto gap-3")}
+              className={pdfButtonClass}
             >
-              <Users size={18} strokeWidth={2} aria-hidden="true" className="text-orange" />
-              <span>{t("alps.programBtn")}</span>
-              <ArrowRight size={18} strokeWidth={2} aria-hidden="true" className="ml-auto md:ml-0" />
+              {t("alps.programBtn")}
             </a>
           </div>
         </div>
