@@ -14,13 +14,14 @@ const ru: Dict = {
   "nav.faq": "FAQ",
   "nav.cta": "ЗАБРОНИРОВАТЬ УЧАСТИЕ",
   "brand.line2": "КЛУБ ПРЕДПРИНИМАТЕЛЕЙ",
-  "brand.hero": "SKI OPENING 2026/27",
+  "brand.hero": "SKI OPENING",
 
   // Hero
   "hero.dates": "1 - 6 DECEMBER 2026",
   "hero.place": "SÖLDEN · AUSTRIA",
-  "hero.tagline": "5 дней в Альпах: днём горы,\nвечером - разговоры",
-  "hero.sub": "Встреча предпринимателей и\nинвесторов из разных стран",
+  "hero.tagline": "Клуб русскоязычных предпринимателей Европы.",
+  "hero.heading": "Зимняя встреча клуба в Альпах.",
+  "hero.sub": "В Зёльдене, на одном из лучших горнолыжных курортов Альп, в обстановке off the record соберутся русскоязычные предприниматели из разных стран.\n\nПять дней в кругу людей, с которыми совпадает ваш код. Не нужно объяснять базовые вещи — мы говорим, думаем и смеёмся на одном языке.",
   "hero.cta1": "ЗАБРОНИРОВАТЬ УЧАСТИЕ",
   "hero.cta2": "ПРОГРАММА",
   "hero.whatsapp": "Написать в WhatsApp",
@@ -39,11 +40,8 @@ const ru: Dict = {
   "about.f4.b": "Днём - горы, вечером - ужины, встречи и деловая программа. В рамках NATIVE CODE будет отдельный бизнес-вечер с обсуждением проектов и возможностью представить свои идеи.",
 
   // Solden
-  "solden.title": "SÖLDEN",
-  "solden.sub": "один из лучших курортов Альп",
-  "solden.p1": "Зёльден - два ледника и стабильный снег.",
-  "solden.p2": "140+ км трасс и широкие склоны - здесь удобно кататься в любом ритме.",
-  "solden.p3": "Термы Aqua Dome делают поездку комфортной даже вне склонов.",
+  "solden.title": "Один из лучших горнолыжных курортов Альп",
+  "solden.body": "Два ледника, стабильный снег и более 140 км трасс делают Зёльден одним из лучших мест для катания в Альпах. Но Зёльден живет не только лыжами. Рестораны, бары, термы Aqua Dome, прогулки, каток и насыщенная вечерняя жизнь делают поездку интересной даже для тех, кто не планирует выходить на склон.",
 
   // Special guest
   "guest.kicker": "СПЕЦИАЛЬНЫЙ ГОСТЬ",
@@ -59,11 +57,11 @@ const ru: Dict = {
 
   // AlpsConnect
   "alps.kicker": "ALPS CONNECT",
-  "alps.date": "Главный вечер программы - 3 декабря",
-  "alps.title": "На высоте 1950 метров разговоры звучат иначе",
-  "alps.c1": "Проекты и решения",
-  "alps.c2": "Gurgl Carat - 1950 м над уровнем моря",
-  "alps.c3": "Люди и новые связи",
+  "alps.date": "Ключевой вечер программы • 3 декабря",
+  "alps.title": "GURGL CARAT — самый высокогорный конференц-центр Европы.\n\nЗдесь пройдет бизнес-конференция Native Code.",
+  "alps.c1": "ВСЕ УСЛОВИЯ ДЛЯ ОБЩЕНИЯ",
+  "alps.c2": "ПРОСТРАНСТВО ДЛЯ ВСТРЕЧ И ДИСКУССИЙ",
+  "alps.c3": "НОВЫЕ ЗНАКОМСТВА И СВЯЗИ",
   "alps.programBtn": "Программа и спикеры",
 
   // Program
@@ -182,12 +180,13 @@ const en: Dict = {
   "nav.faq": "FAQ",
   "nav.cta": "BOOK PARTICIPATION",
   "brand.line2": "ENTREPRENEURS CLUB",
-  "brand.hero": "SKI OPENING 2026/27",
+  "brand.hero": "SKI OPENING",
 
   "hero.dates": "1 - 6 DECEMBER 2026",
   "hero.place": "SÖLDEN • AUSTRIA",
-  "hero.tagline": "Five days surrounded by people who speak your language.",
-  "hero.sub": "A meeting of entrepreneurs and investors from different countries",
+  "hero.tagline": "A club of Russian-speaking entrepreneurs in Europe.",
+  "hero.heading": "The club's winter gathering in the Alps.",
+  "hero.sub": "In Sölden, at one of the best ski resorts in the Alps, Russian-speaking entrepreneurs from different countries come together off the record.\n\nFive days surrounded by people whose code matches yours. No need to explain the basics — we speak, think and laugh in the same language.",
   "hero.cta1": "BOOK PARTICIPATION",
   "hero.cta2": "PROGRAM",
   "hero.whatsapp": "Message us on WhatsApp",
@@ -204,11 +203,8 @@ const en: Dict = {
   "about.f4.t": "BUSINESS PART",
   "about.f4.b": "Mountains by day; dinners, meetings and a business program by night. Dedicated business dinners inside NATIVE CODE.",
 
-  "solden.title": "SÖLDEN",
-  "solden.sub": "one of the best resorts in the Alps",
-  "solden.p1": "Sölden - two glaciers and reliable snow.",
-  "solden.p2": "140+ km of slopes and wide pistes - comfortable for any pace.",
-  "solden.p3": "Aqua Dome thermal baths make the trip pleasant off-piste too.",
+  "solden.title": "One of the best ski resorts in the Alps",
+  "solden.body": "Two glaciers, reliable snow and more than 140 km of slopes make Sölden one of the best places to ski in the Alps. But Sölden is about more than skiing. Restaurants, bars, the Aqua Dome thermal baths, walks, an ice rink and a lively evening scene make the trip worthwhile even for those who never plan to hit the slopes.",
 
   // Special guest
   "guest.kicker": "SPECIAL GUEST",
@@ -223,11 +219,11 @@ const en: Dict = {
   "guest.topic2": "A conversation about choice, freedom, the people we meet along the way, and what cannot be lost — even when starting all over again.",
 
   "alps.kicker": "THE KEY DAY OF NATIVE CODE",
-  "alps.date": "December 3",
-  "alps.title": "Talking business in one language",
-  "alps.c1": "Projects and decisions",
-  "alps.c2": "1950 metres above sea level",
-  "alps.c3": "People and new connections",
+  "alps.date": "The key evening of the program • December 3",
+  "alps.title": "GURGL CARAT — the highest-altitude conference centre in Europe.\n\nThis is where the Native Code business conference takes place.",
+  "alps.c1": "EVERYTHING YOU NEED TO CONNECT",
+  "alps.c2": "A SPACE FOR MEETINGS AND DISCUSSIONS",
+  "alps.c3": "NEW ACQUAINTANCES AND CONNECTIONS",
   "alps.programBtn": "Program and speakers",
 
   "program.title": "NATIVE CODE PROGRAM",

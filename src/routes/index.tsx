@@ -26,11 +26,11 @@ function Index() {
       <Navbar />
       <Hero />
       <About />
-      <SpecialGuest />
-      <Solden />
       <AlpsConnect />
       <Program />
+      <SpecialGuest />
       <Hotels />
+      <Solden />
       <Included />
       <CtaBanners />
       <Footer />
