@@ -19,10 +19,19 @@ export function About() {
         </div>
 
         <div>
-          <h3 className="text-xl md:text-2xl font-bold tracking-tight text-navy leading-snug">
-            <span className="text-orange">NATIVE CODE</span> {t("about.heading")}
+          <h3 className="text-xl md:text-2xl font-bold tracking-tight text-orange leading-snug">
+            NATIVE CODE
           </h3>
-          <p className="mt-5 text-sm md:text-base text-muted-foreground leading-relaxed">
+          <p className="mt-2 text-sm md:text-base text-muted-foreground leading-relaxed">
+            {t("about.subtitle")}
+          </p>
+
+          <div className="mt-5 text-sm font-bold tracking-[0.12em] text-orange">{t("about.event")}</div>
+          <p className="mt-1.5 text-base md:text-lg font-bold text-navy leading-snug">
+            {t("about.heading")}
+          </p>
+
+          <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed whitespace-pre-line">
             {t("about.body")}
           </p>
 

@@ -14,22 +14,23 @@ const ru: Dict = {
   "nav.faq": "FAQ",
   "nav.cta": "ЗАБРОНИРОВАТЬ УЧАСТИЕ",
   "brand.line2": "КЛУБ ПРЕДПРИНИМАТЕЛЕЙ",
-  "brand.hero": "SKI OPENING",
+  "brand.hero": "SKI OPENING 2026/27",
 
   // Hero
   "hero.dates": "1 - 6 DECEMBER 2026",
   "hero.place": "SÖLDEN · AUSTRIA",
-  "hero.tagline": "Клуб русскоязычных предпринимателей Европы.",
-  "hero.heading": "Зимняя встреча клуба в Альпах.",
-  "hero.sub": "В Зёльдене, на одном из лучших горнолыжных курортов Альп, в обстановке off the record соберутся русскоязычные предприниматели из разных стран.\n\nПять дней в кругу людей, с которыми совпадает ваш код. Не нужно объяснять базовые вещи — мы говорим, думаем и смеёмся на одном языке.",
+  "hero.tagline": "5 дней в Альпах: днём горы,\nвечером - разговоры",
+  "hero.sub": "Встреча предпринимателей и\nинвесторов из разных стран",
   "hero.cta1": "ЗАБРОНИРОВАТЬ УЧАСТИЕ",
   "hero.cta2": "ПРОГРАММА",
   "hero.whatsapp": "Написать в WhatsApp",
   "hero.whatsappSub": "Ответим в течение дня и поможем выбрать формат участия",
 
   // About
-  "about.heading": "- это 5 дней в кругу людей, с которыми вы говорите на одном языке в жизни и бизнесе.",
-  "about.body": "В Зёльдене, в обстановке off the record, соберутся предприниматели, строящие бизнес в новых условиях и говорящие на русском языке. Здесь не нужно объяснять базовые вещи - мы говорим, думаем и смеёмся на одном языке.",
+  "about.subtitle": "Клуб русскоязычных предпринимателей Европы.",
+  "about.event": "SKI OPENING",
+  "about.heading": "Зимняя встреча клуба в Альпах.",
+  "about.body": "В Зёльдене, на одном из лучших горнолыжных курортов Альп, в обстановке off the record соберутся русскоязычные предприниматели из разных стран.\n\nПять дней в кругу людей, с которыми совпадает ваш код. Не нужно объяснять базовые вещи — мы говорим, думаем и смеёмся на одном языке.",
   "about.f1.t": "ФОРМАТ",
   "about.f1.b": "Ski Opening - это Альпы, вельвет Зёльдена и открытие сезона. Приезжайте в компании: днём - каждый в своём ритме, вечером - все за одним столом.",
   "about.f2.t": "УЧАСТНИКИ",
@@ -40,7 +41,8 @@ const ru: Dict = {
   "about.f4.b": "Днём - горы, вечером - ужины, встречи и деловая программа. В рамках NATIVE CODE будет отдельный бизнес-вечер с обсуждением проектов и возможностью представить свои идеи.",
 
   // Solden
-  "solden.title": "Один из лучших горнолыжных курортов Альп",
+  "solden.title": "SÖLDEN",
+  "solden.sub": "Один из лучших горнолыжных курортов Альп",
   "solden.body": "Два ледника, стабильный снег и более 140 км трасс делают Зёльден одним из лучших мест для катания в Альпах. Но Зёльден живет не только лыжами. Рестораны, бары, термы Aqua Dome, прогулки, каток и насыщенная вечерняя жизнь делают поездку интересной даже для тех, кто не планирует выходить на склон.",
 
   // Special guest
@@ -180,20 +182,21 @@ const en: Dict = {
   "nav.faq": "FAQ",
   "nav.cta": "BOOK PARTICIPATION",
   "brand.line2": "ENTREPRENEURS CLUB",
-  "brand.hero": "SKI OPENING",
+  "brand.hero": "SKI OPENING 2026/27",
 
   "hero.dates": "1 - 6 DECEMBER 2026",
   "hero.place": "SÖLDEN • AUSTRIA",
-  "hero.tagline": "A club of Russian-speaking entrepreneurs in Europe.",
-  "hero.heading": "The club's winter gathering in the Alps.",
-  "hero.sub": "In Sölden, at one of the best ski resorts in the Alps, Russian-speaking entrepreneurs from different countries come together off the record.\n\nFive days surrounded by people whose code matches yours. No need to explain the basics — we speak, think and laugh in the same language.",
+  "hero.tagline": "Five days surrounded by people who speak your language.",
+  "hero.sub": "A meeting of entrepreneurs and investors from different countries",
   "hero.cta1": "BOOK PARTICIPATION",
   "hero.cta2": "PROGRAM",
   "hero.whatsapp": "Message us on WhatsApp",
   "hero.whatsappSub": "Questions and bookings - we'll help on WhatsApp",
 
-  "about.heading": "- five days surrounded by people who speak your language.",
-  "about.body": "In Sölden, off the record, entrepreneurs building businesses in new conditions come together. No need to explain the basics - we think, talk and laugh in the same language.",
+  "about.subtitle": "A club of Russian-speaking entrepreneurs in Europe.",
+  "about.event": "SKI OPENING",
+  "about.heading": "The club's winter gathering in the Alps.",
+  "about.body": "In Sölden, at one of the best ski resorts in the Alps, Russian-speaking entrepreneurs from different countries come together off the record.\n\nFive days surrounded by people whose code matches yours. No need to explain the basics — we speak, think and laugh in the same language.",
   "about.f1.t": "FORMAT",
   "about.f1.b": "Ski Opening - the Alps, evening Z(I)Abend and the season's opening. Like-minded company: rhythm, energy, all at one table.",
   "about.f2.t": "PARTICIPANTS",
@@ -203,7 +206,8 @@ const en: Dict = {
   "about.f4.t": "BUSINESS PART",
   "about.f4.b": "Mountains by day; dinners, meetings and a business program by night. Dedicated business dinners inside NATIVE CODE.",
 
-  "solden.title": "One of the best ski resorts in the Alps",
+  "solden.title": "SÖLDEN",
+  "solden.sub": "One of the best ski resorts in the Alps",
   "solden.body": "Two glaciers, reliable snow and more than 140 km of slopes make Sölden one of the best places to ski in the Alps. But Sölden is about more than skiing. Restaurants, bars, the Aqua Dome thermal baths, walks, an ice rink and a lively evening scene make the trip worthwhile even for those who never plan to hit the slopes.",
 
   // Special guest
