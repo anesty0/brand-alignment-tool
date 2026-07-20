@@ -3,6 +3,8 @@ import a1 from "@/assets/alps-1.webp";
 import a2 from "@/assets/alps-2.webp";
 import a3 from "@/assets/alps-3.webp";
 import { useI18n } from "@/lib/i18n";
+import { cn } from "@/lib/utils";
+import { pdfButtonClass } from "./pdfButtonStyles";
 
 export function AlpsConnect() {
   const { t } = useI18n();
@@ -40,7 +42,7 @@ export function AlpsConnect() {
               href="/alps-connect.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full md:w-auto items-center justify-center gap-3 rounded-md bg-navy text-white px-6 py-3.5 text-xs md:text-sm font-semibold tracking-[0.12em] uppercase hover:brightness-125 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2"
+              className={cn(pdfButtonClass, "w-full md:w-auto gap-3")}
             >
               <Users size={18} strokeWidth={2} aria-hidden="true" className="text-orange" />
               <span>{t("alps.programBtn")}</span>

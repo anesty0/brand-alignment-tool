@@ -5,6 +5,7 @@ import d4 from "@/assets/day-4.webp";
 import d5 from "@/assets/day-5.webp";
 import d6 from "@/assets/day-6.webp";
 import { useI18n } from "@/lib/i18n";
+import { pdfButtonClass } from "./pdfButtonStyles";
 
 const days = [
   { img: d1, k: "program.d1" },
@@ -54,7 +55,7 @@ export function Program() {
             href="/program.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-md bg-background border border-border text-navy px-5 py-2.5 text-xs font-semibold tracking-[0.12em] hover:border-orange hover:text-orange transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2"
+            className={pdfButtonClass}
           >
             {t("program.schedule")}
           </a>
