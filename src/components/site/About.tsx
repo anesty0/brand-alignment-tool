@@ -22,12 +22,14 @@ export function About() {
           <h3 className="text-xl md:text-2xl font-bold tracking-tight text-orange leading-snug">
             NATIVE CODE
           </h3>
-          <p className="mt-2 text-sm md:text-base text-muted-foreground leading-relaxed">
+          <p className="mt-2 text-base md:text-lg font-bold text-navy leading-snug">
             {t("about.subtitle")}
           </p>
 
-          <div className="mt-5 text-sm font-bold tracking-[0.12em] text-orange">{t("about.event")}</div>
-          <p className="mt-1.5 text-base md:text-lg font-bold text-navy leading-snug">
+          <h4 className="mt-5 text-xl md:text-2xl font-bold tracking-tight text-orange leading-snug">
+            {t("about.event")}
+          </h4>
+          <p className="mt-2 text-base md:text-lg font-bold text-navy leading-snug">
             {t("about.heading")}
           </p>
 

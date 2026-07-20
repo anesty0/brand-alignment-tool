@@ -60,9 +60,9 @@ const ru: Dict = {
   // AlpsConnect
   "alps.kicker": "ALPS CONNECT",
   "alps.date": "Ключевой вечер программы • 3 декабря",
-  "alps.title": "GURGL CARAT — самый высокогорный конференц-центр Европы.\n\nЗдесь пройдет бизнес-конференция Native Code.",
+  "alps.title": "GURGL CARAT — самый высокогорный конференц-центр Европы.\nЗдесь пройдет бизнес-конференция Native Code.",
   "alps.c1": "ВСЕ УСЛОВИЯ ДЛЯ ОБЩЕНИЯ",
-  "alps.c2": "ПРОСТРАНСТВО ДЛЯ ВСТРЕЧ И ДИСКУССИЙ",
+  "alps.c2": "ПРОСТРАНСТВО ДЛЯ ДИСКУССИЙ",
   "alps.c3": "НОВЫЕ ЗНАКОМСТВА И СВЯЗИ",
   "alps.programBtn": "Программа и спикеры",
 
@@ -224,9 +224,9 @@ const en: Dict = {
 
   "alps.kicker": "THE KEY DAY OF NATIVE CODE",
   "alps.date": "The key evening of the program • December 3",
-  "alps.title": "GURGL CARAT — the highest-altitude conference centre in Europe.\n\nThis is where the Native Code business conference takes place.",
+  "alps.title": "GURGL CARAT — the highest-altitude conference centre in Europe.\nThis is where the Native Code business conference takes place.",
   "alps.c1": "EVERYTHING YOU NEED TO CONNECT",
-  "alps.c2": "A SPACE FOR MEETINGS AND DISCUSSIONS",
+  "alps.c2": "A SPACE FOR DISCUSSIONS",
   "alps.c3": "NEW ACQUAINTANCES AND CONNECTIONS",
   "alps.programBtn": "Program and speakers",
 

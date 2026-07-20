@@ -18,10 +18,10 @@ export function AlpsConnect() {
           <div className="text-[11px] md:text-xs font-bold tracking-[0.22em] text-orange">{t("alps.kicker")}</div>
           <h3 className="mt-3 text-2xl md:text-4xl font-extrabold tracking-tight text-navy">ALPS CONNECT</h3>
           <p className="mt-3 text-sm md:text-base font-semibold text-navy">{t("alps.date")}</p>
-          <p className="mt-1 text-base md:text-lg text-foreground/80 whitespace-pre-line">{t("alps.title")}</p>
+          <p className="mt-5 text-base md:text-lg text-foreground/80 whitespace-pre-line">{t("alps.title")}</p>
         </div>
 
-        <div className="mt-10 flex flex-col">
+        <div className="mt-6 flex flex-col">
           <div className="order-2 md:order-1 grid md:grid-cols-3 gap-5 md:gap-6">
             {items.map((it) => (
               <div key={it.k} className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-card)] group">

@@ -32,7 +32,7 @@ export function Solden() {
           <p className="mt-2 text-foreground/80 font-semibold text-xl">
             {t("solden.sub")}
           </p>
-          <div className="mt-4 max-w-2xl space-y-2 text-base text-muted-foreground leading-snug">
+          <div className="mt-4 max-w-2xl space-y-2 text-left text-base text-muted-foreground leading-snug">
             <p>{t("solden.body")}</p>
           </div>
           <div className="mt-6 w-full max-w-5xl rounded-2xl overflow-hidden shadow-[var(--shadow-card)]">
