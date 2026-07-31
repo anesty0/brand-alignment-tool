@@ -25,7 +25,7 @@ const partners = [
     descriptionRu: "Австрийская компания, сопровождающая предпринимателей в бизнес-иммиграции, корпоративных структурах, налоговой и юридической интеграции бизнеса в Европе.",
     descriptionEn: "An Austrian company supporting entrepreneurs with business immigration, corporate structures, and tax and legal integration of businesses in Europe.",
     img: lounge,
-    link: "axiom-management.at",
+    link: "www.axiom-solutions.at",
   },
   {
     name: "SKI4U",
