@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Cookiebot CMP (Auto Blocking) — must remain the first script in <head> so it
+         gates all downstream trackers (Meta Pixel, and future GA4 / Consent Mode). -->
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="f32bdb51-197f-4ead-9ee8-bba582b8cffd"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
