@@ -1,5 +1,8 @@
-import { Instagram, Send, MessageCircle, Mail } from "lucide-react";
+import { Instagram, Facebook, Send, MessageCircle, Mail } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+
+const IG = "https://www.instagram.com/nativecode.club?igsh=MW80enplMTRveGhjcQ%3D%3D&utm_source=qr";
+const FB = "https://www.facebook.com/share/1UJJmmzpXE/?mibextid=wwXIfr";
 
 export function Footer() {
   const { t } = useI18n();
@@ -11,7 +14,8 @@ export function Footer() {
           <div className="text-xs font-semibold tracking-[0.18em] text-orange mt-1">{t("brand.line2")}</div>
           <p className="mt-4 text-sm text-white/70 max-w-xs">{t("footer.tagline")}</p>
           <div className="mt-5 flex items-center gap-3">
-            <a href="https://instagram.com/" aria-label="Instagram" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><Instagram size={16} /></a>
+            <a href={IG} target="_blank" rel="noreferrer noopener" aria-label="Instagram" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><Instagram size={16} /></a>
+            <a href={FB} target="_blank" rel="noreferrer noopener" aria-label="Facebook" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><Facebook size={16} /></a>
             <a href="https://t.me/Irina_krasil" aria-label="Telegram" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><Send size={16} /></a>
             <a href="https://wa.me/306972801776" aria-label="WhatsApp" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><MessageCircle size={16} /></a>
             <a href="mailto:info@nativecode.club" aria-label="Email" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-orange transition"><Mail size={16} /></a>

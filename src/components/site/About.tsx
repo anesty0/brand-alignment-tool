@@ -1,13 +1,7 @@
 import obs from "@/assets/about-section.webp";
-import { Calendar, Users, Mountain, Briefcase } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
-const features = [
-  { icon: Calendar, k: "about.f1" },
-  { icon: Users, k: "about.f2" },
-  { icon: Mountain, k: "about.f3" },
-  { icon: Briefcase, k: "about.f4" },
-];
+const features = ["about.f1", "about.f2", "about.f3", "about.f4"];
 
 export function About() {
   const { t } = useI18n();
@@ -37,14 +31,12 @@ export function About() {
             {t("about.body")}
           </p>
 
-          <div className="mt-8 grid sm:grid-cols-2 gap-x-8 gap-y-7">
+          <div className="mt-8 grid sm:grid-cols-2 gap-x-8 gap-y-8">
             {features.map((f) => (
-              <div key={f.k}>
-                <div className="flex items-center gap-2.5">
-                  <f.icon className="text-navy shrink-0" size={26} strokeWidth={1.5} />
-                  <h4 className="text-sm font-bold tracking-[0.12em] text-orange">{t(`${f.k}.t`)}</h4>
-                </div>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t(`${f.k}.b`)}</p>
+              <div key={f}>
+                <div className="text-xs font-bold tracking-[0.16em] text-orange uppercase">{t(`${f}.t`)}</div>
+                <h4 className="mt-2 text-xl md:text-2xl font-extrabold tracking-tight text-navy leading-[1.1]">{t(`${f}.h`)}</h4>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{t(`${f}.b`)}</p>
               </div>
             ))}
           </div>
