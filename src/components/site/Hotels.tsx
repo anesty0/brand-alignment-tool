@@ -13,6 +13,7 @@ import park2 from "@/assets/parkhotel-2.webp";
 import { MessageCircle, X } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useI18n } from "@/lib/i18n";
+import { useContacts } from "@/lib/contacts";
 
 type Section = { titleRu: string; titleEn: string; itemsRu: string[]; itemsEn: string[] };
 
@@ -192,6 +193,7 @@ export function Hotels() {
   const [active, setActive] = useState<Hotel | null>(null);
   const [galleryIdx, setGalleryIdx] = useState(0);
   const { t, lang } = useI18n();
+  const { whatsappUrl } = useContacts();
 
   const openHotel = (h: Hotel) => {
     setActive(h);
@@ -240,7 +242,7 @@ export function Hotels() {
 
           <div className="bg-card rounded-2xl border border-border shadow-[var(--shadow-card)] p-5 flex flex-col justify-center gap-3 self-center w-full lg:w-[260px] lg:justify-self-end">
             <a
-              href="https://wa.me/306972801776"
+              href={whatsappUrl}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 text-info font-semibold text-sm min-w-0"
@@ -326,7 +328,7 @@ export function Hotels() {
                     </>
                   )}
                   <a
-                    href="https://wa.me/306972801776"
+                    href={whatsappUrl}
                     target="_blank"
                     rel="noreferrer"
                     className="w-full inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-navy text-white hover:brightness-125 transition"
