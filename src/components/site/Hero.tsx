@@ -16,6 +16,10 @@ export function Hero() {
           <h1 className="font-extrabold tracking-tight text-navy leading-[0.95] text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
             NATIVE CODE
           </h1>
+          <h2 className="mt-2 text-orange font-extrabold tracking-tight leading-[0.95] text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+            {t("brand.hero")}
+          </h2>
+
           <p className="mt-5 text-base md:text-lg text-foreground/80 max-w-md leading-snug whitespace-pre-line">
             {t("hero.tagline")}
           </p>
