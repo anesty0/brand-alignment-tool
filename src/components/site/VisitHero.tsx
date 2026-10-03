@@ -1,5 +1,4 @@
-import peopleImg from "@/assets/day-1.webp";
-import skiImg from "@/assets/hero-skiers.webp";
+import heroImg from "@/assets/hero-skiers.webp";
 import { useI18n } from "@/lib/i18n";
 import { useContacts } from "@/lib/contacts";
 
@@ -8,78 +7,50 @@ export type VisitVariant = "people" | "ski";
 /**
  * Hero for the /visit/people and /visit/ski landing pages.
  *
- * Shares the homepage hero's visual language — full-bleed photograph, left-to-right
- * background scrim, navy display type, orange primary CTA — but leads with the trip
- * heading as the page `h1` instead of the NATIVE CODE wordmark. The wordmark is kept
- * above it as a brand lockup. `Hero.tsx` is deliberately left untouched.
+ * Uses the homepage hero's background image and its exact image treatment — same
+ * source file, same object-position ramp, same overlay gradient — so all three
+ * heroes are visually identical behind the copy. It leads with the trip heading as
+ * the page `h1` instead of the NATIVE CODE wordmark; the wordmark is kept above it
+ * as a brand lockup. `Hero.tsx` owns the homepage hero and is not imported here.
+ *
+ * Only the heading copy and its top size step vary by variant: the people heading is
+ * substantially longer than the ski one, so it stops a step lower.
  */
-const VARIANTS: Record<
-  VisitVariant,
-  {
-    img: string;
-    width: number;
-    height: number;
-    /** Focal point, chosen so the subject sits clear of the headline column. */
-    objectPos: string;
-    /** The two headings differ a lot in length, so each gets its own top step. */
-    headingSize: string;
-    altRu: string;
-    altEn: string;
-    key: string;
-  }
-> = {
+const VARIANTS: Record<VisitVariant, { headingSize: string; key: string }> = {
   people: {
-    img: peopleImg,
-    width: 1200,
-    height: 800,
-    objectPos: "object-[72%_center] md:object-[64%_center]",
     headingSize: "text-3xl sm:text-4xl md:text-5xl",
-    altRu: "Участники Native Code вместе на горе в Зёльдене",
-    altEn: "Native Code guests together on the mountain in Sölden",
     key: "visit.people",
   },
   ski: {
-    img: skiImg,
-    width: 1920,
-    height: 1280,
-    objectPos: "object-[70%_center] md:object-center",
     headingSize: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl",
-    altRu: "Лыжники на склоне в Зёльдене, Австрия",
-    altEn: "Skiers on the slopes in Sölden, Austria",
     key: "visit.ski",
   },
 };
 
 export function VisitHero({ variant }: { variant: VisitVariant }) {
-  const { t, lang } = useI18n();
+  const { t } = useI18n();
   const { whatsappUrl } = useContacts();
   const v = VARIANTS[variant];
 
   return (
     <section id="top" className="relative overflow-hidden">
-      {/* background image with the same subtle left-side fade as the homepage hero */}
+      {/* background image with very subtle fade — identical treatment to Hero.tsx */}
       <div className="absolute inset-0">
         <img
-          src={v.img}
-          alt={lang === "ru" ? v.altRu : v.altEn}
-          className={`w-full h-full object-cover ${v.objectPos}`}
-          width={v.width}
-          height={v.height}
+          src={heroImg}
+          alt="Skiers in Sölden Alps"
+          className="w-full h-full object-cover object-[70%_center] md:object-center"
+          width={1920}
+          height={1080}
         />
-        {/* Stronger scrim below md, where the copy spans most of the width. */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40 md:from-background/90 md:via-background/55 md:to-background/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/25 to-transparent" />
       </div>
 
       <div className="relative container-x pt-8 md:pt-14 lg:pt-10 pb-16 md:pb-24 lg:pb-16 xl:pb-20">
         <div className="max-w-2xl">
           {/* Brand lockup — the wordmark stays, but it is no longer the page heading */}
-          <div className="leading-tight">
-            <div className="font-extrabold tracking-tight text-navy text-base md:text-lg">
-              NATIVE CODE
-            </div>
-            <div className="mt-0.5 text-[10px] md:text-[11px] font-semibold tracking-[0.18em] text-orange">
-              {t("brand.line2")}
-            </div>
+          <div className="font-extrabold tracking-tight text-navy text-base md:text-lg leading-tight">
+            NATIVE CODE
           </div>
 
           <h1
