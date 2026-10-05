@@ -102,7 +102,7 @@ const ru: Dict = {
   "program.d6.evening": "Дорога домой и те самые кадры, к которым ещё не раз вернёмся",
 
   // Hotels
-  "hotels.title": "РАЗМЕЩЕНИЕ В ТРЁХ ОТЕЛЯХ НА ВЫБОР",
+  "hotels.title": "РАЗМЕЩЕНИЕ В ДВУХ ОТЕЛЯХ НА ВЫБОР",
   "hotels.sub": "условия для участников NATIVE CODE",
   "hotels.perPerson": "на человека",
   "hotels.perPackage": "за пакет / 5 ночей",
@@ -177,7 +177,7 @@ const ru: Dict = {
   "faq.empty": "Скоро здесь появятся ответы на самые частые вопросы.",
   // Visit landing pages (/visit/people, /visit/ski)
   "visit.dates": "1-6 декабря 2026 · Зёльден, Австрия",
-  "visit.price": "Участие от 1500 € за человека",
+  "visit.price": "Участие от 1800 € за человека",
   "visit.cta1": "Посмотреть участие и стоимость",
   "visit.cta2": "Задать вопрос",
   "visit.people.h1": "Пять дней в Зёльдене с русскоязычными предпринимателями Европы",
@@ -285,7 +285,7 @@ const en: Dict = {
   "program.d6.morning": "Check-out, premium Mercedes V-Class transfer",
   "program.d6.evening": "Way home and shots you'll come back to",
 
-  "hotels.title": "THREE HOTELS TO CHOOSE FROM",
+  "hotels.title": "TWO HOTELS TO CHOOSE FROM",
   "hotels.sub": "conditions for NATIVE CODE participants",
   "hotels.perPerson": "per person",
   "hotels.perPackage": "per package / 5 nights",
@@ -356,7 +356,7 @@ const en: Dict = {
   "faq.empty": "Answers to the most common questions will appear here soon.",
   // Visit landing pages (/visit/people, /visit/ski)
   "visit.dates": "1–6 December 2026 · Sölden, Austria",
-  "visit.price": "Participation from €1,500 per person",
+  "visit.price": "Participation from €1,800 per person",
   "visit.cta1": "View Participation and Pricing",
   "visit.cta2": "Ask a Question",
   "visit.people.h1": "Five Days in Sölden with Russian-Speaking Entrepreneurs from Across Europe",
