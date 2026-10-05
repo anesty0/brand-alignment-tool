@@ -74,7 +74,7 @@ export function VisitHero({ variant }: { variant: VisitVariant }) {
 
           <div className="mt-7 flex flex-wrap gap-3">
             <a
-              href="#included"
+              href="#hotels"
               className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 text-xs font-semibold tracking-[0.12em] hover:brightness-110 transition shadow-[var(--shadow-soft)]"
             >
               {t("visit.cta1")}
