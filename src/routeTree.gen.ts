@@ -12,6 +12,8 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SecretSoldenRouteImport } from './routes/secret-solden'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as VisitSkiRouteImport } from './routes/visit/ski'
+import { Route as VisitPeopleRouteImport } from './routes/visit/people'
 
 const SecretSoldenRoute = SecretSoldenRouteImport.update({
   id: '/secret-solden',
@@ -28,35 +30,59 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VisitSkiRoute = VisitSkiRouteImport.update({
+  id: '/visit/ski',
+  path: '/visit/ski',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VisitPeopleRoute = VisitPeopleRouteImport.update({
+  id: '/visit/people',
+  path: '/visit/people',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/secret-solden': typeof SecretSoldenRoute
+  '/visit/people': typeof VisitPeopleRoute
+  '/visit/ski': typeof VisitSkiRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/secret-solden': typeof SecretSoldenRoute
+  '/visit/people': typeof VisitPeopleRoute
+  '/visit/ski': typeof VisitSkiRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/secret-solden': typeof SecretSoldenRoute
+  '/visit/people': typeof VisitPeopleRoute
+  '/visit/ski': typeof VisitSkiRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/secret-solden'
+  fullPaths: '/' | '/about' | '/secret-solden' | '/visit/people' | '/visit/ski'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/secret-solden'
-  id: '__root__' | '/' | '/about' | '/secret-solden'
+  to: '/' | '/about' | '/secret-solden' | '/visit/people' | '/visit/ski'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/secret-solden'
+    | '/visit/people'
+    | '/visit/ski'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   SecretSoldenRoute: typeof SecretSoldenRoute
+  VisitPeopleRoute: typeof VisitPeopleRoute
+  VisitSkiRoute: typeof VisitSkiRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +108,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/visit/ski': {
+      id: '/visit/ski'
+      path: '/visit/ski'
+      fullPath: '/visit/ski'
+      preLoaderRoute: typeof VisitSkiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/visit/people': {
+      id: '/visit/people'
+      path: '/visit/people'
+      fullPath: '/visit/people'
+      preLoaderRoute: typeof VisitPeopleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,6 +129,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   SecretSoldenRoute: SecretSoldenRoute,
+  VisitPeopleRoute: VisitPeopleRoute,
+  VisitSkiRoute: VisitSkiRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

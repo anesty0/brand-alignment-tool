@@ -105,10 +105,21 @@ const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
   },
 ];
 
-export function Navbar() {
+export function Navbar({ inPageLinks = false }: { inPageLinks?: boolean }) {
   const [open, setOpen] = useState(false);
   const [faqOpen, setFaqOpen] = useState(false);
   const { lang, setLang, t } = useI18n();
+
+  // On the /visit/* landing pages the section links must stay on the current route
+  // instead of jumping back to the homepage, so "/#hotels" becomes "#hotels".
+  const sectionHref = (href: string) => (inPageLinks ? href.replace(/^\//, "") : href);
+
+  const brandMark = (
+    <>
+      <div className="font-extrabold tracking-tight text-base md:text-lg text-navy">NATIVE CODE</div>
+      <div className="text-[7px] md:text-[8px] font-semibold tracking-[0.09em] text-orange">{t("brand.line2")}</div>
+    </>
+  );
 
   const LangSwitch = ({ className = "" }: { className?: string }) => (
     <div className={`inline-flex items-center text-[11px] font-semibold tracking-[0.14em] rounded-md border border-border overflow-hidden ${className}`}>
@@ -128,21 +139,33 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/60">
       <div className="container-x flex items-center justify-between h-16 md:h-20 gap-3">
-        <Link
-          to="/"
-          onClick={() => {
-            if (typeof window !== "undefined" && window.location.pathname === "/") {
+        {inPageLinks ? (
+          <a
+            href="#top"
+            onClick={(e) => {
+              e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
-            }
-          }}
-          className="leading-tight shrink-0"
-        >
-          <div className="font-extrabold tracking-tight text-base md:text-lg text-navy">NATIVE CODE</div>
-          <div className="text-[7px] md:text-[8px] font-semibold tracking-[0.09em] text-orange">{t("brand.line2")}</div>
-        </Link>
+            }}
+            className="leading-tight shrink-0"
+          >
+            {brandMark}
+          </a>
+        ) : (
+          <Link
+            to="/"
+            onClick={() => {
+              if (typeof window !== "undefined" && window.location.pathname === "/") {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+            className="leading-tight shrink-0"
+          >
+            {brandMark}
+          </Link>
+        )}
         <nav className="hidden lg:flex items-center gap-3 xl:gap-7 whitespace-nowrap">
           {linkKeys.map((l) => (
-            <a key={l.href} href={l.href} className="text-[10.5px] xl:text-xs font-semibold tracking-[0.08em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
+            <a key={l.href} href={sectionHref(l.href)} className="text-[10.5px] xl:text-xs font-semibold tracking-[0.08em] xl:tracking-[0.12em] text-foreground/80 hover:text-orange transition-colors whitespace-nowrap">
               {t(l.k)}
             </a>
           ))}
@@ -155,7 +178,7 @@ export function Navbar() {
         </nav>
         <div className="flex items-center gap-2 lg:gap-2 xl:gap-3 shrink-0">
           <LangSwitch className="hidden sm:inline-flex shrink-0" />
-          <a href="/#hotels" className="hidden md:inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-3 lg:px-3 xl:px-5 py-2.5 text-[10.5px] xl:text-[11px] font-semibold tracking-[0.08em] xl:tracking-[0.1em] hover:brightness-110 transition shadow-[var(--shadow-soft)] whitespace-nowrap shrink-0">
+          <a href={sectionHref("/#hotels")} className="hidden md:inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-3 lg:px-3 xl:px-5 py-2.5 text-[10.5px] xl:text-[11px] font-semibold tracking-[0.08em] xl:tracking-[0.1em] hover:brightness-110 transition shadow-[var(--shadow-soft)] whitespace-nowrap shrink-0">
             {t("nav.cta")}
           </a>
           <button className="lg:hidden p-2 -mr-2 text-navy" onClick={() => setOpen(!open)} aria-label="Menu">
@@ -167,7 +190,7 @@ export function Navbar() {
         <div className="lg:hidden border-t border-border bg-background">
           <div className="container-x py-3 flex flex-col">
             {linkKeys.map((l) => (
-              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="py-3 text-sm font-semibold tracking-wider text-foreground/85 border-b border-border">
+              <a key={l.href} href={sectionHref(l.href)} onClick={() => setOpen(false)} className="py-3 text-sm font-semibold tracking-wider text-foreground/85 border-b border-border">
                 {t(l.k)}
               </a>
             ))}
@@ -179,7 +202,7 @@ export function Navbar() {
             </button>
             <div className="mt-3 flex items-center justify-between gap-3">
               <LangSwitch />
-              <a href="/#hotels" onClick={() => setOpen(false)} className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 text-[11px] font-semibold tracking-[0.1em]">
+              <a href={sectionHref("/#hotels")} onClick={() => setOpen(false)} className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 text-[11px] font-semibold tracking-[0.1em]">
                 {t("nav.cta")}
               </a>
             </div>

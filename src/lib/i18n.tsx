@@ -102,7 +102,7 @@ const ru: Dict = {
   "program.d6.evening": "Дорога домой и те самые кадры, к которым ещё не раз вернёмся",
 
   // Hotels
-  "hotels.title": "РАЗМЕЩЕНИЕ В ТРЁХ ОТЕЛЯХ НА ВЫБОР",
+  "hotels.title": "РАЗМЕЩЕНИЕ В ДВУХ ОТЕЛЯХ НА ВЫБОР",
   "hotels.sub": "условия для участников NATIVE CODE",
   "hotels.perPerson": "на человека",
   "hotels.perPackage": "за пакет / 5 ночей",
@@ -175,6 +175,23 @@ const ru: Dict = {
   // FAQ
   "faq.title": "Часто задаваемые вопросы",
   "faq.empty": "Скоро здесь появятся ответы на самые частые вопросы.",
+  // Visit landing pages (/visit/people, /visit/ski)
+  "visit.dates": "1-6 декабря 2026 · Зёльден, Австрия",
+  "visit.price": "Участие от 1800 € за человека",
+  "visit.cta1": "Посмотреть участие и стоимость",
+  "visit.cta2": "Задать вопрос",
+  "visit.people.h1": "Пять дней в Зёльдене с русскоязычными предпринимателями Европы",
+  "visit.people.desc":
+    "Мы собираемся из разных стран, чтобы кататься, знакомиться и проводить время вместе. Днём будем в горах, вечером будем встречаться за ужином и обсуждать жизнь и бизнес после переезда.",
+  "visit.people.metaTitle": "Пять дней в Зёльдене с русскоязычными предпринимателями — Native Code",
+  "visit.people.metaDesc":
+    "Ski Opening 2026 в Зёльдене: пять дней в Альпах с русскоязычными предпринимателями Европы. 1-6 декабря 2026, участие от 1500 € за человека.",
+  "visit.ski.h1": "В декабре едем кататься в Зёльден",
+  "visit.ski.desc":
+    "Собираемся с русскоязычными предпринимателями, инвесторами и самостоятельными профессионалами из разных стран Европы. В программе Ski Safari, катание по группам, соревнования и вечерние встречи.",
+  "visit.ski.metaTitle": "Ski Opening в Зёльдене — катание и программа — Native Code",
+  "visit.ski.metaDesc":
+    "Ski Opening 2026 в Зёльдене: Ski Safari, катание по группам, соревнования и вечерние встречи. 1-6 декабря 2026, участие от 1500 € за человека.",
 };
 
 const en: Dict = {
@@ -268,7 +285,7 @@ const en: Dict = {
   "program.d6.morning": "Check-out, premium Mercedes V-Class transfer",
   "program.d6.evening": "Way home and shots you'll come back to",
 
-  "hotels.title": "THREE HOTELS TO CHOOSE FROM",
+  "hotels.title": "TWO HOTELS TO CHOOSE FROM",
   "hotels.sub": "conditions for NATIVE CODE participants",
   "hotels.perPerson": "per person",
   "hotels.perPackage": "per package / 5 nights",
@@ -337,6 +354,23 @@ const en: Dict = {
 
   "faq.title": "Frequently asked questions",
   "faq.empty": "Answers to the most common questions will appear here soon.",
+  // Visit landing pages (/visit/people, /visit/ski)
+  "visit.dates": "1–6 December 2026 · Sölden, Austria",
+  "visit.price": "Participation from €1,800 per person",
+  "visit.cta1": "View Participation and Pricing",
+  "visit.cta2": "Ask a Question",
+  "visit.people.h1": "Five Days in Sölden with Russian-Speaking Entrepreneurs from Across Europe",
+  "visit.people.desc":
+    "We come together from different countries to ski, meet new people, and spend time together. During the day, we'll be in the mountains; in the evening, we'll meet for dinner and talk about life and business after relocating abroad.",
+  "visit.people.metaTitle": "Five Days in Sölden with Russian-Speaking Entrepreneurs — Native Code",
+  "visit.people.metaDesc":
+    "Ski Opening 2026 in Sölden: five days in the Alps with Russian-speaking entrepreneurs from across Europe. 1–6 December 2026, from €1,500 per person.",
+  "visit.ski.h1": "We're Going Skiing in Sölden This December",
+  "visit.ski.desc":
+    "We're bringing together Russian-speaking entrepreneurs, investors, and independent professionals from across Europe. The programme includes Ski Safari, group skiing, competitions, and evening gatherings.",
+  "visit.ski.metaTitle": "Ski Opening in Sölden — Skiing and Programme — Native Code",
+  "visit.ski.metaDesc":
+    "Ski Opening 2026 in Sölden: Ski Safari, group skiing, competitions and evening gatherings. 1–6 December 2026, from €1,500 per person.",
 };
 
 const dicts: Record<Lang, Dict> = { ru, en };
