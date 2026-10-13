@@ -12,6 +12,15 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useI18n } from "@/lib/i18n";
 import { useContacts } from "@/lib/contacts";
 
+/**
+ * Online booking through Ski4You is hidden for now.
+ *
+ * The two "book online" links stay in the markup — `hidden` takes them out of view,
+ * out of the tab order and out of the accessibility tree — so bringing them back is a
+ * one-word change. The consultant (WhatsApp) button is deliberately unaffected.
+ */
+const HIDE_SKI4U_BOOKING = true;
+
 type Section = { titleRu: string; titleEn: string; itemsRu: string[]; itemsEn: string[] };
 
 type Hotel = {
@@ -263,6 +272,7 @@ export function Hotels() {
                   ) : (
                     <>
                       <a
+                        hidden={HIDE_SKI4U_BOOKING}
                         href={active.bookSingleUrl ?? active.bookUrl ?? "#"}
                         target="_blank"
                         rel="noreferrer"
@@ -271,6 +281,7 @@ export function Hotels() {
                         {t("hotels.bookSingle")}
                       </a>
                       <a
+                        hidden={HIDE_SKI4U_BOOKING}
                         href={active.bookDoubleUrl ?? active.bookUrl ?? "#"}
                         target="_blank"
                         rel="noreferrer"
