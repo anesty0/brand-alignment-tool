@@ -11,15 +11,7 @@ import { MessageCircle, X } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useI18n } from "@/lib/i18n";
 import { useContacts } from "@/lib/contacts";
-
-/**
- * Online booking through Ski4You is hidden for now.
- *
- * The two "book online" links stay in the markup — `hidden` takes them out of view,
- * out of the tab order and out of the accessibility tree — so bringing them back is a
- * one-word change. The consultant (WhatsApp) button is deliberately unaffected.
- */
-const HIDE_SKI4U_BOOKING = true;
+import { ONLINE_BOOKING_ENABLED } from "@/lib/booking";
 
 type Section = { titleRu: string; titleEn: string; itemsRu: string[]; itemsEn: string[] };
 
@@ -263,6 +255,7 @@ export function Hotels() {
                 <div className="shrink-0 px-6 md:px-8 py-5 md:py-6 border-t border-border/60 bg-card flex flex-col gap-3">
                   {active.detailPath ? (
                     <Link
+                      hidden={!ONLINE_BOOKING_ENABLED}
                       to={active.detailPath}
                       onClick={() => setActive(null)}
                       className="w-full inline-flex items-center justify-center text-xs font-semibold tracking-wide px-5 py-3.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition"
@@ -272,7 +265,7 @@ export function Hotels() {
                   ) : (
                     <>
                       <a
-                        hidden={HIDE_SKI4U_BOOKING}
+                        hidden={!ONLINE_BOOKING_ENABLED}
                         href={active.bookSingleUrl ?? active.bookUrl ?? "#"}
                         target="_blank"
                         rel="noreferrer"
@@ -281,7 +274,7 @@ export function Hotels() {
                         {t("hotels.bookSingle")}
                       </a>
                       <a
-                        hidden={HIDE_SKI4U_BOOKING}
+                        hidden={!ONLINE_BOOKING_ENABLED}
                         href={active.bookDoubleUrl ?? active.bookUrl ?? "#"}
                         target="_blank"
                         rel="noreferrer"

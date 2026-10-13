@@ -4,6 +4,7 @@ import { ArrowLeft, Calendar, Coffee, Users, Maximize2, Zap, MessageCircle, X } 
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { useI18n } from "@/lib/i18n";
+import { ONLINE_BOOKING_ENABLED } from "@/lib/booking";
 import secretMain from "@/assets/secret-main.webp";
 import studioDesign1 from "@/assets/secret/studio-design-1.webp";
 import studioDesign2 from "@/assets/secret/studio-design-2.webp";
@@ -427,17 +428,26 @@ function SuiteCard({
             {t("secret.bookHeader")}
           </div>
           <div className="mt-3 space-y-2">
-            {suite.prices.map((p, i) => (
-              <a
-                key={i}
-                href={p.bookUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="w-full inline-flex items-center justify-center text-center text-xs md:text-[13px] font-semibold tracking-wide px-4 py-2.5 rounded-md bg-primary text-primary-foreground hover:brightness-110 transition"
-              >
-                {t(p.guestsKey)} — {p.price}€{p.perPerson ? ` ${t("secret.perPerson")}` : ""}
-              </a>
-            ))}
+            {suite.prices.map((p, i) => {
+              const label = `${t(p.guestsKey)} — ${p.price}€${p.perPerson ? ` ${t("secret.perPerson")}` : ""}`;
+              const className =
+                "w-full inline-flex items-center justify-center text-center text-xs md:text-[13px] font-semibold tracking-wide px-4 py-2.5 rounded-md bg-primary text-primary-foreground transition";
+              return ONLINE_BOOKING_ENABLED ? (
+                <a
+                  key={i}
+                  href={p.bookUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`${className} hover:brightness-110`}
+                >
+                  {label}
+                </a>
+              ) : (
+                <div key={i} className={className}>
+                  {label}
+                </div>
+              );
+            })}
           </div>
           <div className="mt-3 inline-flex items-center gap-1.5 text-[11px] text-muted-foreground leading-snug">
             <Zap size={12} className="text-orange shrink-0" />
