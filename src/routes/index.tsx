@@ -4,7 +4,7 @@ import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { SpecialGuest } from "@/components/site/SpecialGuest";
-import { Solden } from "@/components/site/Solden";
+import { Resort } from "@/components/site/Resort";
 import { AlpsConnect } from "@/components/site/AlpsConnect";
 import { Program } from "@/components/site/Program";
 import { Hotels } from "@/components/site/Hotels";
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   useEffect(() => {
-    document.title = "Native Code - Ski Opening 2027 in Sölden, Austria";
+    document.title = "Native Code - Ski Finale 2027 in Zell am See - Kaprun, Austria";
   }, []);
 
   return (
@@ -30,7 +30,7 @@ function Index() {
       <Program />
       <SpecialGuest />
       <Hotels />
-      <Solden />
+      <Resort />
       <Included />
       <CtaBanners />
       <Footer />

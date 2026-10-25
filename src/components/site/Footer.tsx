@@ -34,7 +34,7 @@ export function Footer() {
           <ul className="space-y-2 text-white/70">
             <li><a href={whatsappUrl} target="_blank" rel="noreferrer" className="hover:text-orange transition">WhatsApp</a> / <a href={telegramUrl} target="_blank" rel="noreferrer" className="hover:text-orange transition">Telegram</a></li>
             <li><a href={`mailto:${email}`} className="hover:text-orange transition">{email}</a></li>
-            <li>Sölden, Tyrol, Austria</li>
+            <li>Zell am See, Salzburg, Austria</li>
           </ul>
         </div>
       </div>

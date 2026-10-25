@@ -7,7 +7,7 @@ import { Included } from "@/components/site/Included";
 import { Hotels } from "@/components/site/Hotels";
 import { SpecialGuest } from "@/components/site/SpecialGuest";
 import { AlpsConnect } from "@/components/site/AlpsConnect";
-import { Solden } from "@/components/site/Solden";
+import { Resort } from "@/components/site/Resort";
 import { CtaBanners } from "@/components/site/CtaBanners";
 import { Footer } from "@/components/site/Footer";
 import { ContactsContext, VISIT_CONTACTS } from "@/lib/contacts";
@@ -46,7 +46,7 @@ function VisitPeoplePage() {
         <Hotels />
         <SpecialGuest />
         <AlpsConnect />
-        <Solden />
+        <Resort />
         <CtaBanners />
         <Footer />
       </main>

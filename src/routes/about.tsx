@@ -152,13 +152,13 @@ function AboutPage() {
           <div className="mt-8 md:mt-10 pt-6 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 items-center text-xs md:text-sm">
             <div className="leading-tight">
               <div className="font-extrabold tracking-tight text-white">NATIVE CODE</div>
-              <div className="text-[10px] font-semibold tracking-[0.18em] text-orange mt-1">SKI OPENING 2026</div>
+              <div className="text-[10px] font-semibold tracking-[0.18em] text-orange mt-1">SKI FINALE 2027</div>
             </div>
             <div className="flex items-center gap-2 text-white/80">
               <MapPin size={14} className="text-orange shrink-0" />
               <div>
-                <div>1-6 DECEMBER 2026</div>
-                <div className="text-white/60">SÖLDEN, AUSTRIA</div>
+                <div>30 MARCH – 4 APRIL 2027</div>
+                <div className="text-white/60">ZELL AM SEE – KAPRUN, AUSTRIA</div>
               </div>
             </div>
             <a href="mailto:info@nativecode.club" className="flex items-center gap-2 text-white/80 hover:text-orange transition">
@@ -168,7 +168,7 @@ function AboutPage() {
             <div className="flex items-center justify-start md:justify-end gap-4 text-white/80">
               <a href="https://www.instagram.com/nativecode.club?igsh=MW80enplMTRveGhjcQ%3D%3D&utm_source=qr" target="_blank" rel="noreferrer noopener" aria-label="Instagram" className="hover:text-orange transition"><Instagram size={18} /></a>
               <a href="#" aria-label="Telegram" className="hover:text-orange transition"><Send size={18} /></a>
-              <a href="https://wa.me/306972801776" target="_blank" rel="noreferrer" aria-label="WhatsApp" className="hover:text-orange transition"><MessageCircle size={18} /></a>
+              <a href="https://wa.me/421915442716" target="_blank" rel="noreferrer" aria-label="WhatsApp" className="hover:text-orange transition"><MessageCircle size={18} /></a>
             </div>
           </div>
         </div>

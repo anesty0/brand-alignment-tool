@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { VisitHero } from "@/components/site/VisitHero";
-import { Solden } from "@/components/site/Solden";
+import { Resort } from "@/components/site/Resort";
 import { Program } from "@/components/site/Program";
 import { Included } from "@/components/site/Included";
 import { Hotels } from "@/components/site/Hotels";
@@ -36,7 +36,7 @@ function VisitSkiPage() {
       <main className="min-h-screen bg-background text-foreground">
         <Navbar inPageLinks />
         <VisitHero variant="ski" />
-        <Solden />
+        <Resort />
         <Program />
         {/* Anchor for the hero's primary CTA. Added here rather than inside
             Included.tsx so the homepage markup is untouched. */}

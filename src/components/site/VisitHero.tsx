@@ -38,7 +38,7 @@ export function VisitHero({ variant }: { variant: VisitVariant }) {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Skiers in Sölden Alps"
+          alt="Skiers in the Alps"
           className="w-full h-full object-cover object-[70%_center] md:object-center"
           width={1920}
           height={1080}

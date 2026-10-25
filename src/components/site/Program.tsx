@@ -1,9 +1,9 @@
-import d1 from "@/assets/day-1.webp";
-import d2 from "@/assets/day-2.webp";
-import d3 from "@/assets/day-3.webp";
-import d4 from "@/assets/day-4.webp";
-import d5 from "@/assets/day-5.webp";
-import d6 from "@/assets/day-6.webp";
+import d1 from "@/assets/zell/program-day1.webp";
+import d2 from "@/assets/zell/program-day2.webp";
+import d3 from "@/assets/zell/program-day3.webp";
+import d4 from "@/assets/zell/program-day4.webp";
+import d5 from "@/assets/zell/program-day5.webp";
+import d6 from "@/assets/zell/program-day6.webp";
 import { useI18n } from "@/lib/i18n";
 import { pdfButtonClass } from "./pdfButtonStyles";
 
@@ -29,7 +29,7 @@ export function Program() {
             <article key={day.k} className="bg-card rounded-xl overflow-hidden border border-border shadow-[var(--shadow-card)] hover:-translate-y-1 transition-transform duration-300 flex flex-col">
               <div className="relative">
                 <img src={day.img} alt={t(`${day.k}.title`)} loading="lazy" className="w-full h-28 object-cover" />
-                {day.k === "program.d3" && (
+                {day.k === "program.d4" && (
                   <span className="absolute bottom-2 left-2 bg-orange text-white text-[10px] xl:text-[8px] font-bold tracking-[0.12em] xl:tracking-[0.08em] uppercase px-2.5 xl:px-2 py-1 xl:py-0.5 rounded-full shadow-sm">
                     {t(`${day.k}.kicker`)}
                   </span>

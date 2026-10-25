@@ -16,14 +16,14 @@ const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
   {
     qRu: "Что такое NATIVE CODE?",
     qEn: "What is NATIVE CODE?",
-    aRu: "NATIVE CODE - это клуб предпринимателей, инвесторов и людей, которые строят жизнь и бизнес в новых странах, но продолжают говорить на одном языке - русском.\n\nЭто сообщество людей с похожим опытом, кругом общения и пониманием реальности последних лет.\n\nSKI OPENING - первая встреча клуба в Альпах.",
-    aEn: "NATIVE CODE is a club of entrepreneurs, investors and people building life and business in new countries while still sharing one language - Russian.\n\nIt is a community of people with similar experience, social circles and understanding of the realities of recent years.\n\nSKI OPENING is the club's first gathering in the Alps.",
+    aRu: "NATIVE CODE - это клуб предпринимателей, инвесторов и людей, которые строят жизнь и бизнес в новых странах, но продолжают говорить на одном языке - русском.\n\nЭто сообщество людей с похожим опытом, кругом общения и пониманием реальности последних лет.\n\nSKI FINALE - первая встреча клуба в Альпах.",
+    aEn: "NATIVE CODE is a club of entrepreneurs, investors and people building life and business in new countries while still sharing one language - Russian.\n\nIt is a community of people with similar experience, social circles and understanding of the realities of recent years.\n\nSKI FINALE is the club's first gathering in the Alps.",
   },
   {
-    qRu: "Что такое SKI OPENING?",
-    qEn: "What is SKI OPENING?",
-    aRu: "Это 5 дней в Зёльдене (Австрия), где соединяются:\n\n• катание в Альпах\n• отдых\n• знакомства\n• предпринимательская среда\n• живое общение без официоза\n\nБез сцены «успешного успеха».\nБез скучных конференций.\nБез жесткой программы.",
-    aEn: "5 days in Sölden (Austria) bringing together:\n\n• skiing in the Alps\n• relaxation\n• new connections\n• an entrepreneurial environment\n• genuine conversations without formality\n\nNo “successful success” stage.\nNo boring conferences.\nNo rigid agenda.",
+    qRu: "Что такое SKI FINALE?",
+    qEn: "What is SKI FINALE?",
+    aRu: "Это 5 дней в Целль-ам-Зее — Капруне (Австрия), где соединяются:\n\n• катание в Альпах\n• отдых\n• знакомства\n• предпринимательская среда\n• живое общение без официоза\n\nБез сцены «успешного успеха».\nБез скучных конференций.\nБез жесткой программы.",
+    aEn: "5 days in Zell am See – Kaprun (Austria) bringing together:\n\n• skiing in the Alps\n• relaxation\n• new connections\n• an entrepreneurial environment\n• genuine conversations without formality\n\nNo “successful success” stage.\nNo boring conferences.\nNo rigid agenda.",
   },
   {
     qRu: "Для кого это мероприятие?",
@@ -82,14 +82,14 @@ const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
   {
     qRu: "Где проходит мероприятие?",
     qEn: "Where does the event take place?",
-    aRu: "Sölden - один из самых известных горнолыжных курортов Австрии и традиционное место открытия сезона в Альпах.",
-    aEn: "Sölden - one of Austria's most famous ski resorts and the traditional season-opening destination in the Alps.",
+    aRu: "В Целль-ам-Зее — Капруне (Австрия), в Grand Hotel Zell am See 4★ Superior на собственном полуострове на озере Целль. На дни встречи весь отель забронирован исключительно для участников Native Code.",
+    aEn: "In Zell am See – Kaprun (Austria), at the Grand Hotel Zell am See 4★ Superior on its own peninsula on Lake Zell. For the days of the gathering, the entire hotel is reserved exclusively for Native Code participants.",
   },
   {
-    qRu: "Почему именно Зёльден?",
-    qEn: "Why Sölden?",
-    aRu: "Потому что это:\n\n• высокий сезон уже в начале декабря\n• качественное катание\n• красивая альпийская атмосфера\n• удобная инфраструктура\n• хорошие рестораны, SPA и après-ski\n• место, куда хочется возвращаться",
-    aEn: "Because it offers:\n\n• peak season already in early December\n• excellent skiing\n• beautiful alpine atmosphere\n• convenient infrastructure\n• great restaurants, SPA and après-ski\n• a place you want to return to",
+    qRu: "Почему именно Целль-ам-Зее — Капрун?",
+    qEn: "Why Zell am See – Kaprun?",
+    aRu: "Потому что это:\n\n• ледник Китцштайнхорн со стабильным снегом до конца сезона\n• катание с видом на озеро и вершины Альп\n• легендарный Grand Hotel на берегу озера Целль\n• GRANDSPA, рестораны и вечера у камина\n• весеннее солнце и красивая альпийская атмосфера\n• место, куда хочется возвращаться",
+    aEn: "Because it offers:\n\n• the Kitzsteinhorn glacier with reliable snow until the end of the season\n• skiing with views of the lake and the Alpine peaks\n• the legendary Grand Hotel on the shore of Lake Zell\n• GRANDSPA, restaurants and fireside evenings\n• spring sunshine and a beautiful alpine atmosphere\n• a place you want to return to",
   },
   {
     qRu: "Как попасть на мероприятие?",

@@ -1,5 +1,5 @@
-import a1 from "@/assets/alps-1.webp";
-import a2 from "@/assets/alps-2.webp";
+import a1 from "@/assets/zell/alps-connect-1.webp";
+import a2 from "@/assets/zell/alps-connect-2.webp";
 import a3 from "@/assets/alps-3.webp";
 import { useI18n } from "@/lib/i18n";
 import { pdfButtonClass } from "./pdfButtonStyles";
@@ -7,8 +7,8 @@ import { pdfButtonClass } from "./pdfButtonStyles";
 export function AlpsConnect() {
   const { t } = useI18n();
   const items = [
-    { img: a1, k: "alps.c1", alt: "Guests talking at the Gurgl Carat conference centre" },
-    { img: a2, k: "alps.c2", alt: "Conference hall at Gurgl Carat set up for a session" },
+    { img: a1, k: "alps.c1", alt: "Wine glasses by the window overlooking Lake Zell and the Alps" },
+    { img: a2, k: "alps.c2", alt: "Event hall at the Grand Hotel Zell am See set up with round tables" },
     { img: a3, k: "alps.c3", alt: "Participants meeting during a networking break" },
   ];
   return (
@@ -17,8 +17,12 @@ export function AlpsConnect() {
         <div className="text-center max-w-2xl mx-auto">
           <div className="text-[11px] md:text-xs font-bold tracking-[0.22em] text-orange">{t("alps.kicker")}</div>
           <h3 className="mt-3 text-2xl md:text-4xl font-extrabold tracking-tight text-navy">ALPS CONNECT</h3>
-          <p className="mt-3 text-sm md:text-base font-semibold text-navy">{t("alps.date")}</p>
-          <p className="mt-5 text-base md:text-lg text-foreground/80 whitespace-pre-line">{t("alps.title")}</p>
+          <p className="mt-3 text-base md:text-lg font-bold text-navy">{t("alps.sub")}</p>
+          <p className="mt-4 text-sm md:text-base font-semibold text-navy">{t("alps.date")}</p>
+          <div className="mt-3 space-y-3 text-sm md:text-base text-foreground/75 leading-relaxed">
+            <p>{t("alps.body1")}</p>
+            <p>{t("alps.body2")}</p>
+          </div>
         </div>
 
         <div className="mt-6 flex flex-col">

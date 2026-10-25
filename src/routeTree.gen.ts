@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SecretSoldenRouteImport } from './routes/secret-solden'
+import { Route as GrandHotelZellAmSeeRouteImport } from './routes/grand-hotel-zell-am-see'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as VisitSkiRouteImport } from './routes/visit/ski'
@@ -18,6 +19,11 @@ import { Route as VisitPeopleRouteImport } from './routes/visit/people'
 const SecretSoldenRoute = SecretSoldenRouteImport.update({
   id: '/secret-solden',
   path: '/secret-solden',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GrandHotelZellAmSeeRoute = GrandHotelZellAmSeeRouteImport.update({
+  id: '/grand-hotel-zell-am-see',
+  path: '/grand-hotel-zell-am-see',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -44,6 +50,7 @@ const VisitPeopleRoute = VisitPeopleRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/grand-hotel-zell-am-see': typeof GrandHotelZellAmSeeRoute
   '/secret-solden': typeof SecretSoldenRoute
   '/visit/people': typeof VisitPeopleRoute
   '/visit/ski': typeof VisitSkiRoute
@@ -51,6 +58,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/grand-hotel-zell-am-see': typeof GrandHotelZellAmSeeRoute
   '/secret-solden': typeof SecretSoldenRoute
   '/visit/people': typeof VisitPeopleRoute
   '/visit/ski': typeof VisitSkiRoute
@@ -59,19 +67,33 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/grand-hotel-zell-am-see': typeof GrandHotelZellAmSeeRoute
   '/secret-solden': typeof SecretSoldenRoute
   '/visit/people': typeof VisitPeopleRoute
   '/visit/ski': typeof VisitSkiRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/secret-solden' | '/visit/people' | '/visit/ski'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/grand-hotel-zell-am-see'
+    | '/secret-solden'
+    | '/visit/people'
+    | '/visit/ski'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/secret-solden' | '/visit/people' | '/visit/ski'
+  to:
+    | '/'
+    | '/about'
+    | '/grand-hotel-zell-am-see'
+    | '/secret-solden'
+    | '/visit/people'
+    | '/visit/ski'
   id:
     | '__root__'
     | '/'
     | '/about'
+    | '/grand-hotel-zell-am-see'
     | '/secret-solden'
     | '/visit/people'
     | '/visit/ski'
@@ -80,6 +102,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  GrandHotelZellAmSeeRoute: typeof GrandHotelZellAmSeeRoute
   SecretSoldenRoute: typeof SecretSoldenRoute
   VisitPeopleRoute: typeof VisitPeopleRoute
   VisitSkiRoute: typeof VisitSkiRoute
@@ -92,6 +115,13 @@ declare module '@tanstack/react-router' {
       path: '/secret-solden'
       fullPath: '/secret-solden'
       preLoaderRoute: typeof SecretSoldenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/grand-hotel-zell-am-see': {
+      id: '/grand-hotel-zell-am-see'
+      path: '/grand-hotel-zell-am-see'
+      fullPath: '/grand-hotel-zell-am-see'
+      preLoaderRoute: typeof GrandHotelZellAmSeeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -128,6 +158,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  GrandHotelZellAmSeeRoute: GrandHotelZellAmSeeRoute,
   SecretSoldenRoute: SecretSoldenRoute,
   VisitPeopleRoute: VisitPeopleRoute,
   VisitSkiRoute: VisitSkiRoute,

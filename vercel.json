@@ -28,7 +28,17 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/secret-solden",
+      "destination": "/grand-hotel-zell-am-see",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }

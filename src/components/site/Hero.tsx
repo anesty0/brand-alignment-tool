@@ -1,13 +1,15 @@
 import heroImg from "@/assets/hero-skiers.webp";
 import { useI18n } from "@/lib/i18n";
+import { useContacts } from "@/lib/contacts";
 
 export function Hero() {
   const { t } = useI18n();
+  const { whatsappUrl } = useContacts();
   return (
     <section id="top" className="relative overflow-hidden">
       {/* background image with very subtle fade */}
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Skiers in Sölden Alps" className="w-full h-full object-cover object-[70%_center] md:object-center" width={1920} height={1080} />
+        <img src={heroImg} alt="Skiers in the Alps" className="w-full h-full object-cover object-[70%_center] md:object-center" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/25 to-transparent" />
       </div>
 
@@ -26,7 +28,7 @@ export function Hero() {
 
           <div className="mt-5 space-y-1">
             <div className="text-lg md:text-xl font-bold text-navy tracking-tight">{t("hero.dates")}</div>
-            <div className="text-lg md:text-xl font-bold text-navy tracking-tight flex items-center gap-2">
+            <div className="text-sm sm:text-base md:text-xl font-bold text-navy tracking-tight flex items-center gap-2">
               {t("hero.place")}
             </div>
           </div>
@@ -36,10 +38,10 @@ export function Hero() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="#hotels" className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 text-xs font-semibold tracking-[0.12em] hover:brightness-110 transition shadow-[var(--shadow-soft)]">
+            <a href="#program" className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 text-xs font-semibold tracking-[0.12em] hover:brightness-110 transition shadow-[var(--shadow-soft)]">
               {t("hero.cta1")}
             </a>
-            <a href="/#program" className="inline-flex items-center justify-center rounded-md bg-background border border-border text-navy px-5 py-3 text-xs font-semibold tracking-[0.12em] hover:border-orange hover:text-orange transition">
+            <a href={whatsappUrl} target="_blank" rel="noreferrer noopener" className="inline-flex items-center justify-center rounded-md bg-background border border-border text-navy px-5 py-3 text-xs font-semibold tracking-[0.12em] hover:border-orange hover:text-orange transition">
               {t("hero.cta2")}
             </a>
           </div>
