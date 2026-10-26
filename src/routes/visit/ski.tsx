@@ -48,7 +48,7 @@ function VisitSkiPage() {
         <AlpsConnect />
         <SpecialGuest />
         <CtaBanners />
-        <Footer />
+        <Footer inPageLinks />
       </main>
     </ContactsContext.Provider>
   );

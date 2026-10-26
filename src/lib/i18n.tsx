@@ -18,7 +18,8 @@ const ru: Dict = {
 
   // Hero
   "hero.dates": "30 марта — 4 апреля",
-  "hero.place": "ЦЕЛЛЬ-АМ-ЗЕЕ · КАПРУН · АВСТРИЯ",
+  "hero.place": "ЦЕЛЛЬ-АМ-ЗЕЕ · КАПРУН",
+  "hero.country": "АВСТРИЯ",
   "hero.tagline": "5 дней в Альпах: днём горы,\nвечером - разговоры",
   "hero.sub": "Встреча предпринимателей и\nинвесторов из разных стран",
   "hero.cta1": "ПОСМОТРЕТЬ ПРОГРАММУ",
@@ -121,7 +122,7 @@ const ru: Dict = {
   "cta.about": "О ПРОЕКТЕ",
 
   // Footer
-  "footer.tagline": "30 марта – 4 апреля 2027, Zell am See – Kaprun • Austria. Встреча предпринимателей и инвесторов из разных стран.",
+  "footer.tagline": "30 марта - 4 апреля\nЦеоль ам Капрун Австрия\nВстреча предпринимателей",
   "footer.nav": "Навигация",
   "footer.contacts": "Контакты",
   "footer.rights": "© 2026 NATIVE CODE. All rights reserved.",
@@ -207,7 +208,8 @@ const en: Dict = {
   "brand.hero": "SKI FINALE 2027",
 
   "hero.dates": "30 MARCH — 4 APRIL",
-  "hero.place": "ZELL AM SEE · KAPRUN · AUSTRIA",
+  "hero.place": "ZELL AM SEE · KAPRUN",
+  "hero.country": "AUSTRIA",
   "hero.tagline": "Five days surrounded by people who speak your language.",
   "hero.sub": "A meeting of entrepreneurs and investors from different countries",
   "hero.cta1": "VIEW THE PROGRAM",
@@ -302,7 +304,7 @@ const en: Dict = {
   "cta.creators": "Creators of NATIVE CODE",
   "cta.about": "ABOUT THE PROJECT",
 
-  "footer.tagline": "30 March – 4 April 2027, Zell am See – Kaprun • Austria. Entrepreneurs and investors from different countries.",
+  "footer.tagline": "30 March - 4 April\nZell am See - Kaprun, Austria\nA gathering of entrepreneurs",
   "footer.nav": "Navigation",
   "footer.contacts": "Contacts",
   "footer.rights": "© 2026 NATIVE CODE. All rights reserved.",

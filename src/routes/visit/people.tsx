@@ -48,7 +48,7 @@ function VisitPeoplePage() {
         <AlpsConnect />
         <Resort />
         <CtaBanners />
-        <Footer />
+        <Footer inPageLinks />
       </main>
     </ContactsContext.Provider>
   );

@@ -29,7 +29,9 @@ export function Hero() {
           <div className="mt-5 space-y-1">
             <div className="text-lg md:text-xl font-bold text-navy tracking-tight">{t("hero.dates")}</div>
             <div className="text-sm sm:text-base md:text-xl font-bold text-navy tracking-tight flex items-center gap-2">
+              {/* The country is dropped below sm, where the full line crowds the photo. */}
               {t("hero.place")}
+              <span className="hidden sm:inline">· {t("hero.country")}</span>
             </div>
           </div>
 
