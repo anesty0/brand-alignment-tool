@@ -38,8 +38,8 @@ export function CtaBanners() {
               {t("cta.about")}
             </Link>
             <div className="mt-5 flex justify-center gap-4 text-muted-foreground">
-              <a href={whatsappSocialUrl} aria-label="WhatsApp" className="hover:text-emerald-600 transition"><MessageCircle size={16} /></a>
-              <a href={telegramUrl} aria-label="Telegram" className="hover:text-info transition"><Send size={16} /></a>
+              <a href={whatsappSocialUrl} target="_blank" rel="noreferrer noopener" aria-label="WhatsApp" className="hover:text-emerald-600 transition"><MessageCircle size={16} /></a>
+              <a href={telegramUrl} target="_blank" rel="noreferrer noopener" aria-label="Telegram" className="hover:text-info transition"><Send size={16} /></a>
               <a href={instagramUrl} target="_blank" rel="noreferrer noopener" aria-label="Instagram" className="hover:text-orange transition"><Instagram size={16} /></a>
               <a href={facebookUrl} target="_blank" rel="noreferrer noopener" aria-label="Facebook" className="hover:text-orange transition"><Facebook size={16} /></a>
               <a href={`mailto:${email}`} aria-label="Email" className="hover:text-orange transition"><Mail size={16} /></a>

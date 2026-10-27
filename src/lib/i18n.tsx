@@ -17,7 +17,7 @@ const ru: Dict = {
   "brand.hero": "SKI FINALE 2027",
 
   // Hero
-  "hero.dates": "30 марта — 4 апреля",
+  "hero.dates": "30 марта - 4 апреля",
   "hero.place": "ЦЕЛЛЬ-АМ-ЗЕЕ · КАПРУН",
   "hero.country": "АВСТРИЯ",
   "hero.tagline": "5 дней в Альпах: днём горы,\nвечером - разговоры",
@@ -37,10 +37,10 @@ const ru: Dict = {
   "about.f2.b": "Предприниматели, инвесторы и эксперты из разных стран Европы. Кто-то живет здесь уже много лет, кто-то только начинает новый этап. У каждого свой опыт, свои задачи и свой взгляд на рынок.",
   "about.f3.t": "ЧТО ДАЁТ",
   "about.f3.h": "Совпадение кода.",
-  "about.f3.b": "Самые ценные знакомства — те, где совпадает код: отношение к делу, способ принимать решения, темп и взгляд на развитие бизнеса. Такие офлайн встречи становятся началом новых идей, партнерств и совместных проектов.",
+  "about.f3.b": "Самые ценные знакомства - те, где совпадает код: отношение к делу, способ принимать решения, темп и взгляд на развитие бизнеса. Такие офлайн встречи становятся началом новых идей, партнерств и совместных проектов.",
   "about.f4.t": "ДЕЛОВАЯ ПРОГРАММА",
   "about.f4.h": "Разговоры на одном языке.",
-  "about.f4.b": "ALPS CONNECT, открытые дискуссии и Expert Tables — это разговор о реальных задачах бизнеса в Европе. О решениях, которые работают, ошибках, которых можно избежать, и опыте, который помогает двигаться дальше.",
+  "about.f4.b": "ALPS CONNECT, открытые дискуссии и Expert Tables - это разговор о реальных задачах бизнеса в Европе. О решениях, которые работают, ошибках, которых можно избежать, и опыте, который помогает двигаться дальше.",
 
   // Special guest
   "guest.kicker": "СПЕЦИАЛЬНЫЙ ГОСТЬ",
@@ -48,7 +48,7 @@ const ru: Dict = {
   "guest.desc1": "Журналист, много лет работала на BBC в Москве и Лондоне.",
   "guest.desc2pre": "Автор книги ",
   "guest.book": "«Возвращения. Несерьезный мемуар»",
-  "guest.desc2post": " — мемуара о жизни на два, три, четыре дома, написанного без пафоса, с тонкой самоиронией и удивительной честностью.",
+  "guest.desc2post": " - мемуара о жизни на два, три, четыре дома, написанного без пафоса, с тонкой самоиронией и удивительной честностью.",
   "guest.topicLabel": "ТЕМА ВСТРЕЧИ",
   "guest.topicTitle": "Внутренний код",
   "guest.topic1": "Что остается с человеком, когда меняются страны, язык, профессия и привычная жизнь?",
@@ -116,13 +116,13 @@ const ru: Dict = {
   "cta.partner.b": "Станьте партнёром события и получите доступ к предпринимательской аудитории из разных стран",
   "cta.partner.btn": "Спонсорские пакеты",
   "cta.speaker.t": "БИЗНЕС-ПРОГРАММА\nALPS CONNECT",
-  "cta.speaker.b": "Подробное расписание двух бизнес-дней: выступления, дискуссии, разборы кейсов и новые возможности для бизнеса в новых странах.",
+  "cta.speaker.b": "Подробное расписание бизнес дня - 2 апреля: выступления, дискуссии, разборы кейсов и новые возможности для бизнеса в новых странах.",
   "cta.speaker.btn": "Программа ALPS CONNECT",
   "cta.creators": "Создатели проекта NATIVE CODE",
   "cta.about": "О ПРОЕКТЕ",
 
   // Footer
-  "footer.tagline": "30 марта - 4 апреля\nЦеоль ам Капрун Австрия\nВстреча предпринимателей",
+  "footer.tagline": "30 марта - 4 апреля\nЦелль-ам-Зее - Капрун, Австрия\nВстреча предпринимателей",
   "footer.nav": "Навигация",
   "footer.contacts": "Контакты",
   "footer.rights": "© 2026 NATIVE CODE. All rights reserved.",
@@ -132,34 +132,34 @@ const ru: Dict = {
   "faq.title": "Часто задаваемые вопросы",
   "faq.empty": "Скоро здесь появятся ответы на самые частые вопросы.",
   // Visit landing pages (/visit/people, /visit/ski)
-  "visit.dates": "30 марта – 4 апреля 2027 · Целль-ам-Зее — Капрун, Австрия",
+  "visit.dates": "30 марта – 4 апреля 2027 · Целль-ам-Зее - Капрун, Австрия",
   "visit.price": "Участие от 1900 € за человека",
   "visit.cta1": "Посмотреть участие и стоимость",
   "visit.cta2": "Задать вопрос",
   "visit.people.h1": "Пять дней в Целль-ам-Зее с русскоязычными предпринимателями Европы",
   "visit.people.desc":
     "Мы собираемся из разных стран, чтобы кататься, знакомиться и проводить время вместе. Днём будем в горах, вечером будем встречаться за ужином и обсуждать жизнь и бизнес после переезда.",
-  "visit.people.metaTitle": "Пять дней в Целль-ам-Зее с русскоязычными предпринимателями — Native Code",
-  "visit.people.metaDesc": "Ski Finale 2027 в Целль-ам-Зее — Капрун: пять дней в Альпах с русскоязычными предпринимателями Европы. 30 марта – 4 апреля 2027, участие от 1900 € за человека.",
-  "visit.ski.h1": "Весной едем кататься в Целль-ам-Зее — Капрун",
+  "visit.people.metaTitle": "Пять дней в Целль-ам-Зее с русскоязычными предпринимателями - Native Code",
+  "visit.people.metaDesc": "Ski Finale 2027 в Целль-ам-Зее - Капрун: пять дней в Альпах с русскоязычными предпринимателями Европы. 30 марта – 4 апреля 2027, участие от 1900 € за человека.",
+  "visit.ski.h1": "Весной едем кататься в Целль-ам-Зее - Капрун",
   "visit.ski.desc":
     "Собираемся с русскоязычными предпринимателями, инвесторами и самостоятельными профессионалами из разных стран Европы. В программе Ski Safari, катание по группам, соревнования и вечерние встречи.",
-  "visit.ski.metaTitle": "Ski Finale в Целль-ам-Зее — катание и программа — Native Code",
-  "visit.ski.metaDesc": "Ski Finale 2027 в Целль-ам-Зее — Капрун: ски-сафари, катание по группам, соревнования и вечерние встречи. 30 марта – 4 апреля 2027, участие от 1900 € за человека.",
+  "visit.ski.metaTitle": "Ski Finale в Целль-ам-Зее - катание и программа - Native Code",
+  "visit.ski.metaDesc": "Ski Finale 2027 в Целль-ам-Зее - Капрун: ски-сафари, катание по группам, соревнования и вечерние встречи. 30 марта – 4 апреля 2027, участие от 1900 € за человека.",
 
-  // Zell am See — new sections
+  // Zell am See - new sections
   "lightbox.zoomIn": "Увеличить",
   "lightbox.zoomOut": "Уменьшить",
-  "lightbox.hint": "Двойной клик или колесо мыши — увеличить · ← → — листать",
-  "lightbox.hintTouch": "Разведите пальцы или нажмите дважды — увеличить · свайп — листать",
+  "lightbox.hint": "Двойной клик или колесо мыши - увеличить · ← → - листать",
+  "lightbox.hintTouch": "Разведите пальцы или нажмите дважды - увеличить · свайп - листать",
   "lightbox.open": "Открыть фото",
-  "about.p1pre": "Легендарный отель ",
-  "about.p1hotel": "Grand Hotel Zell am See 4*s",
-  "about.p1post": " на собственном полуострове на озере Целль. Величественные Альпы, историческая архитектура и более 130 лет традиций европейского гостеприимства.",
+  "about.p1pre": "Легендарный ",
+  "about.p1hotel": "Grand Hotel Zell am See 4★ Superior",
+  "about.p1post": " расположен на собственном полуострове на берегу озера. Величественные Альпы, историческая архитектура и более 130 лет традиций европейского гостеприимства.",
   "about.p2": "Мы полностью забронировали Grand Hotel для участников Native Code. Завтраки с видом на озеро, катание на леднике, спа и вечера в кругу предпринимателей, их семей и друзей.",
   "resort.title": "ZELL AM SEE – KAPRUN",
   "resort.sub": "Озеро, ледник и Альпы в одном месте",
-  "resort.body": "Курортный регион Целль-ам-Зее – Капрун объединяет горное озеро Целль, ледник Китцштайнхорн со стабильным снегом и склоны Шмиттенхёэ над озером. Катание с видом на воду и вершины Альп, а вечером — прогулка по историческому центру на берегу озера.",
+  "resort.body": "Курортный регион Целль-ам-Зее – Капрун объединяет горное озеро Целлер-Зее, ледник Китцштайнхорн со стабильным снегом и склоны Шмиттенхёэ над озером. Катание с видом на воду и вершины Альп, а вечером - прогулка по историческому центру на берегу озера.",
   "resort.alt": "Целль-ам-Зее и Grand Hotel на берегу озера зимой",
   "alps.sub": "Днём на леднике. Вечером в кругу предпринимателей.",
   "alps.body1": "После солнечного дня на склонах Капруна встречаемся в Grand Hotel за бокалом вина и разговором о бизнесе в Европе.",
@@ -167,7 +167,7 @@ const ru: Dict = {
   "program.d4.kicker": "КЛЮЧЕВОЙ ДЕНЬ ПРОГРАММЫ",
   "hotels.stars": "Luxury hotel 4★ Superior",
   "hotels.lead": "Все участники Native Code размещаются в Grand Hotel.",
-  "hotels.body": "Легендарный отель на собственном полуострове на озере Целль. Историческая элегантность, панорамы Альп, изысканный ресторан, спа и номера 10 категорий. На дни встречи весь отель забронирован исключительно для участников Native Code.",
+  "hotels.body": "Легендарный отель на собственном полуострове на озере Целлер-Зее. Историческая элегантность, панорамы Альп, изысканный ресторан, спа и номера 10 категорий. На дни встречи весь отель забронирован исключительно для участников Native Code.",
   "hotels.rooms": "Подробно о номерах",
   "hotels.ask": "Задать вопрос",
   "hotels.prev": "Предыдущее фото",
@@ -192,7 +192,7 @@ const ru: Dict = {
   "grand.guests2": "2 человека",
   "grand.help": "Нужна помощь с выбором номера?",
   "grand.helpBtn": "Напишите нам",
-  "grand.metaTitle": "Grand Hotel Zell am See — номера и цены — Native Code",
+  "grand.metaTitle": "Grand Hotel Zell am See - номера и цены - Native Code",
   "grand.metaDesc": "Grand Hotel Zell am See 4★ Superior: выберите номер для Native Code Ski Finale 2027. 30 марта – 4 апреля 2027, 5 ночей с завтраками и участием в программе.",
 };
 
@@ -207,7 +207,7 @@ const en: Dict = {
   "brand.line2": "ENTREPRENEURS CLUB",
   "brand.hero": "SKI FINALE 2027",
 
-  "hero.dates": "30 MARCH — 4 APRIL",
+  "hero.dates": "30 MARCH - 4 APRIL",
   "hero.place": "ZELL AM SEE · KAPRUN",
   "hero.country": "AUSTRIA",
   "hero.tagline": "Five days surrounded by people who speak your language.",
@@ -228,7 +228,7 @@ const en: Dict = {
   "about.f3.b": "The most valuable connections are the ones where the code matches: attitude to work, the way decisions are made, pace and outlook on growing a business. These offline meetings become the start of new ideas, partnerships and joint projects.",
   "about.f4.t": "BUSINESS PROGRAM",
   "about.f4.h": "Talking in one language.",
-  "about.f4.b": "ALPS CONNECT, open discussions and Expert Tables — a conversation about the real challenges of doing business in Europe. About solutions that work, mistakes you can avoid, and experience that helps you move forward.",
+  "about.f4.b": "ALPS CONNECT, open discussions and Expert Tables - a conversation about the real challenges of doing business in Europe. About solutions that work, mistakes you can avoid, and experience that helps you move forward.",
 
   // Special guest
   "guest.kicker": "SPECIAL GUEST",
@@ -236,11 +236,11 @@ const en: Dict = {
   "guest.desc1": "A journalist who worked for the BBC in Moscow and London for many years.",
   "guest.desc2pre": "Author of the book ",
   "guest.book": "«Returns. An Unserious Memoir»",
-  "guest.desc2post": " — a memoir about living across two, three, four homes, written without pathos, with subtle self-irony and remarkable honesty.",
+  "guest.desc2post": " - a memoir about living across two, three, four homes, written without pathos, with subtle self-irony and remarkable honesty.",
   "guest.topicLabel": "TOPIC OF THE MEETING",
   "guest.topicTitle": "Inner Code",
   "guest.topic1": "What stays with a person when countries, language, profession and familiar life all change?",
-  "guest.topic2": "A conversation about choice, freedom, the people we meet along the way, and what cannot be lost — even when starting all over again.",
+  "guest.topic2": "A conversation about choice, freedom, the people we meet along the way, and what cannot be lost - even when starting all over again.",
 
   "alps.kicker": "ALPS CONNECT",
   "alps.date": "An evening dedicated to business · April 2",
@@ -299,7 +299,7 @@ const en: Dict = {
   "cta.partner.b": "Become a partner and get access to an entrepreneurial audience from different countries",
   "cta.partner.btn": "Sponsorship packages",
   "cta.speaker.t": "BUSINESS PROGRAM\nALPS CONNECT",
-  "cta.speaker.b": "A detailed schedule of two business days: talks, discussions, case studies and new business opportunities in new countries.",
+  "cta.speaker.b": "A detailed schedule of the business day on 2 April: talks, discussions, case studies and new business opportunities in new countries.",
   "cta.speaker.btn": "ALPS CONNECT program",
   "cta.creators": "Creators of NATIVE CODE",
   "cta.about": "ABOUT THE PROJECT",
@@ -320,23 +320,23 @@ const en: Dict = {
   "visit.people.h1": "Five Days in Zell am See with Russian-Speaking Entrepreneurs from Across Europe",
   "visit.people.desc":
     "We come together from different countries to ski, meet new people, and spend time together. During the day, we'll be in the mountains; in the evening, we'll meet for dinner and talk about life and business after relocating abroad.",
-  "visit.people.metaTitle": "Five Days in Zell am See with Russian-Speaking Entrepreneurs — Native Code",
+  "visit.people.metaTitle": "Five Days in Zell am See with Russian-Speaking Entrepreneurs - Native Code",
   "visit.people.metaDesc": "Ski Finale 2027 in Zell am See – Kaprun: five days in the Alps with Russian-speaking entrepreneurs from across Europe. 30 March – 4 April 2027, from €1,900 per person.",
   "visit.ski.h1": "We're Going Skiing in Zell am See – Kaprun This Spring",
   "visit.ski.desc":
     "We're bringing together Russian-speaking entrepreneurs, investors, and independent professionals from across Europe. The programme includes Ski Safari, group skiing, competitions, and evening gatherings.",
-  "visit.ski.metaTitle": "Ski Finale in Zell am See — Skiing and Programme — Native Code",
+  "visit.ski.metaTitle": "Ski Finale in Zell am See - Skiing and Programme - Native Code",
   "visit.ski.metaDesc": "Ski Finale 2027 in Zell am See – Kaprun: ski safari, group skiing, competitions and evening gatherings. 30 March – 4 April 2027, from €1,900 per person.",
 
-  // Zell am See — new sections
+  // Zell am See - new sections
   "lightbox.zoomIn": "Zoom in",
   "lightbox.zoomOut": "Zoom out",
   "lightbox.hint": "Double-click or scroll to zoom · ← → to browse",
   "lightbox.hintTouch": "Pinch or double-tap to zoom · swipe to browse",
   "lightbox.open": "Open photo",
   "about.p1pre": "The legendary ",
-  "about.p1hotel": "Grand Hotel Zell am See 4*S",
-  "about.p1post": " stands on its own peninsula on Lake Zell. Majestic Alps, historic architecture and more than 130 years of European hospitality.",
+  "about.p1hotel": "Grand Hotel Zell am See 4★ Superior",
+  "about.p1post": " stands on its own peninsula on the lakeshore. Majestic Alps, historic architecture and more than 130 years of European hospitality.",
   "about.p2": "We have booked the entire Grand Hotel for Native Code participants. Breakfasts overlooking the lake, glacier skiing, a spa and evenings among entrepreneurs, their families and friends.",
   "resort.title": "ZELL AM SEE – KAPRUN",
   "resort.sub": "A lake, a glacier and the Alps in one place",
@@ -373,7 +373,7 @@ const en: Dict = {
   "grand.guests2": "2 people",
   "grand.help": "Need help choosing a room?",
   "grand.helpBtn": "Message us",
-  "grand.metaTitle": "Grand Hotel Zell am See — Rooms and Prices — Native Code",
+  "grand.metaTitle": "Grand Hotel Zell am See - Rooms and Prices - Native Code",
   "grand.metaDesc": "Grand Hotel Zell am See 4★ Superior: choose your room for Native Code Ski Finale 2027. 30 March – 4 April 2027, 5 nights with breakfast and programme participation.",
 };
 

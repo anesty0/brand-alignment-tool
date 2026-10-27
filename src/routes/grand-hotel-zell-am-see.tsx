@@ -25,7 +25,7 @@ export const Route = createFileRoute("/grand-hotel-zell-am-see")({
 type PriceTier = {
   guestsKey: string;
   price: number;
-  /** Booking link for this tier. Empty until online booking opens (see lib/booking.ts). */
+  /** Ski4U booking page for this tier. */
   bookUrl: string;
 };
 
@@ -39,9 +39,17 @@ type Room = {
   prices: PriceTier[];
 };
 
-const twoGuestPrices = (single: number, double: number): PriceTier[] => [
-  { guestsKey: "grand.guests1", price: single, bookUrl: "" },
-  { guestsKey: "grand.guests2", price: double, bookUrl: "" },
+const SKI4U = "https://ski4u.com/special-offers/";
+
+/** Prices for 1 and 2 guests, each with its Ski4U booking page (offer codes from the client). */
+const twoGuestPrices = (
+  single: number,
+  double: number,
+  singleOffer: string,
+  doubleOffer: string,
+): PriceTier[] => [
+  { guestsKey: "grand.guests1", price: single, bookUrl: SKI4U + singleOffer },
+  { guestsKey: "grand.guests2", price: double, bookUrl: SKI4U + doubleOffer },
 ];
 
 /** Order is final (client-confirmed). A help banner follows the first room and closes the list. */
@@ -52,7 +60,7 @@ const rooms: Room[] = [
     descriptionRu: "Уютный двухместный номер в классическом стиле.",
     descriptionEn: "A cosy classic-style double room.",
     images: [comfort1, comfort2],
-    prices: twoGuestPrices(2300, 1900),
+    prices: twoGuestPrices(2300, 1900, "ncgh5", "ncgh1"),
   },
   {
     name: "DOUBLE ROOM SUPERIOR",
@@ -62,7 +70,7 @@ const rooms: Room[] = [
     descriptionEn:
       "A classic-style room with a double bed, a seating area, a balcony and lake views.",
     images: [superior1, superior2],
-    prices: twoGuestPrices(2500, 2100),
+    prices: twoGuestPrices(2500, 2100, "ncgh6", "ncgh2"),
   },
   {
     name: "DELUXE DOUBLE ROOM",
@@ -72,7 +80,7 @@ const rooms: Room[] = [
     descriptionEn:
       "A spacious room with a double bed, a seating area and a balcony overlooking the lake.",
     images: [deluxe1, deluxe2],
-    prices: twoGuestPrices(2900, 2500),
+    prices: twoGuestPrices(2900, 2500, "ncgh7", "ncgh3"),
   },
   {
     name: "DELUXE DOUBLE ROOM С СОБСТВЕННОЙ САУНОЙ",
@@ -83,7 +91,7 @@ const rooms: Room[] = [
     descriptionEn:
       "A spacious room with a seating area, a balcony overlooking the lake and a private sauna.",
     images: [deluxeSauna1, deluxeSauna2],
-    prices: twoGuestPrices(3200, 2800),
+    prices: twoGuestPrices(3200, 2800, "ncgh8", "ncgh4"),
   },
 ];
 
@@ -106,7 +114,7 @@ function GrandHotelPage() {
     () =>
       rooms.flatMap((room) => {
         const name = !isRu && room.nameEn ? room.nameEn : room.name;
-        return room.images.map((src, i) => ({ src, alt: `${name} — ${i + 1}`, caption: name }));
+        return room.images.map((src, i) => ({ src, alt: `${name} - ${i + 1}`, caption: name }));
       }),
     [isRu],
   );
@@ -314,7 +322,7 @@ function RoomCard({
           </div>
           <div className="mt-3 space-y-2">
             {room.prices.map((p) => {
-              const label = `${t(p.guestsKey)} — ${p.price}€ ${t("grand.perPerson")}`;
+              const label = `${t(p.guestsKey)} - ${p.price}€ ${t("grand.perPerson")}`;
               const base =
                 "w-full inline-flex items-center justify-center text-center text-sm font-semibold px-4 py-2.5 rounded-md bg-primary text-primary-foreground";
               return ONLINE_BOOKING_ENABLED && p.bookUrl ? (

@@ -22,7 +22,7 @@ const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
   {
     qRu: "Что такое SKI FINALE?",
     qEn: "What is SKI FINALE?",
-    aRu: "Это 5 дней в Целль-ам-Зее — Капруне (Австрия), где соединяются:\n\n• катание в Альпах\n• отдых\n• знакомства\n• предпринимательская среда\n• живое общение без официоза\n\nБез сцены «успешного успеха».\nБез скучных конференций.\nБез жесткой программы.",
+    aRu: "Это 5 дней в Целль-ам-Зее - Капруне (Австрия), где соединяются:\n\n• катание в Альпах\n• отдых\n• знакомства\n• предпринимательская среда\n• живое общение без официоза\n\nБез сцены «успешного успеха».\nБез скучных конференций.\nБез жесткой программы.",
     aEn: "5 days in Zell am See – Kaprun (Austria) bringing together:\n\n• skiing in the Alps\n• relaxation\n• new connections\n• an entrepreneurial environment\n• genuine conversations without formality\n\nNo “successful success” stage.\nNo boring conferences.\nNo rigid agenda.",
   },
   {
@@ -82,13 +82,13 @@ const faqs: { qRu: string; qEn: string; aRu: string; aEn: string }[] = [
   {
     qRu: "Где проходит мероприятие?",
     qEn: "Where does the event take place?",
-    aRu: "В Целль-ам-Зее — Капруне (Австрия), в Grand Hotel Zell am See 4★ Superior на собственном полуострове на озере Целль. На дни встречи весь отель забронирован исключительно для участников Native Code.",
+    aRu: "В Целль-ам-Зее - Капруне (Австрия), в Grand Hotel Zell am See 4★ Superior на собственном полуострове на озере Целлер-Зее. На дни встречи весь отель забронирован исключительно для участников Native Code.",
     aEn: "In Zell am See – Kaprun (Austria), at the Grand Hotel Zell am See 4★ Superior on its own peninsula on Lake Zell. For the days of the gathering, the entire hotel is reserved exclusively for Native Code participants.",
   },
   {
-    qRu: "Почему именно Целль-ам-Зее — Капрун?",
+    qRu: "Почему именно Целль-ам-Зее - Капрун?",
     qEn: "Why Zell am See – Kaprun?",
-    aRu: "Потому что это:\n\n• ледник Китцштайнхорн со стабильным снегом до конца сезона\n• катание с видом на озеро и вершины Альп\n• легендарный Grand Hotel на берегу озера Целль\n• GRANDSPA, рестораны и вечера у камина\n• весеннее солнце и красивая альпийская атмосфера\n• место, куда хочется возвращаться",
+    aRu: "Потому что это:\n\n• ледник Китцштайнхорн со стабильным снегом до конца сезона\n• катание с видом на озеро и вершины Альп\n• легендарный Grand Hotel на берегу озера Целлер-Зее\n• GRANDSPA, рестораны и вечера у камина\n• весеннее солнце и красивая альпийская атмосфера\n• место, куда хочется возвращаться",
     aEn: "Because it offers:\n\n• the Kitzsteinhorn glacier with reliable snow until the end of the season\n• skiing with views of the lake and the Alpine peaks\n• the legendary Grand Hotel on the shore of Lake Zell\n• GRANDSPA, restaurants and fireside evenings\n• spring sunshine and a beautiful alpine atmosphere\n• a place you want to return to",
   },
   {

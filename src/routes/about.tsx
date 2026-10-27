@@ -82,8 +82,8 @@ function AboutPage() {
             </h1>
             <p className="mt-6 max-w-md text-sm md:text-base text-foreground/75 leading-relaxed whitespace-pre-line">
               {isRu
-                ? "NATIVE CODE создают люди, которые последние годы строят бизнес, запускают проекты и создают новую жизнь в разных странах Европы.\n\nИз этого опыта и появился NATIVE CODE.\n\nСегодня за проектом стоят компании из разных сфер — недвижимости, консалтинга, путешествий и международных событий.\n\nУ каждой компании своя экспертиза.\n\nА NATIVE CODE появился благодаря общему интересу к людям, идеям и новым проектам."
-                : "NATIVE CODE is created by people who, over the past years, have been building businesses, launching projects and creating a new life across different countries in Europe.\n\nFrom that experience NATIVE CODE was born.\n\nToday the project is backed by companies from different fields — real estate, consulting, travel and international events.\n\nEach company has its own expertise.\n\nAnd NATIVE CODE came into being thanks to a shared interest in people, ideas and new projects."}
+                ? "NATIVE CODE создают люди, которые последние годы строят бизнес, запускают проекты и создают новую жизнь в разных странах Европы.\n\nИз этого опыта и появился NATIVE CODE.\n\nСегодня за проектом стоят компании из разных сфер - недвижимости, консалтинга, путешествий и международных событий.\n\nУ каждой компании своя экспертиза.\n\nА NATIVE CODE появился благодаря общему интересу к людям, идеям и новым проектам."
+                : "NATIVE CODE is created by people who, over the past years, have been building businesses, launching projects and creating a new life across different countries in Europe.\n\nFrom that experience NATIVE CODE was born.\n\nToday the project is backed by companies from different fields - real estate, consulting, travel and international events.\n\nEach company has its own expertise.\n\nAnd NATIVE CODE came into being thanks to a shared interest in people, ideas and new projects."}
             </p>
           </div>
         </div>
@@ -167,7 +167,7 @@ function AboutPage() {
             </a>
             <div className="flex items-center justify-start md:justify-end gap-4 text-white/80">
               <a href="https://www.instagram.com/nativecode.club?igsh=MW80enplMTRveGhjcQ%3D%3D&utm_source=qr" target="_blank" rel="noreferrer noopener" aria-label="Instagram" className="hover:text-orange transition"><Instagram size={18} /></a>
-              <a href="#" aria-label="Telegram" className="hover:text-orange transition"><Send size={18} /></a>
+              <a href="https://t.me/jenia_nativecode" target="_blank" rel="noreferrer noopener" aria-label="Telegram" className="hover:text-orange transition"><Send size={18} /></a>
               <a href="https://wa.me/421915442716" target="_blank" rel="noreferrer" aria-label="WhatsApp" className="hover:text-orange transition"><MessageCircle size={18} /></a>
             </div>
           </div>

@@ -33,17 +33,14 @@ export const WHATSAPP_URL = "https://wa.me/421915442716";
 export const DEFAULT_CONTACTS: SiteContacts = {
   whatsappUrl: WHATSAPP_URL,
   whatsappSocialUrl: WHATSAPP_URL,
-  telegramUrl: "https://t.me/Irina_krasil",
+  telegramUrl: "https://t.me/jenia_nativecode",
   email: "info@nativecode.club",
   instagramUrl: INSTAGRAM_URL,
   facebookUrl: FACEBOOK_URL,
 };
 
 /** Contacts for the /visit/people and /visit/ski landing pages. */
-export const VISIT_CONTACTS: SiteContacts = {
-  ...DEFAULT_CONTACTS,
-  telegramUrl: "https://t.me/jenia_nativecode",
-};
+export const VISIT_CONTACTS: SiteContacts = DEFAULT_CONTACTS;
 
 export const ContactsContext = createContext<SiteContacts>(DEFAULT_CONTACTS);
 

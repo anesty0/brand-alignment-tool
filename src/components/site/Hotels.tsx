@@ -151,7 +151,7 @@ function HotelCarousel({ images, t }: { images: string[]; t: (k: string) => stri
                 >
                   <img
                     src={src}
-                    alt={`Grand Hotel Zell am See — ${t("hotels.photo")} ${i + 1}`}
+                    alt={`Grand Hotel Zell am See - ${t("hotels.photo")} ${i + 1}`}
                     loading={i === 0 ? "eager" : "lazy"}
                     draggable={false}
                     className="w-full aspect-[16/10] object-cover select-none"
@@ -197,7 +197,7 @@ function HotelCarousel({ images, t }: { images: string[]; t: (k: string) => stri
       <Lightbox
         images={images.map((src, i) => ({
           src,
-          alt: `Grand Hotel Zell am See — ${t("hotels.photo")} ${i + 1}`,
+          alt: `Grand Hotel Zell am See - ${t("hotels.photo")} ${i + 1}`,
           caption: "Grand Hotel Zell am See",
         }))}
         index={openIndex}
