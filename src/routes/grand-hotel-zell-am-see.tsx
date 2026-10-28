@@ -8,6 +8,7 @@ import { useI18n } from "@/lib/i18n";
 import { useContacts } from "@/lib/contacts";
 import { useDocumentMeta } from "@/lib/useDocumentMeta";
 import { ONLINE_BOOKING_ENABLED } from "@/lib/booking";
+import { withUtm } from "@/lib/utm";
 import heroImg from "@/assets/zell/hotel-01.webp";
 import comfort1 from "@/assets/zell/rooms/comfort-1.webp";
 import comfort2 from "@/assets/zell/rooms/comfort-2.webp";
@@ -24,12 +25,17 @@ export const Route = createFileRoute("/grand-hotel-zell-am-see")({
 
 type PriceTier = {
   guestsKey: string;
+  guests: number;
+  /** Ski4U offer code, e.g. "ncgh1". */
+  offer: string;
   price: number;
   /** Ski4U booking page for this tier. */
   bookUrl: string;
 };
 
 type Room = {
+  /** Short id used in tracking (utm_content and analytics events). */
+  slug: string;
   name: string;
   nameEn?: string;
   size: string;
@@ -48,13 +54,14 @@ const twoGuestPrices = (
   singleOffer: string,
   doubleOffer: string,
 ): PriceTier[] => [
-  { guestsKey: "grand.guests1", price: single, bookUrl: SKI4U + singleOffer },
-  { guestsKey: "grand.guests2", price: double, bookUrl: SKI4U + doubleOffer },
+  { guestsKey: "grand.guests1", guests: 1, offer: singleOffer, price: single, bookUrl: SKI4U + singleOffer },
+  { guestsKey: "grand.guests2", guests: 2, offer: doubleOffer, price: double, bookUrl: SKI4U + doubleOffer },
 ];
 
 /** Order is final (client-confirmed). A help banner follows the first room and closes the list. */
 const rooms: Room[] = [
   {
+    slug: "comfort",
     name: "DOUBLE ROOM COMFORT",
     size: "22 м²",
     descriptionRu: "Уютный двухместный номер в классическом стиле.",
@@ -63,6 +70,7 @@ const rooms: Room[] = [
     prices: twoGuestPrices(2300, 1900, "ncgh5", "ncgh1"),
   },
   {
+    slug: "superior",
     name: "DOUBLE ROOM SUPERIOR",
     size: "30 м²",
     descriptionRu:
@@ -73,6 +81,7 @@ const rooms: Room[] = [
     prices: twoGuestPrices(2500, 2100, "ncgh6", "ncgh2"),
   },
   {
+    slug: "deluxe",
     name: "DELUXE DOUBLE ROOM",
     size: "42 м²",
     descriptionRu:
@@ -83,6 +92,7 @@ const rooms: Room[] = [
     prices: twoGuestPrices(2900, 2500, "ncgh7", "ncgh3"),
   },
   {
+    slug: "deluxe_sauna",
     name: "DELUXE DOUBLE ROOM С СОБСТВЕННОЙ САУНОЙ",
     nameEn: "DELUXE DOUBLE ROOM WITH PRIVATE SAUNA",
     size: "42 м²",
@@ -323,14 +333,20 @@ function RoomCard({
           <div className="mt-3 space-y-2">
             {room.prices.map((p) => {
               const label = `${t(p.guestsKey)} - ${p.price}€ ${t("grand.perPerson")}`;
+              const placement = `${room.slug}_${p.guests}${p.guests > 1 ? "guests" : "guest"}`;
               const base =
                 "w-full inline-flex items-center justify-center text-center text-sm font-semibold px-4 py-2.5 rounded-md bg-primary text-primary-foreground";
               return ONLINE_BOOKING_ENABLED && p.bookUrl ? (
                 <a
                   key={p.guestsKey}
-                  href={p.bookUrl}
+                  href={withUtm(p.bookUrl, placement)}
+                  data-placement={placement}
+                  data-room={room.nameEn ?? room.name}
+                  data-guests={p.guests}
+                  data-offer={p.offer}
+                  data-price={p.price}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener"
                   className={`${base} hover:brightness-110 transition`}
                 >
                   {label}

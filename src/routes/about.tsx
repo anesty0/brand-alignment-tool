@@ -115,8 +115,9 @@ function AboutPage() {
                 </p>
                 <a
                   href={`https://${p.link}`}
+                  data-placement={p.name === "SKI4U" ? "about_partner" : undefined}
                   target="_blank"
-                  rel="noreferrer"
+                  rel={p.name === "SKI4U" ? "noopener" : "noreferrer"}
                   className="mt-4 md:mt-0 inline-flex h-10 w-fit items-center gap-2 rounded-md border border-border px-5 text-[11px] font-semibold tracking-[0.14em] text-navy hover:border-orange hover:text-orange transition uppercase"
                 >
                   {p.link} ↗
